@@ -29,6 +29,28 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 - Landed cost before freight/FDA: about **USD 0.50/stick, USD 15/box**, USD 15,000 for 30k sticks
 - Flavours available now: Watermelon, Pineapple, Peach, Pomelo, Strawberry
 
+## 3b. Wilder: public facts (wilder.co, checked 2026-11-08)
+
+- Company: Besoda Pte Ltd (Singapore), FDA-registered in Thailand; 450+ retail doors (Supersports, gyms), now also in Singapore
+- One product: **WILDER Electrolytes**, 10.9 g sachet: **1,000 mg Na, 600 mg K, 100 mg Mg, 40 mg L-theanine**, zero added sugar, caffeine-free, keto/fasting
+- Flavours: **Pineapple, Strawberry, Yuzu, Peach, Watermelon** (Watermelon sold out)
+- Positioning: "Performance hydration… made for Asia's heat": Hyrox, running, functional fitness, Wilder Training Club community
+- Prices (VAT incl.):
+
+| Offer | Price | ฿/stick |
+|---|---|---|
+| 30-pack, one-off | ฿1,590 | 53 |
+| 30-pack, subscribe (1st order / after) | ฿1,200 / ฿1,400 | 40 / 47 |
+| 12 variety pack | ฿695 | 58 |
+| Single sachet at retail (Sunshine Market) | ฿60 | 60 |
+| Running promo: buy 3 get 1 free | ≈ ฿1,193 per box | ≈ 40 |
+
+- **Our target (−20%)**: 30-pack at **≈ ฿1,272 → list at ฿1,290 (฿43/stick)**; subscribe ≈ ฿1,120 (฿37/stick).
+  Cost ≈ USD 15/box (≈ ฿500 at ~฿33–35/USD) before freight, FDA and fees, so roughly 55–60% gross margin on the one-off price.
+- ⚠️ **The OEM's flavours (Watermelon, Pineapple, Peach, Pomelo, Strawberry) are four of Wilder's five.** The OEM may be
+  Wilder's own manufacturer. If its base formula is Wilder's, we would inherit the "not good enough product".
+  Ask the OEM directly (question 7) and compare the sample spec against Wilder's.
+
 ## 4. Workstreams, in order
 
 1. **Wilder recap.** *Waiting on you:* paste the key points from the Wilder chat (segments, product gaps, new-product ideas).
@@ -56,6 +78,7 @@ The samples' contents are unknown, so these decide which functional claims and n
 4. Thai FDA: timeline and cost to register, which product category (dietary supplement vs. beverage powder), and **will the FDA accept the innuendo product names?** The FDA reviews product names, so this needs checking before we design labels.
 5. Lead time from artwork sign-off to delivery, and shelf life.
 6. Is the 7.50 USD box price for printed custom boxes, and is the stick film printed per SKU or with a generic print plus a sticker?
+7. Do they manufacture for WILDER (or other Thai brands) with the same base? If yes, what formula changes can we make so ours is clearly different and better?
 
 ## 6. Blocker: Blender on Erik's Mac
 
