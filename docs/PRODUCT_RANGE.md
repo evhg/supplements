@@ -1,7 +1,7 @@
 # Product range & names: proposal v1
 
 _2026-11-08. Built on the Wilder research handoff (`research/wilder-handoff.md`, §§1–5) and `ANALYSIS.md`.
-Brand: Paleo Robbie private label, following PR's existing naming ("Robbie's Ketchup", "Robbie's Spicy BBQ")._
+Brand: Paleo Robbie private label. Product names never include "Paleo" or "Robbie"._
 
 ## 1. How the range works
 
@@ -18,10 +18,10 @@ Brand: Paleo Robbie private label, following PR's existing naming ("Robbie's Ket
 
 | # | Line (working name) | Add-on to base | Occasion / buyer | Status |
 |---|---|---|---|---|
-| 1 | **Robbie's Thirsty** (Hydrate) | none | Everyday: gym, heat, afternoon slump, travel, late nights | **Launch now**, OEM base and flavours |
-| 2 | **Robbie's Swole Mate** (Power) | creatine monohydrate ~3 g, micronised, CoA per batch | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
-| 3 | **Robbie's Pillow Talk** (Recover) | magnesium glycinate + glycine + calming botanicals | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
-| 4 | **Robbie's Rise & Grind** (Energy) | caffeine (natural, e.g. green tea), **no taurine** | Morning or pre-workout, coffee alternative | Later: watch Thai energy-drink rules |
+| 1 | **Thirsty** (Hydrate) | none | Everyday: gym, heat, afternoon slump, travel, late nights | **Launch now**, OEM base and flavours |
+| 2 | **Swole Mate** (Power) | creatine monohydrate ~3 g, micronised, CoA per batch | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
+| 3 | **Pillow Talk** (Recover) | magnesium glycinate + glycine + calming botanicals | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
+| 4 | **Rise & Grind** (Energy) | caffeine (natural, e.g. green tea), **no taurine** | Morning or pre-workout, coffee alternative | Later: watch Thai energy-drink rules |
 
 Packs that need no new formula:
 
