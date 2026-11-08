@@ -86,8 +86,8 @@ occasions, which suits cheeky names and Paleo Robbie's tone ("Nothing processed,
 
 **Things to sort out with Robbie:**
 
-- **PR sells Wilder.** A PR private label at −20% next to Wilder on the same page will cannibalise it and may
-  strain that supplier relationship. Decide early whether Wilder stays, and agree it with Robbie.
+- **PR sells Wilder. Decided: Wilder stays.** Listed next to ours, Wilder is the reference point: the PR sticks
+  look better on price (−20%), flavour (Pomelo) and the real-food promise. Expect some cannibalisation; keep the supplier relationship.
 - **PR's own Wilder sales are the best demand data we have:** units per month, flavour mix and repeat rate.
   Ask Robbie for PR's sell-through. That's PR's own data, not Wilder's.
 - **Price on PR:** Wilder ฿1,490 ex VAT → −20% = **฿1,190 ex VAT (≈ ฿1,273 incl.)**.

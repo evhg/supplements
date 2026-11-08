@@ -22,6 +22,14 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 | Pricing | **20% below Wilder's Shopify price** for the same pack size |
 | Deliverables location | Markdown in this repo under `docs/` |
 
+### Decisions, round 3 (2026-11-08)
+
+- **Brand is Paleo Robbie, and the logo stays on pack.** Product names don't include "Paleo" or "Robbie"; the line name (THIRSTY) and flavour name lead.
+- **Launch names fixed for now:** Tight Peach, Pomel-Oh!, Wet Melon.
+- **Wilder stays on PR's shelf next to ours.** It acts as the reference point the in-house sticks compare well against (price, flavour, PR's real-food promise).
+- **Backdrop:** user chooses from a side-by-side render (cream / PR pink / whitewashed wood).
+- **All renders and image encoding run on Erik's M3 Max** (Kinetic local mac rendering session, `~/supplements-render`).
+
 ## 3. OEM quote (as received)
 
 - Unit price **USD 0.25/stick**, based on **30,000 sticks per flavour**; the quote covers one flavour

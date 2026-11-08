@@ -73,4 +73,4 @@ Names for later lines, using flavours we'd ask the OEM for:
 
 1. Does the OEM base meet PR's "nothing artificial" promise (sweetener, flavours, colours)? Without that, the PR name can't go on it.
 2. Is Robbie comfortable with the names? Test Tight Peach / Pomel-Oh! / Wet Melon first, then the bolder ones.
-3. Does Wilder stay on PR's shelf next to Thirsty?
+3. ~~Does Wilder stay on PR's shelf?~~ Decided: yes, side by side.
