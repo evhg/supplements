@@ -28,6 +28,8 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 - **Launch names fixed for now:** Tight Peach, Pomel-Oh!, Wet Melon.
 - **Wilder stays on PR's shelf next to ours.** It acts as the reference point the in-house sticks compare well against (price, flavour, PR's real-food promise).
 - **Backdrop:** user chooses from a side-by-side render (cream / PR pink / whitewashed wood).
+- **Base formula: complete electrolytes** (all 6: sodium, chloride, potassium, magnesium, calcium, phosphate), not a copy of Wilder's L-theanine. Spec: `FORMULA_THIRSTY.md`.
+- **Launch waits for the custom formula.** We don't launch on the OEM's standard base.
 - **All renders and image encoding run on Erik's M3 Max** (Kinetic local mac rendering session, `~/supplements-render`).
 
 ## 3. OEM quote (as received)
@@ -89,7 +91,7 @@ The samples' contents are unknown, so these decide which functional claims and n
 
 1. Full spec sheet per stick: Na, K, Mg, Ca, Cl, sugar/sweetener, calories, vitamins, stick weight (g).
 2. Does **USD 0.25** still apply if 30k sticks are split across 2–3 flavours? If not, what is the price per stick at 10k/15k per flavour?
-3. Can they make custom formulas (e.g. + magnesium glycinate for sleep, + caffeine/L-theanine for focus, + creatine), and what are the MOQ and price?
+3. Can they make our **custom Thirsty formula** (`FORMULA_THIRSTY.md`: all 6 electrolytes, magnesium bisglycinate, natural sweetener) in 3 flavours? MOQ, price per stick, lead time, and its own FDA registration? Later: + creatine (Swole Mate), + magnesium glycinate and glycine (Pillow Talk).
 4. Thai FDA: timeline and cost to register, which product category (dietary supplement vs. beverage powder), and **will the FDA accept the innuendo product names?** The FDA reviews product names, so this needs checking before we design labels.
 5. Lead time from artwork sign-off to delivery, and shelf life.
 6. Is the 7.50 USD box price for printed custom boxes, and is the stick film printed per SKU or with a generic print plus a sticker?
