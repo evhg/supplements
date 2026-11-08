@@ -5,6 +5,7 @@ Brand: Paleo Robbie private label. Product names never include "Paleo" or "Robbi
 
 ## 1. How the range works
 
+- **Every stick is zero calorie.** No sugar, fruit powder, juice solids or honey; only stevia or monk fruit, and natural flavours. Each formula stays under ~5 kcal per stick.
 - **One electrolyte base, plus one add-on per occasion.** Each stick makes one claim. No 3-in-1 sticks: a
   third ingredient means a second claim and a second buyer.
 - **Each line has a cheeky line name; each flavour has a cheeky flavour name.** The line name says what it's
@@ -20,7 +21,7 @@ Brand: Paleo Robbie private label. Product names never include "Paleo" or "Robbi
 |---|---|---|---|---|
 | 1 | **Thirsty** (Hydrate) | none: **complete electrolytes**, all 6 (see `FORMULA_THIRSTY.md`) | Everyday: gym, heat, afternoon slump, travel, late nights | **Launch first**, custom formula; we wait for it |
 | 2 | **Swole Mate** (Power) | creatine monohydrate ~3 g, micronised, CoA per batch | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
-| 3 | **Pillow Talk** (Recover) | magnesium glycinate + glycine + calming botanicals | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
+| 3 | **Pillow Talk** (Recover) | magnesium bisglycinate + calming botanical extracts (e.g. chamomile, lemon balm); no added glycine, which would add ~4 kcal per gram | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
 | 4 | **Rise & Grind** (Energy) | caffeine (natural, e.g. green tea), **no taurine** | Morning or pre-workout, coffee alternative | Later: watch Thai energy-drink rules |
 
 Packs that need no new formula:
@@ -50,7 +51,7 @@ Names for later lines, using flavours we'd ask the OEM for:
 |---|---|---|
 | Swole Mate (creatine) | Pineapple | **Pump & Pine** |
 | Swole Mate (creatine) | Strawberry | **Strawberry Stiffy** (bolder: check with Robbie) or **Berry Buff** (safe) |
-| Pillow Talk | Honey-chamomile | **Honey, Come to Bed** |
+| Pillow Talk | Honey-chamomile (natural flavour, no real honey) | **Honey, Come to Bed** |
 | Rise & Grind | Grapefruit/citrus | **Morning Glory** |
 
 ## 4. Names I'd steer away from

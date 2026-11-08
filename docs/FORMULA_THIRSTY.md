@@ -6,7 +6,7 @@ registered**; no launch on the OEM's standard base._
 
 ## Positioning
 
-**"All 6 electrolytes. Nothing artificial."** Each competitor leaves something out:
+**"All 6 electrolytes. Zero calories. Nothing artificial."** Each competitor leaves something out:
 
 - **Wilder:** high sodium, no calcium or phosphate, and 40 mg L-theanine as a label hook (studied doses are 100–200 mg).
 - **HYDRTE:** all six, but light on sodium (350 mg) and padded with vitamins.
@@ -28,7 +28,7 @@ Thirsty covers all six at doses that matter, with no stimulants, no nootropic cl
 Other ingredients:
 
 - **Acid:** citric and/or malic acid, about 0.8–1.2 g, for taste.
-- **Flavour:** natural flavours only. Real fruit powder where the OEM can manage it.
+- **Flavour:** natural flavours only. No fruit powder, juice solids or honey: they add sugar, and every stick is zero calorie.
 - **Sweetener:** stevia and/or monk fruit only. No sucralose, acesulfame-K or aspartame.
 - **No** added sugar, colours, caffeine or preservatives.
 - **Anti-caking:** silica only if the OEM needs it.
@@ -37,6 +37,22 @@ Other ingredients:
 
 Salt weights are first estimates from typical mineral content per form. The OEM's formulator sets the exact
 amounts from their actual raw-material specs.
+
+## Calorie budget: zero-calorie claim
+
+Every stick in the range must be labelled **0 kcal**. Salts, stevia and monk fruit are effectively calorie-free,
+but a few ingredients carry small amounts:
+
+| Ingredient | Approx. kcal per stick | How to keep it down |
+|---|---|---|
+| Citric/malic acid (~1 g) | ~2.5–3 | Use the least acid that tastes right |
+| Magnesium bisglycinate (~0.85 g, mostly glycine) | ~3 | Fall back to magnesium citrate or part chloride if the total is over the limit |
+| Trisodium and potassium citrate | small; depends on the local labelling rule | Shift part of the sodium to sodium chloride if needed |
+| Natural flavour carrier (often maltodextrin) | ~1 | Require a carrier-free flavour, or one with a non-caloric carrier |
+
+**Target: under 5 kcal per stick.** That's the common threshold for declaring "0", and also stays under
+~4 kcal per 100 ml once mixed. The OEM must confirm the Thai FDA rule for a "0 kcal / energy-free" claim
+on a powder sold per stick, and calculate our formula against it.
 
 ## Things the OEM must test or confirm
 
@@ -49,3 +65,4 @@ amounts from their actual raw-material specs.
 5. **Same formula in all 3 flavours** (Peach, Pomelo, Watermelon), so one registration, lab analysis and
    nutrition panel covers the whole line, if Thai rules allow.
 6. **"Nothing artificial":** written confirmation that the flavour and sweetener system has no artificial ingredients.
+7. **Zero calorie:** calculated kcal per stick against the Thai rule for an energy-free claim (see the calorie budget above).

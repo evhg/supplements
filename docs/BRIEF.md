@@ -29,6 +29,7 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 - **Wilder stays on PR's shelf next to ours.** It acts as the reference point the in-house sticks compare well against (price, flavour, PR's real-food promise).
 - **Backdrop:** user chooses from a side-by-side render (cream / PR pink / whitewashed wood).
 - **Base formula: complete electrolytes** (all 6: sodium, chloride, potassium, magnesium, calcium, phosphate), not a copy of Wilder's L-theanine. Spec: `FORMULA_THIRSTY.md`.
+- **Every stick is zero calorie** (under ~5 kcal per stick): no sugar, fruit powder, juice solids or honey. This rules out banana-water style products.
 - **Launch waits for the custom formula.** We don't launch on the OEM's standard base.
 - **All renders and image encoding run on Erik's M3 Max** (Kinetic local mac rendering session, `~/supplements-render`).
 
@@ -89,7 +90,7 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 
 The samples' contents are unknown, so these decide which functional claims and names we can use:
 
-1. Full spec sheet per stick: Na, K, Mg, Ca, Cl, sugar/sweetener, calories, vitamins, stick weight (g).
+1. Full spec sheet per stick: Na, K, Mg, Ca, Cl, sugar/sweetener, calories (must be 0 kcal on the label), vitamins, stick weight (g).
 2. Does **USD 0.25** still apply if 30k sticks are split across 2–3 flavours? If not, what is the price per stick at 10k/15k per flavour?
 3. Can they make our **custom Thirsty formula** (`FORMULA_THIRSTY.md`: all 6 electrolytes, magnesium bisglycinate, natural sweetener) in 3 flavours? MOQ, price per stick, lead time, and its own FDA registration? Later: + creatine (Swole Mate), + magnesium glycinate and glycine (Pillow Talk).
 4. Thai FDA: timeline and cost to register, which product category (dietary supplement vs. beverage powder), and **will the FDA accept the innuendo product names?** The FDA reviews product names, so this needs checking before we design labels.
