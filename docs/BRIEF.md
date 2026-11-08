@@ -45,11 +45,18 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 | Single sachet at retail (Sunshine Market) | ฿60 | 60 |
 | Running promo: buy 3 get 1 free | ≈ ฿1,193 per box | ≈ 40 |
 
-- **Our target (−20%)**: 30-pack at **≈ ฿1,272 → list at ฿1,290 (฿43/stick)**; subscribe ≈ ฿1,120 (฿37/stick).
+- **Our target (−20%)**: 30-pack at **฿1,270 incl. VAT (≈ ฿42/stick)**; subscribe ≈ ฿1,120 (฿37/stick).
+  **Paleo Robbie already stocks the full Wilder range** at ฿1,490 ex VAT, so on PR we list at **฿1,190 ex VAT**. See `ANALYSIS.md` §4.
   Cost ≈ USD 15/box (≈ ฿500 at ~฿33–35/USD) before freight, FDA and fees, so roughly 55–60% gross margin on the one-off price.
 - ⚠️ **The OEM's flavours (Watermelon, Pineapple, Peach, Pomelo, Strawberry) are four of Wilder's five.** The OEM may be
   Wilder's own manufacturer. If its base formula is Wilder's, we would inherit the "not good enough product".
   Ask the OEM directly (question 7) and compare the sample spec against Wilder's.
+
+## 3c. Where the work is
+
+- `ANALYSIS.md`: competitor table (Royal-D, Wilder, tenplus, HYDRTE), segment map, Paleo Robbie category fit
+- `PRODUCT_RANGE.md`: lines, flavours, names, launch split, pricing
+- `research/wilder-handoff.md`: research from the Wilder chat (§§1–5; the confidential data-room section is deliberately left out)
 
 ## 4. Workstreams, in order
 
@@ -79,6 +86,7 @@ The samples' contents are unknown, so these decide which functional claims and n
 5. Lead time from artwork sign-off to delivery, and shelf life.
 6. Is the 7.50 USD box price for printed custom boxes, and is the stick film printed per SKU or with a generic print plus a sticker?
 7. Do they manufacture for WILDER (or other Thai brands) with the same base? If yes, what formula changes can we make so ours is clearly different and better?
+8. Sweetener, flavourings and colours in the base: does it meet Paleo Robbie's "nothing artificial" promise (no sucralose/acesulfame/artificial flavours)?
 
 ## 6. Blocker: Blender on Erik's Mac
 
