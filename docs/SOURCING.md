@@ -48,7 +48,11 @@ _Status: complete. All three research tracks are in._
 
 Not recommended: Siam Biotech (100k MOQ for printed sachets) and Panaosod (≥ ฿350k per product, 120 days).
 
-**Wilder's manufacturer:** Wilder's Thai FDA number is **13-2-03652-6-0149**. That points to a plant in Pathum Thani (province code 13), the same registration that covers Carabao 3-in-1 coffee. A lookup on the Thai FDA portal would name the factory. Our OEM's flavours match Wilder's, so this is worth checking (OEM question 7).
+**Wilder's manufacturer: Benjaphanphong Co., Ltd. (บริษัท เบญจพันธ์พงศ์ จำกัด)**, 10/7 Moo 5, Khlong Si, Khlong Luang,
+Pathum Thani 12120. Manufacturing licence **13-2-03652**, the prefix of every Wilder FDA number (Yuzu …-0139, Strawberry …-0149).
+The plant also makes Carabao 3-in-1 coffee and Chame Sye coffee sachets. Source: Wilder's FDA registration certificate (shared by the
+user, not under NDA); it can also be looked up on the Thai FDA portal. **If our OEM is Benjaphanphong, we'd be buying from Wilder's factory**
+(see OEM question 7).
 
 ## 3. Creatine raw material: Shaanxi Lanoric Biotech (Xi'an) COA review
 
@@ -132,12 +136,14 @@ MOPH Notification No. 195 (B.E. 2543) covers dry powders too and requires, per l
 
 Source: [Thai FDA English translation](https://exfood.fda.moph.go.th/law/data/announ_moph/V.English/No.195-43%20Electrolyte%20Drinks.pdf).
 
-**Precedent: Wilder is sold as "Wilder Multi Mineral Beverage"** (FDA no. 13-2-03652-6-0149), not as an electrolyte drink.
-Zero-sugar, high-sodium sticks therefore go through another route: a flavoured/mineral beverage powder, or a dietary supplement (Sor Bor 5).
+**Precedent: Wilder is registered as "Multi Mineral Beverage Wilder Brand"** (เครื่องดื่ม มัลติ มิเนอรอล (เครื่องดื่มผสมแร่ธาตุรวม),
+FDA no. 13-2-03652-6-0139, registered 29 Nov 2024). Its category is **beverage in a sealed container, dry type (ชนิดแห้ง), under MOPH Notification
+No. 356 (B.E. 2556 / 2013)**, made by dry mixing. It is not an electrolyte drink (No. 195) and not a dietary supplement.
+So a zero-sugar, high-sodium stick goes through the beverage route (No. 356), not the electrolyte-drink or supplement routes.
 
 What this means for us:
 
-1. Ask the OEM **which category its "registration included" quote assumes**, and that it is the same route Wilder uses.
+1. Ask the OEM to register under the **same route as Wilder: dry beverage, MOPH No. 356**, and confirm its "registration included" quote assumes this.
 2. **Label wording:** the official Thai product name can't be "electrolyte drink". Our stick currently says
    "ELECTROLYTE DRINK MIX". Check with the OEM whether "electrolytes" may appear in the English marketing copy, or
    switch to e.g. "MINERAL DRINK MIX · 6 ELECTROLYTES" (to verify).
