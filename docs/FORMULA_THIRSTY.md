@@ -1,5 +1,7 @@
 # Thirsty: target formula v1 (brief for the OEM)
 
+> **Superseded 2026-11-09 by `FORMULAS.md` (the day system).** Kept for the reasoning on the electrolyte base, creatine and calories.
+
 _2026-11-08. Direction chosen: **complete electrolytes**, all six at effective doses in premium forms,
 instead of a headline "extra" like Wilder's L-theanine. **We launch only once this custom formula is made and
 registered**; no launch on the OEM's standard base._

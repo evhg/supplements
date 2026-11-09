@@ -1,5 +1,7 @@
 # Swole Mate: creatine stick, target formula v1
 
+> **Superseded 2026-11-09 by `FORMULAS.md` (the day system).** Kept for the reasoning on the electrolyte base, creatine and calories.
+
 _2026-11-09, from the user's creatine notes. Reference product: Neutonic Creatine Sticks
 (7.5 g, micronised Creapure®, natural colour, flavour and sweetener, zero sugar)._
 

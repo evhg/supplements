@@ -1,77 +1,74 @@
-# Product range & names: proposal v1
+# Product range & names: v2, the day system
 
-_2026-11-08. Built on the Wilder research handoff (`research/wilder-handoff.md`, §§1–5) and `ANALYSIS.md`.
-Brand: Paleo Robbie private label. Product names never include "Paleo" or "Robbie"._
+_2026-11-09. Replaces v1 (Thirsty / Swole Mate / Pillow Talk / Rise & Grind). Brand: Paleo Robbie private label;
+product names never include "Paleo" or "Robbie". Formulas: `FORMULAS.md`._
 
-## 1. How the range works
+## 1. The idea
 
-- **Every stick is zero calorie.** No sugar, fruit powder, juice solids or honey; only stevia or monk fruit, and natural flavours. Each formula stays under ~5 kcal per stick.
-- **One electrolyte base, plus one add-on per occasion.** Each stick makes one claim. No 3-in-1 sticks: a
-  third ingredient means a second claim and a second buyer.
-- **Each line has a cheeky line name; each flavour has a cheeky flavour name.** The line name says what it's
-  for, and the flavour name gets the laugh.
-- **Launch one line at a time.** Add the next only when the current one is clearly selling (rule of thumb: ~20% of revenue).
-- Once any stick has caffeine, every label states its caffeine status.
-- Claims stay legal in Thailand: no hangover claims (say "late nights"), no sleep-drug claims (say "evenings", "wind down"),
-  no cognitive claims. Every name and claim gets checked with the OEM's FDA filing (OEM question 4).
+**Three sticks, one for each part of the day. Each has one flavour and one job, on the same base of 6 electrolytes.**
+Hydration is the base, but every stick does more than hydrate. All three launch together.
 
-## 2. The lines
-
-| # | Line (working name) | Add-on to base | Occasion / buyer | Status |
+| Time | Name | Flavour | Job (besides hydration) | Extra ingredient |
 |---|---|---|---|---|
-| 1 | **Thirsty** (Hydrate) | none: **complete electrolytes**, all 6 (see `FORMULA_THIRSTY.md`) | Everyday: gym, heat, afternoon slump, travel, late nights | **Launch first**, custom formula; we wait for it |
-| 2 | **Swole Mate** (Power) | creatine monohydrate **5 g**, micronised (Creapure® preferred), creatine only, **flavoured only** (see `FORMULA_SWOLE_MATE.md`) | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
-| 3 | **Pillow Talk** (Recover) | magnesium bisglycinate + calming botanical extracts (e.g. chamomile, lemon balm); no added glycine, which would add ~4 kcal per gram | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
-| 4 | **Rise & Grind** (Energy) | caffeine (natural, e.g. green tea), **no taurine** | Morning or pre-workout, coffee alternative | Later: watch Thai energy-drink rules |
+| Morning | **Morning Glory** | **Pomel-Oh!** (pomelo) | Start the day; creatine as a daily habit | **5 g creatine monohydrate**, no caffeine |
+| Afternoon | **Afternoon Delight** | **Wet Melon** (watermelon) | Heat, sweat and the afternoon slump | **vitamins: C + B-complex**; most sodium of the three |
+| Evening | **Nightcap** | **Tight Peach** (peach) | Wind down after a long day or training | **more magnesium + calming botanicals** (e.g. chamomile, lemon balm); least sodium, least acid |
 
-Packs that need no new formula:
+**On pack:** Paleo Robbie logo, then the time name, then the big cheeky flavour name. There's no range name above the
+three (Thirsty is retired). Both names do the joking: the time name says *when*, the flavour name says *what*.
 
-- **Walk of Shame kit**: Thirsty + Pillow Talk sticks for hotels, bars and beach clubs ("for late nights").
-  Covers the nightlife segment without making a hangover claim.
-- **Sampler**: 3 flavours × 3 sticks, for PR Deals → Samplers and our landing-page trial offer.
+**Why the flavours sit where they do:**
+- **Pomelo:** the boldest citrus. It wakes you up and masks creatine's slight bitterness.
+- **Watermelon:** the most refreshing in the heat.
+- **Peach:** soft and low-acid, right for the evening.
 
-Cut on purpose: Focus (just caffeine + L-theanine, risky claims), a separate Sleep stick (same as Pillow Talk),
-melatonin (a drug in Thailand), collagen (crowded, pulls toward beauty), greens and protein (don't fit in a stick).
+## 2. Rules
 
-## 3. Launch flavours (order 1: Thirsty only, 2–3 flavours, 30k sticks)
+- **Zero calorie, every stick.** Under ~5 kcal: no sugar, fruit powder, juice solids or honey. Only stevia or monk fruit, natural flavours and natural colours.
+- **Designed as a daily system.** Someone who takes all three must stay within safe daily totals:
+  - sodium well under the WHO's 2,000 mg/day, since Thai food is already salty
+  - supplemental magnesium under 350 mg/day
+  - creatine in one stick only
 
-| OEM flavour | Name | Why | Launch? |
-|---|---|---|---|
-| **Peach** | **Tight Peach** | Your name; the best-known 🍑 joke, clear and ad-safe | ✅ Hero |
-| **Pomelo** | **Pomel-Oh!** | The only flavour Wilder doesn't have; Thai; the "Oh!" is the joke | ✅ |
-| **Watermelon** | **Wet Melon** | Hydration double meaning; Wilder's watermelon is sold out | ✅ if 3 flavours |
-| Strawberry | **Berry Thirsty** | "Thirsty" is slang for keen, and it's a hydration product | Order 2 |
-| Pineapple | **Pine For Me** | Soft innuendo; pineapple's own folk reputation does the rest | Order 2 |
+  See `FORMULAS.md` §2.
+- **The pitch is "pick your time", not "take all three".** Three sticks a day would cost ~฿3,800 a month.
+- **Magnesium:** a citrate + bisglycinate blend. Citrate tastes cleaner (no fishy or metallic note above ~100 mg);
+  bisglycinate is gentler. The OEM taste-tests the ratio.
+- **No caffeine in any stick** (morning decided; none needed elsewhere). The labels can say "caffeine-free".
+- **No L-theanine.** It's Wilder's ingredient.
+- **Claims:** no hangover, sleep or focus claims. Use "evening", "wind down", "late nights". Every name and claim gets checked against the registration category (`SOURCING.md` §5).
 
-**Recommended split:** Tight Peach 12k · Pomel-Oh! 10k · Wet Melon 8k (30k total). Confirm the OEM's per-flavour pricing first (OEM question 2).
+## 3. Range history (what changed and why)
 
-Names for later lines, using flavours we'd ask the OEM for:
-
-| Line | Flavour | Name |
+| v1 | v2 | Why |
 |---|---|---|
-| Swole Mate (creatine) | Pineapple | **Pump & Pine** |
-| Swole Mate (creatine) | Strawberry | **Strawberry Stiffy** (bolder: check with Robbie) or **Berry Buff** (safe) |
-| Pillow Talk | Honey-chamomile (natural flavour, no real honey) | **Honey, Come to Bed** |
-| Rise & Grind | Grapefruit/citrus | **Morning Glory** |
+| Thirsty (hydration) | the shared **base** of all three sticks | "Thirsty" undersold products that do more than hydrate |
+| Swole Mate (creatine stick) | **Morning Glory** | creatine folded into the morning stick, the most reliable daily habit |
+| Pillow Talk (evening) | **Nightcap** | "Pillow Talk" felt meh |
+| Rise & Grind (caffeine) | dropped | no caffeine in the morning; the afternoon uses vitamins instead |
+| Walk of Shame kit | **Nightcap + Morning Glory pair** for hotels and bars | same nightlife use, no new formula |
+
+**Kept for later flavour extensions:** Berry Thirsty / Berry Buff (strawberry), Pine For Me / Pump & Pine (pineapple).
 
 ## 4. Names I'd steer away from
 
-- **"Make Me Grape(fruit)"**: when said aloud it can be heard as a rape pun. That's the one joke that becomes a
-  backlash screenshot, and grapefruit isn't an OEM flavour anyway. Use **Morning Glory** for grapefruit.
-- **"Juicy Melons" and anything body-part based**: crosses from innuendo into objectifying, and is a likely ad rejection.
-- **"Morning After"**: also the name of the emergency contraceptive pill. Use **Walk of Shame**.
+- **"Make Me Grape(fruit)":** when said aloud it can be heard as a rape pun.
+- **Body-part names ("Juicy Melons"):** objectifying, and a likely ad rejection.
+- **"Morning After":** also the name of the emergency contraceptive pill.
+- **"Happy Ending":** a well-known Thai massage-parlour joke. High risk for ads, Robbie and the Thai FDA name review.
 
 ## 5. Pricing (VAT incl., 30-stick box)
 
-| Line | Landing page | On PR (ex VAT as PR shows) | ฿/stick | Basis |
+| Box | Landing page | On PR (ex VAT) | ฿/stick | Basis |
 |---|---|---|---|---|
-| Thirsty | **฿1,270** | ฿1,190 | ≈ 42 | Wilder ฿1,590 / ฿1,490 ex VAT, −20% |
-| Thirsty, subscribe | ฿1,120 | – | ≈ 37 | Wilder's subscribe price ฿1,400, −20% |
-| Swole Mate | ≈ ฿1,490 | ≈ ฿1,390 | ≈ 50 | Priced above Thirsty so it doesn't cannibalise; cost TBC |
-| Sampler (9) | ฿390 | ฿365 | ≈ 43 | Matches Plantogenic's ฿390 sachet box on PR |
+| Afternoon Delight | **฿1,270** | ฿1,190 | ≈ 42 | Wilder ฿1,590 / ฿1,490 ex VAT, −20% |
+| Nightcap | **฿1,270** | ฿1,190 | ≈ 42 | same |
+| Morning Glory (creatine) | **≈ ฿1,490** | ≈ ฿1,390 | ≈ 50 | 5 g creatine adds cost; still under Wilder |
+| **Day pack** (10 of each) | ≈ ฿1,350 | ≈ ฿1,260 | ≈ 45 | the system in one box; a good subscription default |
+| Sampler (3 × 3) | ฿390 | ฿365 | ≈ 43 | matches Plantogenic's ฿390 sachet box on PR |
+| Subscribe | −12% | – | | Wilder's subscription is −25% from the first order, so check it against our margin |
 
-## 6. Open questions this proposal depends on
+## 6. Launch
 
-1. Does the OEM base meet PR's "nothing artificial" promise (sweetener, flavours, colours)? Without that, the PR name can't go on it.
-2. Is Robbie comfortable with the names? Test Tight Peach / Pomel-Oh! / Wet Melon first, then the bolder ones.
-3. ~~Does Wilder stay on PR's shelf?~~ Decided: yes, side by side.
+All three at once, **10,000 sticks each** inside the OEM's 30k MOQ, if the OEM accepts the split. Three formulas,
+three flavours and possibly three registration routes (see `FORMULAS.md` §4).

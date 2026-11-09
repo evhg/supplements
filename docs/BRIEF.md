@@ -22,6 +22,17 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 | Pricing | **20% below Wilder's Shopify price** for the same pack size |
 | Deliverables location | Markdown in this repo under `docs/` |
 
+### Decisions, round 4 (2026-11-09): the day system
+
+- **Range = three sticks for different times of day, each with one flavour and one job, on a base of 6 electrolytes** (`PRODUCT_RANGE.md` v2, `FORMULAS.md`):
+  - **Morning Glory** (Pomel-Oh!): 5 g creatine, no caffeine
+  - **Afternoon Delight** (Wet Melon): vitamins C + B, most sodium
+  - **Nightcap** (Tight Peach): more magnesium + calming botanicals, least sodium
+- **Thirsty, Swole Mate, Pillow Talk and Rise & Grind are retired.** No range name; the pack shows the Paleo Robbie logo, the time name and the flavour name.
+- **All three launch at once**, 10k sticks each within the 30k MOQ.
+- **Magnesium:** citrate + bisglycinate blend.
+- **Daily totals are designed for all three in a day:** sodium 1,200 mg, magnesium 320 mg (< 350 mg UL), creatine in one stick only.
+
 ### Decisions, round 3 (2026-11-08)
 
 - **Brand is Paleo Robbie, and the logo stays on pack.** Product names don't include "Paleo" or "Robbie"; the line name (THIRSTY) and flavour name lead.
