@@ -63,9 +63,24 @@ Sample: "Creatine Powder", batch LX20260716, 800 kg, 200 mesh, made 16 Jul 2026,
 **Missing or questionable, so ask before buying:**
 1. **No creatine-specific impurities.** Good creatine is judged on **creatinine, dicyandiamide (DCD), dihydrotriazine (DHT)** and ideally cyanide and sulfate. These are exactly the numbers Creapure and Pürest compete on, and none are on this certificate. Ask for them, ideally from a third-party lab (SGS, Eurofins, Intertek).
 2. **Assay method not stated.** It should be HPLC.
-3. **Loss on drying 5.98% (limit ≤ 7%) is unusual for creatine monohydrate.** The water of crystallisation alone is ~12% by weight, and pharmacopoeia-style specs are typically ~11.5–12.5% at 105 °C. Ask which method and temperature were used. It could mean a different test, or a partly dehydrated product.
+3. **Loss on drying 5.98% (limit ≤ 7%).** Less alarming than first thought. Other suppliers' specs set this as a
+   *maximum* (≤ 12%), and their certificates also show results below 12% (e.g. Ruichfood 8.14%). Still ask which method and temperature were used.
 4. **Who made it?** The address is an office tower in the Xi'an development zone, and the contact is an Alibaba storefront. Many Xi'an "biotech" companies are traders. Ask for the **actual manufacturer's name**, its GMP/ISO 22000/FSSC certificates, and halal/kosher if relevant.
 5. **Internal certificate only.** It's signed and stamped by their own QC, with no third-party report.
+
+**How it compares on paper:**
+
+| | Lanoric (this certificate) | Creapure® (AlzChem TDS 2020) | Pürest™ (NNB) | Ruichfood, Shanghai (example certificate) |
+|---|---|---|---|---|
+| Particle size | 100% < 200 mesh (≤ 74 µm) | standard grade **98% < 500 µm (~35 mesh, coarse)**; Neutonic uses a "micronised Creapure" grade, spec not found | **200 mesh**, per Alph8's product page | 200 mesh |
+| Purity | ≥ 99.9% (99.93%) | ≥ 99.9% | 99.998% (Mérieux batch report via Alph8) | ≥ 99.5% |
+| Creatinine | **not tested** | ≤ 100 mg/kg | "among the lowest" | 51 ppm |
+| Dicyandiamide (DCD) | **not tested** | ≤ 50 mg/kg | "among the lowest" | 22 ppm |
+| Dihydrotriazine (DHT) | **not tested** | ≤ 3 mg/kg | "among the lowest" | – |
+| Lead | ≤ 2 ppm | **≤ 0.1 mg/kg** | screened | ≤ 0.5 ppm |
+| Arsenic / cadmium / mercury | ≤ 1 / 0.5 / 0.1 ppm | ≤ 0.1 each | screened | ≤ 1 / 0.5 / 0.1 ppm |
+
+Lanoric's heavy-metal limits are 5–20× looser than Creapure's. Its actual results may be lower; ask for the numbers.
 
 **On mesh size** (the supplier's point is right):
 - "Micronised" in the market usually means **≈ 200 mesh (≤ 74 µm)**. Standard creatine is ~80 mesh.
