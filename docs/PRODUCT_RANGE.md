@@ -32,8 +32,7 @@ three (Thirsty is retired). Both names do the joking: the time name says *when*,
 
   See `FORMULAS.md` §2.
 - **The pitch is "pick your time", not "take all three".** Three sticks a day would cost ~฿3,800 a month.
-- **Magnesium:** a citrate + bisglycinate blend. Citrate tastes cleaner (no fishy or metallic note above ~100 mg);
-  bisglycinate is gentler. The OEM taste-tests the ratio.
+- **Magnesium:** mainly citrate (clean taste). The OEM caps bisglycinate at 50 mg per stick because of odour and taste, so it's only a small top-up in Nightcap.
 - **No caffeine in any stick** (morning decided; none needed elsewhere). The labels can say "caffeine-free".
 - **No L-theanine.** It's Wilder's ingredient.
 - **Claims:** no hangover, sleep or focus claims. Use "evening", "wind down", "late nights". Every name and claim gets checked against the registration category (`SOURCING.md` §5).

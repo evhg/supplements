@@ -9,18 +9,18 @@ All three sticks carry **sodium, chloride, potassium, magnesium, calcium and pho
 
 **Ingredients:**
 - **Salts:** sodium chloride (ideally partly Thai sea salt), trisodium citrate, potassium citrate, dipotassium phosphate, calcium lactate.
-- **Magnesium:** magnesium citrate + magnesium bisglycinate (the OEM taste-tests the ratio, ~2:1 by Mg).
+- **Magnesium:** mainly **magnesium citrate**. The OEM's limit is **max 50 mg magnesium bisglycinate per stick** before the odour and taste go bad, so bisglycinate is only a small top-up (Nightcap).
 - **Taste:** citric/malic acid, natural flavours (carrier-free or non-caloric carrier), stevia (Reb M/Reb A) and/or monk fruit.
 - **Colour:** natural colour only (beta-carotene or colouring foods).
 - **Anti-caking:** silica only if needed.
 - **None of these:** sugar, fruit powder, juice solids, honey, caffeine, L-theanine, artificial sweeteners, colours or flavours.
 
-## 2. Full breakdown per stick (v1.1, 2026-11-09)
+## 2. Full breakdown per stick (v1.2, 2026-11-09)
 
 Grams calculated from the mineral content of each salt form (NaCl 39.3% Na; trisodium citrate 23.5% Na;
 potassium citrate 36.2% K; K₂HPO₄ 44.9% K and 54.5% PO₄; magnesium citrate ~15% Mg; bisglycinate ~14.1% Mg;
 calcium lactate 13% Ca). Sodium comes ~35% from salt (NaCl) and ~65% from citrate: citrate tastes less salty and harsh,
-which is the lever behind "less salty". Magnesium is ~2:1 citrate:bisglycinate by Mg (Nightcap ~55:45).
+which is the lever behind "less salty". Magnesium is all citrate in Morning Glory and Afternoon Delight. Nightcap adds bisglycinate up to the OEM's 50 mg limit (to confirm: 50 mg of bisglycinate powder (≈ 7 mg Mg), or 50 mg of magnesium from bisglycinate (≈ 0.35 g powder)). The table assumes the stricter reading.
 
 | Ingredient (g per stick) | Morning Glory | Afternoon Delight | Nightcap |
 |---|---|---|---|
@@ -29,8 +29,8 @@ which is the lever behind "less salty". Magnesium is ~2:1 citrate:bisglycinate b
 | Sodium chloride (sea salt) | 0.36 | 0.67 | 0.18 |
 | Potassium citrate | 0.76 | 1.25 | 0.76 |
 | Dipotassium phosphate | 0.06 | 0.11 | 0.06 |
-| Magnesium citrate | 0.45 | 0.45 | 0.51 |
-| Magnesium bisglycinate | 0.23 | 0.23 | 0.45 |
+| Magnesium citrate | 0.67 | 0.67 | 0.89 |
+| Magnesium bisglycinate | – | – | 0.05 (OEM max) |
 | Calcium lactate | 0.38 | 0.77 | 0.38 |
 | Vitamin premix (C + B1, B2, B3, B6, B12) | – | 0.15 | – |
 | Chamomile extract / lemon balm extract | – | – | 0.15 / 0.15 |
@@ -41,7 +41,7 @@ which is the lever behind "less salty". Magnesium is ~2:1 citrate:bisglycinate b
 | Silica | 0.03 | 0.03 | 0.03 |
 | **Stick weight** | **≈ 9.4 g** | **≈ 7.2 g** | **≈ 3.9 g** |
 | Water | 400–500 ml | 500–750 ml | 250–350 ml |
-| kcal (acids + glycine + flavour carrier) | ~2.6 | ~3.6 | ~2.7 |
+| kcal (acids + flavour carrier) | ~1.8 | ~2.8 | ~1.3 |
 
 | Minerals per stick | Morning Glory | Afternoon Delight | Nightcap | **All three / day** | Limit / reference |
 |---|---|---|---|---|---|

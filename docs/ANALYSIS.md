@@ -21,6 +21,27 @@ IDR→THB at ≈ Rp 490 per ฿1; prices are approximate._
 | Price per stick | ฿5–10 | ฿53 one-off, ฿40–47 subscribe, ฿60 single at retail | ≈ ฿37 (Rp 218k/12), ≈ ฿28 at 4+ boxes | ≈ ฿58 (Rp 850k/30) | **≈ ฿42 (target)** |
 | Look | pharmacy | dark, sporty | dark box, neon fruit panel | clinical blue/white, sans-serif | white label, PR red, pink panel, hand-drawn icon |
 
+## 1b. Two more Thai competitors (added 2026-11-09)
+
+**BLUE ZONE by Slice Wellbeing (Phuket)** – Instagram @bluezone_hydration (~160 followers) and @slice_wellbeing.
+- **Who makes it:** Slice Wellbeing Co., Ltd., a Phuket meal-plan and grab-and-go food company co-founded by chef
+  David Laris. It sells from its own stores and from "Pick Up & Go" fridges in gyms, padel clubs, pilates studios and clinics.
+- **Format:** a ready-to-drink bottle (as seen in their videos), not a powder stick. Bottle size and price aren't published.
+- **Per serving** (Slice's own captions, Sep and Dec 2025): **sodium 190 mg (mineral sea salt), potassium 200 mg, magnesium 50 mg**,
+  lemon + kaffir lime, **blue spirulina** for colour, "a touch of stevia". Zero sugar, "no fillers, no fake flavours".
+- **Positioning:** "Clean electrolyte hydration with zero sugar, built for the Modern Performer. Find Your Limit. Then Move It."
+- **Partners:** Destination Padel, Phuket United FC, Cherngtalay Run, Porto de Phuket, Bangkok Throwdown; also KĀHLĪ
+  (a Phuket tennis/residence club) for Slice meal plans. Launched Sep 2025.
+- **What it means for us:** a light, everyday dose (about a quarter of Wilder's sodium), sold through venues rather than retail.
+  The spirulina blue and the Thai kaffir lime are good real-food ideas. Ours carries ~2–4× the electrolytes per serving,
+  in a stick that travels and lasts.
+
+**Simplify Electrolytes (simplify.co.th)**
+- **Formula:** sodium chloride, **magnesium bisglycinate**, potassium chloride; zero sugar.
+- **Two strengths:** 500 mg sodium (+250 mg potassium) or 1,000 mg sodium (+500 mg potassium).
+- **Price:** a variety pack at ฿590; Thai FDA registered, HACCP. They sell a "sweat test" to choose a strength.
+- **What it means for us:** proof that a "pick your dose" story sells in Thailand, which fits our day system.
+
 ## 2. Segment map
 
 Two axes separate the brands: **sport ↔ everyday life** and **serious/clinical ↔ playful**.
