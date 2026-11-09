@@ -20,7 +20,7 @@ Brand: Paleo Robbie private label. Product names never include "Paleo" or "Robbi
 | # | Line (working name) | Add-on to base | Occasion / buyer | Status |
 |---|---|---|---|---|
 | 1 | **Thirsty** (Hydrate) | none: **complete electrolytes**, all 6 (see `FORMULA_THIRSTY.md`) | Everyday: gym, heat, afternoon slump, travel, late nights | **Launch first**, custom formula; we wait for it |
-| 2 | **Swole Mate** (Power) | creatine monohydrate ~3 g, micronised, CoA per batch | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
+| 2 | **Swole Mate** (Power) | creatine monohydrate **5 g**, micronised (Creapure® preferred), creatine only, **flavoured only** (see `FORMULA_SWOLE_MATE.md`) | Gym-goers; women new to creatine | Order 2: needs OEM creatine formula |
 | 3 | **Pillow Talk** (Recover) | magnesium bisglycinate + calming botanical extracts (e.g. chamomile, lemon balm); no added glycine, which would add ~4 kcal per gram | Evening wind-down after training or a long day | Order 3: custom formula, soft flavour |
 | 4 | **Rise & Grind** (Energy) | caffeine (natural, e.g. green tea), **no taurine** | Morning or pre-workout, coffee alternative | Later: watch Thai energy-drink rules |
 
