@@ -36,8 +36,8 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 ## 3. OEM quote (as received)
 
 - Unit price **USD 0.25/stick**, based on **30,000 sticks per flavour**; the quote covers one flavour
-- Packing: 30 sticks/box, 1,000 boxes, **USD 7.50/box** (= USD 0.25/stick for packaging)
-- Landed cost before freight/FDA: about **USD 0.50/stick, USD 15/box**, USD 15,000 for 30k sticks
+- Packing: 30 sticks/box, 1,000 boxes, **USD 7.50/box**. That's 30 × USD 0.25, so the box price restates the stick price; it isn't an extra charge (confirm, question 6).
+- Cost: about **USD 0.25/stick all-in, USD 7.50/box, USD 7,500 for 30k sticks** (corrected 2026-11-09; earlier versions double-counted the box)
 - Flavours available now: Watermelon, Pineapple, Peach, Pomelo, Strawberry
 
 ## 3b. Wilder: public facts (wilder.co, checked 2026-11-08)
@@ -58,7 +58,8 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 
 - **Our target (−20%)**: 30-pack at **฿1,270 incl. VAT (≈ ฿42/stick)**; subscribe ≈ ฿1,120 (฿37/stick).
   **Paleo Robbie already stocks the full Wilder range** at ฿1,490 ex VAT, so on PR we list at **฿1,190 ex VAT**. See `ANALYSIS.md` §4.
-  Cost ≈ USD 15/box (≈ ฿500 at ~฿33–35/USD) before freight, FDA and fees, so roughly 55–60% gross margin on the one-off price.
+  Cost ≈ USD 7.50/box (≈ ฿250–260 at ~฿33–35/USD) before freight, FDA and fees, so roughly 75–80% gross margin on the one-off price (฿1,187 ex VAT).
+  These figures are for the OEM's standard base; the custom complete-electrolyte formula will cost more (pricing research in progress).
 - ⚠️ **The OEM's flavours (Watermelon, Pineapple, Peach, Pomelo, Strawberry) are four of Wilder's five.** The OEM may be
   Wilder's own manufacturer. If its base formula is Wilder's, we would inherit the "not good enough product".
   Ask the OEM directly (question 7) and compare the sample spec against Wilder's.
@@ -95,7 +96,7 @@ The samples' contents are unknown, so these decide which functional claims and n
 3. Can they make our **custom Thirsty formula** (`FORMULA_THIRSTY.md`: all 6 electrolytes, magnesium bisglycinate, natural sweetener) in 3 flavours? MOQ, price per stick, lead time, and its own FDA registration? Later: + creatine (Swole Mate), + magnesium glycinate and glycine (Pillow Talk).
 4. Thai FDA: timeline and cost to register, which product category (dietary supplement vs. beverage powder), and **will the FDA accept the innuendo product names?** The FDA reviews product names, so this needs checking before we design labels.
 5. Lead time from artwork sign-off to delivery, and shelf life.
-6. Is the 7.50 USD box price for printed custom boxes, and is the stick film printed per SKU or with a generic print plus a sticker?
+6. Confirm USD 7.50/box is the all-in price (30 × 0.25, printed box included), not an extra charge. Is the stick film printed per flavour, or generic with a sticker?
 7. Do they manufacture for WILDER (or other Thai brands) with the same base? If yes, what formula changes can we make so ours is clearly different and better?
 8. Sweetener, flavourings and colours in the base: does it meet Paleo Robbie's "nothing artificial" promise (no sucralose/acesulfame/artificial flavours)?
 
