@@ -15,27 +15,51 @@ All three sticks carry **sodium, chloride, potassium, magnesium, calcium and pho
 - **Anti-caking:** silica only if needed.
 - **None of these:** sugar, fruit powder, juice solids, honey, caffeine, L-theanine, artificial sweeteners, colours or flavours.
 
-## 2. Per stick and daily totals
+## 2. Full breakdown per stick (v1.1, 2026-11-09)
 
-| Per stick | Morning Glory | Afternoon Delight | Nightcap | **All three / day** | Limit |
+Grams calculated from the mineral content of each salt form (NaCl 39.3% Na; trisodium citrate 23.5% Na;
+potassium citrate 36.2% K; K₂HPO₄ 44.9% K and 54.5% PO₄; magnesium citrate ~15% Mg; bisglycinate ~14.1% Mg;
+calcium lactate 13% Ca). Sodium comes ~35% from salt (NaCl) and ~65% from citrate: citrate tastes less salty and harsh,
+which is the lever behind "less salty". Magnesium is ~2:1 citrate:bisglycinate by Mg (Nightcap ~55:45).
+
+| Ingredient (g per stick) | Morning Glory | Afternoon Delight | Nightcap |
+|---|---|---|---|
+| Creatine monohydrate (200 mesh) | **5.00** | – | – |
+| Trisodium citrate | 1.11 | 2.08 | 0.55 |
+| Sodium chloride (sea salt) | 0.36 | 0.67 | 0.18 |
+| Potassium citrate | 0.76 | 1.25 | 0.76 |
+| Dipotassium phosphate | 0.06 | 0.11 | 0.06 |
+| Magnesium citrate | 0.45 | 0.45 | 0.51 |
+| Magnesium bisglycinate | 0.23 | 0.23 | 0.45 |
+| Calcium lactate | 0.38 | 0.77 | 0.38 |
+| Vitamin premix (C + B1, B2, B3, B6, B12) | – | 0.15 | – |
+| Chamomile extract / lemon balm extract | – | – | 0.15 / 0.15 |
+| Citric + malic acid | 0.60 | 1.00 | 0.35 |
+| Natural flavour | 0.35 | 0.40 | 0.30 |
+| Stevia (Reb M/A) and/or monk fruit | 0.04 | 0.04 | 0.04 |
+| Natural colour (beta-carotene / colouring foods) | 0.03 | 0.03 | 0.03 |
+| Silica | 0.03 | 0.03 | 0.03 |
+| **Stick weight** | **≈ 9.4 g** | **≈ 7.2 g** | **≈ 3.9 g** |
+| Water | 400–500 ml | 500–750 ml | 250–350 ml |
+| kcal (acids + glycine + flavour carrier) | ~2.6 | ~3.6 | ~2.7 |
+
+| Minerals per stick | Morning Glory | Afternoon Delight | Nightcap | **All three / day** | Limit / reference |
 |---|---|---|---|---|---|
-| Sodium | 400 mg | **600 mg** | 200 mg | **1,200 mg** | WHO < 2,000 mg/day total diet |
-| Chloride | ~350 mg | ~550 mg | ~170 mg | ~1,070 mg | – |
-| Potassium | 300 mg | 400 mg | 300 mg | 1,000 mg | low risk at these levels for healthy adults |
-| Magnesium | 100 mg | 100 mg | **120 mg** | **320 mg** | supplemental UL 350 mg/day |
+| Sodium | 400 mg | **750 mg** | 200 mg | **1,350 mg** | WHO < 2,000 mg/day total diet |
+| Chloride | 216 mg | 405 mg | 108 mg | 729 mg | – |
+| Potassium | 300 mg | 500 mg | 300 mg | 1,100 mg | – |
+| Magnesium | 100 mg | 100 mg | **140 mg** | **340 mg** | supplemental UL 350 mg/day |
 | Calcium | 50 mg | 100 mg | 50 mg | 200 mg | – |
-| Phosphate | ~30 mg | 60 mg | ~30 mg | ~120 mg | – |
-| **Extra** | **creatine monohydrate 5.0 g** | **vitamin C + B1, B2, B3, B6, B12** (~100% Thai RDI each; OEM sets the exact levels) | **chamomile extract ~150 mg + lemon balm extract ~150 mg** (or the OEM's Thai-permitted equivalent) | creatine 5 g | – |
-| Acid | medium | medium-high (watermelon brightness) | **low** | | |
-| Stick weight (est.) | **~9–9.5 g** | ~6 g | ~4 g | | stick max ~10–12 g |
-| Water | 400–500 ml | 500–750 ml | 250–350 ml (a smaller evening glass) | | |
-| kcal | < 5 | < 5 | < 5 | | zero-calorie claim |
+| Phosphate | 30 mg | 60 mg | 30 mg | 120 mg | – |
+| **Total electrolytes** | 1,096 mg | **1,915 mg** | 828 mg | | Wilder ≈ 1,700 mg (Na + K + Mg) |
 
-Salt weights follow from the same conversion factors as `FORMULA_THIRSTY.md`. The OEM's formulator sets the
-final figures from actual raw-material specs.
+Vitamin targets for Afternoon Delight, ~100% of the Thai RDI each (verify with the OEM): vitamin C 60 mg, B1 1.5 mg,
+B2 1.7 mg, niacin 20 mg, B6 2 mg, B12 2 µg.
 
-**Morning Glory is the heaviest stick.** Creatine (5 g) plus a lighter electrolyte load gives ~9.3 g, under the
-stick limit, so it needs the same film width and a longer fill, or a slightly longer stick. The OEM to confirm.
+**Why Wilder weighs 10.9 g:** 1,000 mg sodium mostly as sodium citrate is ~4.3 g on its own. Add potassium citrate
+~1.7 g and magnesium ~0.7 g, and that's ~6.6 g of salts; the remaining ~4.3 g is acid, flavour, sweetener and probably
+a bulking agent. Stick weight reflects the salt form and fillers, not the amount of minerals. Afternoon Delight
+carries more total electrolytes (1,915 mg) than Wilder in 7.2 g.
 
 ## 3. Creatine spec (Morning Glory)
 

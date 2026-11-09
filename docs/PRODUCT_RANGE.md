@@ -11,7 +11,7 @@ Hydration is the base, but every stick does more than hydrate. All three launch 
 | Time | Name | Flavour | Job (besides hydration) | Extra ingredient |
 |---|---|---|---|---|
 | Morning | **Morning Glory** | **Pomel-Oh!** (pomelo) | Start the day; creatine as a daily habit | **5 g creatine monohydrate**, no caffeine |
-| Afternoon | **Afternoon Delight** | **Wet Melon** (watermelon) | Heat, sweat and the afternoon slump | **vitamins: C + B-complex**; most sodium of the three |
+| Afternoon | **Afternoon Delight** | **Wet Melon** (watermelon) | Heat, sweat and the afternoon slump | **vitamins: C + B-complex**; most electrolytes of the three (750 mg sodium) |
 | Evening | **Nightcap** | **Tight Peach** (peach) | Wind down after a long day or training | **more magnesium + calming botanicals** (e.g. chamomile, lemon balm); least sodium, least acid |
 
 **On pack:** Paleo Robbie logo, then the time name, then the big cheeky flavour name. There's no range name above the
