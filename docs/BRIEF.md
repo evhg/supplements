@@ -113,6 +113,8 @@ Once it shows up as available, I'll connect and render. Until then I can prepare
 
 ## 7. Risks to keep in view
 
+- **Registration category (found 2026-11-09).** A zero-sugar formula can't be a Thai "electrolyte drink" (MOPH No. 195 makes sugar mandatory). Wilder is registered as a "Multi Mineral Beverage". The OEM must confirm our category, and the stick's "ELECTROLYTE DRINK MIX" wording may have to change. See `SOURCING.md` §5.
+
 - **Thai FDA and ads.** Supplement ads in Thailand need FDA approval, and health claims are tightly limited. The
   cheeky names have to pass both the product-name review and the ad review.
 - **Brand fit.** Innuendo names on a "real food", family-oriented Paleo Robbie label could clash with how PR sells.

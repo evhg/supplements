@@ -1,7 +1,7 @@
 # Sourcing & pricing
 
 _2026-11-09. Web research only; no supplier was contacted. FX ~฿33.5/USD._
-_Status: the Thai OEM and bottom-up cost sections are done; the overseas-OEM section is pending._
+_Status: complete. All three research tracks are in._
 
 ## 1. Verdict on the quote: USD 0.25/stick all-in, 30k MOQ
 
@@ -76,4 +76,70 @@ Sample: "Creatine Powder", batch LX20260716, 800 kg, 200 mesh, made 16 Jul 2026,
 
 ## 4. Overseas OEM leads
 
-_Pending: the researcher is still running._
+**None is verified at ≤ USD 0.125/stick landed for our formula.** Credible listings for magnesium-glycinate electrolyte
+sticks run USD 0.25–0.30 at 10–50k. A realistic factory price for our custom 7.5 g stick with a printed box is ~USD 0.12–0.20,
+or **~0.15–0.25 landed**. That's a 0–40% saving at best, in exchange for running registration ourselves and carrying more quality risk.
+**Their MOQs are lower**, though.
+
+| # | Supplier | Country | Certifications (as claimed) | MOQ | Price evidence | Fit / red flags |
+|---|---|---|---|---|---|---|
+| 1 | **Bionutricia Holding** (bionutricia.com) | Malaysia (since 2006) | FSSC 22000 (SGS), GMP, HACCP, JAKIM Halal, US FDA-registered | **1,500 sticks** (3–15 g) | "from RM12/unit", unit undefined; if a box of 30 → ~USD 0.09–0.10/stick (**unverified**) | Custom formulas; ASEAN registration documents; ASEAN origin → likely 0% duty. Lead time 6 weeks + 7–11 weeks development |
+| 2 | **Zoxizo** (zoxizo.com) | Shenzhen, China | GMP, HACCP, ISO 22000, Halal, FDA-registered (claimed) | 10–20k sticks | not published | Already uses Mg glycinate + monk fruit; offers ASEAN registration support. Marketing claims unverified |
+| 3 | **Greenpie** (greenpie.en.alibaba.com) | Shenzhen, China | GMP, ISO (claimed) | 10k | Mg-glycinate electrolyte USD 0.30 (10k) / 0.25 (50k) / 0.20 (100k); creatine-electrolyte USD 0.16–0.20 | Twin storefronts, neither has passed Alibaba's supplier assessment |
+| – | Shaanxi Xinyide ("Aeglewell", Alibaba) | China | none listed | 5k | USD 0.13 (5k) / 0.09 (100k) | Stock 5 g low-sugar formula, probably a trader, junk spec sheet. Benchmark only |
+| – | Richtek (Dalian) | China | many claimed | 10k | USD 0.30 / 6 g sachet | Founded 2020, 5–10 staff, so it probably outsources production |
+| – | NaViBiotech (navibio.tech) | Malaysia | GMP (PIC/S), ISO 22000, HACCP, Halal | ~10k (5k at a premium) | not public | Has an "Export to Thailand" page; company dates from 2022 |
+
+**Landed-cost adders into Thailand** (30k sticks, ~250 kg):
+
+| Item | Cost | USD per stick |
+|---|---|---|
+| Sea freight | – | ~0.009–0.016 |
+| Customs broker | – | ~0.005–0.010 |
+| Duty from China with an ACFTA Form E | 0% | – |
+| Duty from Malaysia under ATIGA | likely 0% | – |
+| VAT 7% | reclaimable | – |
+| Thai FDA import licence (Orr.7) + product registrations via an agent | ~฿120–150k first time | ~0.04–0.05 over the first 90k sticks |
+
+**Total: ~USD 0.03–0.04 per stick in steady state, ~0.06–0.08 on the first order.** Paleo Robbie (Robbie Market Co.)
+would have to be the importer of record.
+
+## 5. Regulatory finding that applies to every supplier
+
+**Our zero-calorie formula cannot be registered as a Thai "electrolyte drink" (เครื่องดื่มเกลือแร่).**
+MOPH Notification No. 195 (B.E. 2543) covers dry powders too and requires, per litre as prepared:
+
+- sodium 460–920 mg
+- **glucose or fructose ≥ 2% or sucrose ≥ 4%** (sugar is mandatory)
+- potassium ≤ 195 mg
+- citrate ≤ 819 mg
+- **no artificial sweeteners** and no caffeine
+
+Source: [Thai FDA English translation](https://exfood.fda.moph.go.th/law/data/announ_moph/V.English/No.195-43%20Electrolyte%20Drinks.pdf).
+
+**Precedent: Wilder is sold as "Wilder Multi Mineral Beverage"** (FDA no. 13-2-03652-6-0149), not as an electrolyte drink.
+Zero-sugar, high-sodium sticks therefore go through another route: a flavoured/mineral beverage powder, or a dietary supplement (Sor Bor 5).
+
+What this means for us:
+
+1. Ask the OEM **which category its "registration included" quote assumes**, and that it is the same route Wilder uses.
+2. **Label wording:** the official Thai product name can't be "electrolyte drink". Our stick currently says
+   "ELECTROLYTE DRINK MIX". Check with the OEM whether "electrolytes" may appear in the English marketing copy, or
+   switch to e.g. "MINERAL DRINK MIX · 6 ELECTROLYTES" (to verify).
+3. Whether stevia/monk fruit count as "artificial" doesn't matter outside the electrolyte-drink category, but confirm the
+   sweetener rules for whichever category is chosen.
+
+## 6. Recommendation
+
+1. **Keep the Thai OEM as plan A, and negotiate:**
+   - 30k sticks across 3 flavours instead of 30k per flavour
+   - USD 0.19–0.21 for the first run, or 0.25 including FDA, lab test and cylinders
+   - 0.15–0.18 for repeat orders
+   - confirm the registration category (section 5)
+2. **Request quotes for the exact formula** (FORMULA_THIRSTY.md) at 5k / 10k / 30k, with printed stick and box and certificate copies, from:
+   - **Bionutricia** (Malaysia; lowest MOQ, strongest certificates, 0% duty)
+   - **InnovaHealth** (Thai; 10k MOQ, handles FDA)
+   - **Zoxizo** (China; already uses Mg glycinate + monk fruit)
+
+   Use them as benchmarks against plan A.
+3. **Don't expect 50% off.** The realistic prize is ~20–35% off and a 3× lower cash outlay at launch by splitting the MOQ across flavours.
