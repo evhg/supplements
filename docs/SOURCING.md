@@ -93,6 +93,36 @@ Lanoric's heavy-metal limits are 5–20× looser than Creapure's. Its actual res
 
 **Commercial angle:** buying creatine ourselves and supplying it to the Thai OEM for filling works, but then **we** carry the quality risk on the raw material. That's another reason to get the full impurity panel. Compare the price against Creapure and Pürest quoted through the OEM.
 
+## 3b. Lanoric creatine, full certificate (batch G20260311C, received 2026-11-11)
+
+Second certificate, much better than the first (batch LX20260716). It uses USP methods (HPLC <621>, IR <197K>) and
+covers the creatine-specific impurities.
+
+| | **Lanoric G20260311C** (result) | Creapure® (AlzChem spec) | Pürest™ (NNB claims) |
+|---|---|---|---|
+| Assay | 101.0% dry basis (spec 99.5–102.0%), HPLC | ≥ 99.9% | 99.998% (Mérieux batch report via Alph8) |
+| Total impurities | **0.0023%** (≈ 99.998% pure) | – | "lowest in market" |
+| Creatinine | **0 ppm** (spec ≤ 50) | ≤ 100 mg/kg | "among the lowest" |
+| Dicyandiamide (DCD) | **23 ppm** (spec ≤ 50) | ≤ 50 mg/kg | "among the lowest" |
+| Dihydrotriazine (DHT) | **not detected** (spec ≤ 5 ppm) | ≤ 3 mg/kg | "among the lowest" |
+| Cyanide | not detected (≤ 1 ppm) | – | tested |
+| Lead / mercury | "conforms" to ≤ 0.1 / ≤ 0.01 ppm | ≤ 0.1 / ≤ 0.1 | screened |
+| Arsenic / cadmium | "conforms" to ≤ 1 / ≤ 1 ppm | ≤ 0.1 / ≤ 0.1 | screened |
+| Loss on drying | 11.5% (spec 10.5–12.0%), as expected for a monohydrate | – | – |
+| Micro | total count 10 cfu/g, yeast/mould < 10 | ≤ 1,000 / ≤ 50 | – |
+| Particle size | **73% through 200 mesh** (spec ≥ 70%) | 98% < 500 µm (standard grade) | 200 mesh |
+
+**Verdict: on paper this matches or beats Creapure's spec** on creatinine and DCD, with DHT not detected and
+very clean microbiology. It is in Pürest's purity class (~99.998%).
+
+**Before buying, check:**
+1. **It's a different grade from the sample.** The sample was "100% through 200 mesh"; this batch is only 73% through 200 mesh, so 27% is coarser.
+   Ask for the certificate of the **exact lot you'd ship**, at the fineness you want.
+2. **Heavy metals say "conforms", with no numbers**, and the arsenic and cadmium limits are 10× looser than Creapure's. Ask for measured values.
+3. **Still an in-house certificate.** Get one third-party test (SGS, Eurofins or Intertek) on the shipped lot covering assay, creatinine, DCD, DHT, cyanide and heavy metals.
+4. **Who made it?** A 16,250 kg batch and a different layout from the first certificate suggest this is the actual manufacturer's certificate under Lanoric's header. Ask for the manufacturer's name and its GMP/ISO 22000 certificates.
+5. **Two certificates, two specs.** The first had LOD ≤ 7% and no impurity tests; this one is full USP. Ask which spec they will sign in the purchase contract.
+
 ## 4. Overseas OEM leads
 
 **None is verified at ≤ USD 0.125/stick landed for our formula.** Credible listings for magnesium-glycinate electrolyte

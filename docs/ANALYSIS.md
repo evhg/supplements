@@ -32,7 +32,8 @@ IDR→THB at ≈ Rp 490 per ฿1; prices are approximate._
 - **Positioning:** "Clean electrolyte hydration with zero sugar, built for the Modern Performer. Find Your Limit. Then Move It."
 - **Partners:** Destination Padel, Phuket United FC, Cherngtalay Run, Porto de Phuket, Bangkok Throwdown; also KĀHLĪ
   (a Phuket tennis/residence club) for Slice meal plans. Launched Sep 2025.
-- **What it means for us:** a light, everyday dose (about a quarter of Wilder's sodium), sold through venues rather than retail.
+- **Made in Phuket; probably not FDA-registered yet** (user, 2026-11-11). That limits it to their own venues and fridges, not retail.
+- **What it means for us:** a light, everyday dose (about a fifth of Wilder's sodium), sold through venues rather than retail.
   The spirulina blue and the Thai kaffir lime are good real-food ideas. Ours carries ~2–4× the electrolytes per serving,
   in a stick that travels and lasts.
 
@@ -41,6 +42,15 @@ IDR→THB at ≈ Rp 490 per ฿1; prices are approximate._
 - **Two strengths:** 500 mg sodium (+250 mg potassium) or 1,000 mg sodium (+500 mg potassium).
 - **Price:** a variety pack at ฿590; Thai FDA registered, HACCP. They sell a "sweat test" to choose a strength.
 - **What it means for us:** proof that a "pick your dose" story sells in Thailand, which fits our day system.
+- **Not a Wilder copy minus L-theanine.** Wilder takes sodium mostly from citrate and adds L-theanine and flavour;
+  Simplify uses **chloride salts only** (sodium chloride + potassium chloride), which are cheaper and taste saltier,
+  plus magnesium bisglycinate. That's the LMNT recipe (salt, potassium chloride, magnesium), not Wilder's.
+  Simplify puts its L-theanine (100 mg) in the "Sunset" PM capsule instead.
+- **Watch out: Simplify already sells an AM/PM system.** It's capsules, not sticks: "Sunrise" (B-complex, CoQ10,
+  omega-3) and "Sunset" (magnesium 311 mg, L-theanine, zinc), ฿1,390 each. Our day-system sticks are different
+  (drink, electrolytes, three times a day), but the "time of day" idea isn't unique in Thailand.
+- **Thai FDA numbers aren't published** on its site or found on marketplaces. The 13-digit number on the pack
+  would show the factory (the first 8 digits are the plant). We need a photo of the pack's อย. box to identify the OEM.
 
 ## 2. Segment map
 

@@ -9,18 +9,18 @@ All three sticks carry **sodium, chloride, potassium, magnesium, calcium and pho
 
 **Ingredients:**
 - **Salts:** sodium chloride (ideally partly Thai sea salt), trisodium citrate, potassium citrate, dipotassium phosphate, calcium lactate.
-- **Magnesium:** mainly **magnesium citrate**. The OEM's limit is **max 50 mg magnesium bisglycinate per stick** before the odour and taste go bad, so bisglycinate is only a small top-up (Nightcap).
+- **Magnesium: magnesium bisglycinate**, on the OEM R&D's advice (2026-11-11). Citrate avoids the fishy/metallic note but tastes bitter and absorbs moisture, which makes the powder clump. **Open:** the OEM earlier said ~50 mg bisglycinate is the most before odour and taste suffer. Confirm the maximum *elemental* magnesium per stick from bisglycinate, because that caps every stick's magnesium.
 - **Taste:** citric/malic acid, natural flavours (carrier-free or non-caloric carrier), stevia (Reb M/Reb A) and/or monk fruit.
 - **Colour:** natural colour only (beta-carotene or colouring foods).
 - **Anti-caking:** silica only if needed.
 - **None of these:** sugar, fruit powder, juice solids, honey, caffeine, L-theanine, artificial sweeteners, colours or flavours.
 
-## 2. Full breakdown per stick (v1.2, 2026-11-09)
+## 2. Full breakdown per stick (v1.3, 2026-11-11)
 
 Grams calculated from the mineral content of each salt form (NaCl 39.3% Na; trisodium citrate 23.5% Na;
 potassium citrate 36.2% K; K₂HPO₄ 44.9% K and 54.5% PO₄; magnesium citrate ~15% Mg; bisglycinate ~14.1% Mg;
 calcium lactate 13% Ca). Sodium comes ~35% from salt (NaCl) and ~65% from citrate: citrate tastes less salty and harsh,
-which is the lever behind "less salty". Magnesium is all citrate in Morning Glory and Afternoon Delight. Nightcap adds bisglycinate up to the OEM's 50 mg limit (to confirm: 50 mg of bisglycinate powder (≈ 7 mg Mg), or 50 mg of magnesium from bisglycinate (≈ 0.35 g powder)). The table assumes the stricter reading.
+which is the lever behind "less salty". Magnesium is all bisglycinate (~14.1% Mg) per the OEM's R&D. The table keeps our targets (100 / 100 / 140 mg); if the OEM's odour limit is 50 mg Mg per stick, every stick drops to 50 mg (still ≈ Blue Zone, half of Wilder).
 
 | Ingredient (g per stick) | Morning Glory | Afternoon Delight | Nightcap |
 |---|---|---|---|
@@ -29,19 +29,19 @@ which is the lever behind "less salty". Magnesium is all citrate in Morning Glor
 | Sodium chloride (sea salt) | 0.36 | 0.67 | 0.18 |
 | Potassium citrate | 0.76 | 1.25 | 0.76 |
 | Dipotassium phosphate | 0.06 | 0.11 | 0.06 |
-| Magnesium citrate | 0.67 | 0.67 | 0.89 |
-| Magnesium bisglycinate | – | – | 0.05 (OEM max) |
+| Magnesium citrate | – | – | – |
+| Magnesium bisglycinate | 0.71 | 0.71 | 0.99 |
 | Calcium lactate | 0.38 | 0.77 | 0.38 |
 | Vitamin premix (C + B1, B2, B3, B6, B12) | – | 0.15 | – |
 | Chamomile extract / lemon balm extract | – | – | 0.15 / 0.15 |
-| Citric + malic acid | 0.60 | 1.00 | 0.35 |
+| Citric + malic acid | 0.60 | 0.70 | 0.35 |
 | Natural flavour | 0.35 | 0.40 | 0.30 |
 | Stevia (Reb M/A) and/or monk fruit | 0.04 | 0.04 | 0.04 |
 | Natural colour (beta-carotene / colouring foods) | 0.03 | 0.03 | 0.03 |
 | Silica | 0.03 | 0.03 | 0.03 |
-| **Stick weight** | **≈ 9.4 g** | **≈ 7.2 g** | **≈ 3.9 g** |
+| **Stick weight** | **≈ 9.4 g** | **≈ 6.9 g** | **≈ 3.9 g** |
 | Water | 400–500 ml | 500–750 ml | 250–350 ml |
-| kcal (acids + flavour carrier) | ~1.8 | ~2.8 | ~1.3 |
+| kcal (acids + glycine + flavour carrier) | ~4.2 | ~4.5 | ~4.7 |
 
 | Minerals per stick | Morning Glory | Afternoon Delight | Nightcap | **All three / day** | Limit / reference |
 |---|---|---|---|---|---|
@@ -60,6 +60,8 @@ B2 1.7 mg, niacin 20 mg, B6 2 mg, B12 2 µg.
 ~1.7 g and magnesium ~0.7 g, and that's ~6.6 g of salts; the remaining ~4.3 g is acid, flavour, sweetener and probably
 a bulking agent. Stick weight reflects the salt form and fillers, not the amount of minerals. Afternoon Delight
 carries more total electrolytes (1,915 mg) than Wilder in 7.2 g.
+
+**Calorie note (v1.3):** glycine in bisglycinate adds ~2.4–3.4 kcal per stick, so all three now sit at ~4–5 kcal, right at the zero-calorie limit. Afternoon Delight's acid dropped to 0.7 g to stay under. If the OEM's calculation lands above the Thai threshold, cut magnesium or acid further. Glycine in bisglycinate is the main calorie source.
 
 ## 3. Creatine spec (Morning Glory)
 
