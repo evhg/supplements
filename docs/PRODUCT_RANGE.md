@@ -1,5 +1,7 @@
 # Product range & names: v2, the day system
 
+> **Superseded 2026-11-11 by `PROTOCOL.md` (four sticks: Morning, Pre-workout, Post-workout, Sleep).** Names, pricing logic and the avoid-list still apply.
+
 _2026-11-09. Replaces v1 (Thirsty / Swole Mate / Pillow Talk / Rise & Grind). Brand: Paleo Robbie private label;
 product names never include "Paleo" or "Robbie". Formulas: `FORMULAS.md`._
 

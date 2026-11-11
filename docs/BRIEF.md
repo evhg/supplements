@@ -22,6 +22,14 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 | Pricing | **20% below Wilder's Shopify price** for the same pack size |
 | Deliverables location | Markdown in this repo under `docs/` |
 
+### Decisions, round 5 (2026-11-11): the four-stick protocol
+
+- **Four sticks, all launched together as a longevity protocol: Morning, Pre-workout (caffeine-free pump), Post-workout, Sleep.** See `PROTOCOL.md`.
+- **Creatine 5 g only in Post-workout (adults only).** The other three are family-friendly: kids 4–12 take half a stick.
+- **Morning is the GLP-1 stick.** No L-theanine anywhere (parents avoid it; it's Wilder's ingredient).
+- **Target "everyone else":** not the young athletes Wilder, LMNT, Liquid IV and the Bali brands chase.
+- **Names kept for now.** Next: a set of non-sexual puns in Paleo Robbie's email style.
+
 ### Decisions, round 4 (2026-11-09): the day system
 
 - **Range = three sticks for different times of day, each with one flavour and one job, on a base of 6 electrolytes** (`PRODUCT_RANGE.md` v2, `FORMULAS.md`):

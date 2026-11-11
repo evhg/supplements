@@ -1,5 +1,7 @@
 # Formulas: the day system v1 (brief for the OEM)
 
+> **Structure superseded 2026-11-11 by `PROTOCOL.md`.** The salt maths, calorie budget, creatine spec and OEM questions here still apply.
+
 _2026-11-09. Replaces `FORMULA_THIRSTY.md` and `FORMULA_SWOLE_MATE.md`; their reasoning on the 6-electrolyte base,
 creatine quality, calorie budget and OEM tests still applies._
 
