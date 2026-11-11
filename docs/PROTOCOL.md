@@ -91,6 +91,20 @@ Least sodium and acid of the four, in a small glass so nobody wakes up to pee.
 3. **The OEM's magnesium limit.** Sleep needs 120 mg magnesium from bisglycinate. If the odour cap really is ~50 mg Mg, Sleep has a problem.
 4. **Stick size.** Pre- and post-workout are at ~10–10.5 g, the practical stick limit. Ca-AKG (Johnson's 2 g) doesn't fit; leave it out.
 
+## 4b. Reference: Ajinomoto Glyna (グリナ), Japan's no. 1 sleep stick (checked 2026-11-11)
+
+Danny's tip ("amino vitals sleep") is Ajinomoto's **Glyna**. amino VITAL is Ajinomoto's sports line.
+
+- **Per 3.1 g stick:** **glycine 3.0 g**, citric acid, flavour (grapefruit, no juice). **12.3 kcal**, 0 g sugar.
+  A Sleep & Stress version adds GABA 100 mg (3.3 g, 13 kcal).
+- **Price and status:** ¥7,128 for 30 (≈ ฿1,500). A Japanese "food with function claims" (A42): faster to deep sleep, better morning
+  freshness, less daytime sleepiness. Labelled as not developed for minors or pregnant women.
+- **Evidence:** small Ajinomoto human trials. Yamadera 2007 (n = 11, single-blind, polysomnography) found faster sleep onset and
+  faster deep sleep, better subjective sleep and less daytime sleepiness. Inagawa 2006 (double-blind) found better
+  mornings. Bannai 2012 found less fatigue under sleep restriction. Modest, but better than apigenin, which has no human sleep trial on its own.
+- **Implication:** glycine 3 g is the strongest candidate for the Sleep stick's main ingredient (with Mg bisglycinate +
+  inositol, apigenin optional). It costs ~12 kcal (zero calorie → low calorie) and makes the kids' half-serving questionable.
+
 ## 5. Regulatory flags for the OEM (Thailand)
 
 - **Each active must be allowed in the chosen category** (dry beverage No. 356 vs dietary supplement): taurine, betaine, L-citrulline, apigenin,
