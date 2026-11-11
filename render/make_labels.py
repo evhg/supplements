@@ -19,13 +19,15 @@ PX = 20                        # px per mm
 L, W, SEAL = 140 * PX, 32 * PX, 12 * PX
 RED, DEEP, INK, PAPER = "#D92B3A", "#8C000D", "#141414", "#FBFAF7"
 
+# Day system (PRODUCT_RANGE.md v2): one stick per time of day, one flavour each.
 SKUS = {
-    "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH", panel="#F8C6B2", icon="peach"),
-    "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO", panel="#F6CFD9", icon="pomelo"),
-    "wet-melon":   dict(name=["WET", "MELON"],   flavour="WATERMELON", panel="#F7BCC2", icon="melon"),
+    "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO", panel="#F6CFD9", icon="pomelo",
+                        line="MORNING GLORY", sub="6 ELECTROLYTES + 5 G CREATINE", extra="5 g creatine monohydrate", water=500),
+    "wet-melon":   dict(name=["WET", "MELON"],   flavour="WATERMELON", panel="#F7BCC2", icon="melon",
+                        line="AFTERNOON DELIGHT", sub="6 ELECTROLYTES + VITAMINS C, B", extra="vitamin C + B-complex", water=600),
+    "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH", panel="#F8C6B2", icon="peach",
+                        line="NIGHTCAP", sub="6 ELECTROLYTES + CHAMOMILE", extra="magnesium, chamomile, lemon balm", water=300),
 }
-LINE = "THIRSTY"
-LINE_SUB = "ELECTROLYTE DRINK MIX"
 
 # Hand-drawn-ish black icons, drawn in a 400x400 box.
 ICONS = {
@@ -85,6 +87,7 @@ def torn_edge(x0, y0, y1, amp=14, step=26):
 
 def front_svg(sku):
     s = SKUS[sku]
+    line_size = min(120, int(880 / (0.47 * len(s["line"]))))
     px0, px1 = SEAL, SEAL + 1000          # pink panel
     icon = ICONS[s["icon"]].format(panel=s["panel"])
     logo = ""
@@ -96,9 +99,9 @@ def front_svg(sku):
   <polygon points="{px0},0 {torn_edge(px1, 0, W)} {px0},{W}" fill="{s['panel']}"/>
   <g transform="translate({px0 + 40},{150}) scale(0.95)">{icon}</g>
   {bubble(px0 + 470, 70, 420, 170, ["JUST ADD", "WATER"], 64)}
-  <text x="{px0 + 480}" y="{W - 70}" font-family="Outfit" font-weight="800" font-size="40" fill="{INK}" letter-spacing="2">1 STICK + 500 ML</text>
-  <text x="{px1 + 70}" y="150" font-family="Anton" font-size="120" fill="{INK}" letter-spacing="6">{LINE}</text>
-  <text x="{px1 + 70}" y="208" font-family="Outfit" font-weight="500" font-size="40" fill="{DEEP}" letter-spacing="5">{LINE_SUB}</text>
+  <text x="{px0 + 480}" y="{W - 70}" font-family="Outfit" font-weight="800" font-size="40" fill="{INK}" letter-spacing="2">1 STICK + {s["water"]} ML</text>
+  <text x="{px1 + 70}" y="150" font-family="Anton" font-size="{line_size}" fill="{INK}" letter-spacing="4">{s['line']}</text>
+  <text x="{px1 + 70}" y="208" font-family="Outfit" font-weight="500" font-size="36" fill="{DEEP}" letter-spacing="4">{s['sub']}</text>
   <text x="{px1 + 60}" y="{W - 70}" font-family="Anton" font-size="300" fill="{RED}" letter-spacing="2">{n1}<tspan dx="{0 if n1.endswith('-') else 34}">{n2}</tspan></text>
   {logo}
   <text x="{SEAL/2}" y="{W/2}" font-family="Outfit" font-weight="800" font-size="30" fill="{DEEP}" text-anchor="middle"
@@ -112,11 +115,11 @@ def back_svg(sku):
     s = SKUS[sku]
     n = " ".join(s["name"]).replace("- ", "-")
     lines = [
-        ("Outfit", 800, 44, INK, f"{LINE} · {n}"),
-        ("Outfit", 500, 32, INK, "Electrolyte drink mix, " + s["flavour"].lower() + " flavour"),
-        ("Outfit", 500, 32, INK, "Directions: empty 1 stick into 500 ml cold water. Shake. Drink."),
+        ("Outfit", 800, 44, INK, f"{s['line']} · {n}"),
+        ("Outfit", 500, 32, INK, "Mineral drink mix with " + s["extra"] + ", " + s["flavour"].lower() + " flavour"),
+        ("Outfit", 500, 32, INK, f"Directions: empty 1 stick into {s['water']} ml cold water. Shake. Drink."),
         ("Outfit", 500, 32, DEEP, "Ingredients &amp; nutrition: pending OEM spec sheet"),
-        ("Loma", 400, 32, INK, "ผลิตภัณฑ์เสริมอาหาร  ·  เลขสารบบอาหาร XX-X-XXXXX-X-XXXX"),
+        ("Loma", 400, 32, INK, "เครื่องดื่มผสมแร่ธาตุ ชนิดผง  ·  เลขสารบบอาหาร XX-X-XXXXX-X-XXXX"),
     ]
     y, body = 120, ""
     for fam, wt, sz, col, txt in lines:
