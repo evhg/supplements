@@ -8,7 +8,7 @@ the cost check and the "two ingredients, one extra claim" pairings. The salt mat
 
 - **Four sticks, the maximum.** All launch together.
 - **Every stick carries all 6 electrolytes:** sodium, chloride, potassium, magnesium, calcium, phosphate.
-- **Creatine in one stick only (Post-workout), adults only.** The other three are family-friendly: kids 4–12 take half a stick.
+- **Creatine 2.5 g in one stick only (Post-workout), adults only, max 1 a day.** This keeps all four sticks on the drink-mix route. The other three are family-friendly: kids 4–12 take half a stick.
 - **Morning is the GLP-1 stick.**
 - **Pre-workout is caffeine-free.** No caffeine anywhere.
 - **No L-theanine** (Wilder's ingredient; parents avoid it). **No melatonin** (a drug in Thailand).
@@ -51,7 +51,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
-| Extras | **vitamin B6 + B12 + C**, ginger root/extract | **L-citrulline 2 g** (consultation) *or* **beetroot powder** (listed) | **creatine** (2.5 g on this route; 5 g needs the supplement route, §5), **collagen peptides 2.5 g + vitamin C 80 mg** (optional) | **GABA 100 mg + glycine 100 mg**, chamomile flower, inositol 150 mg |
+| Extras | **vitamin B6 + B12 + C**, ginger root/extract | **L-citrulline 2 g** (consultation) *or* **beetroot powder** (listed) | **creatine 2.5 g** (max 1 stick/day), **collagen peptides 2.5 g + vitamin C 80 mg** | **GABA 100 mg + glycine 100 mg**, chamomile flower, inositol 150 mg |
 | kcal | ~3 | **~11 (the one exception)** | ~3, or ~13 with collagen | ~4 |
 | Kids 4–12 | ½ stick | ½ stick | ❌ adults only | ½ stick (GABA: confirm for children) |
 
@@ -72,16 +72,17 @@ These pairings give each stick a second, separate benefit to talk about. All wor
 | Sleep | **GABA + glycine** | Ajinomoto's Glyna "Sleep & Stress" pairing; Huberman stacks the two → *sleep + stress* |
 | Sleep | **magnesium + chamomile** | muscle relaxation plus the classic bedtime flower → *wind down* |
 
-## 5. The creatine problem
+## 5. Creatine: decided 2.5 g per stick (2026-11-12)
 
-On Wilder's route, creatine is capped at **2.5 g/day**. The user's rule is 5 g in one stick. Options:
+**Decision: 2.5 g creatine monohydrate in Post-workout**, so all four sticks register as drink mixes on Wilder's route
+(the Thai positive list allows creatine ≤ 2.5 g/day). Supplement registration is too heavy.
 
-1. **Register Post-workout as a dietary supplement** (Sor Bor 5), separately from the other three. Creatine at 5 g is sold in Thailand as a
-   supplement (e.g. Optimum Nutrition 5 g/serving). Costs a second registration route and supplement labelling; the other three stay drink mixes.
-2. **2.5 g per stick, "two sticks on training days"**: stays on Wilder's route. Bryan Johnson's Longevity Mix uses 2.5–3 g, so it's defensible, but the gym buyer expects 5 g.
-3. **2.5 g creatine + 2.5 g collagen + vitamin C**: one beverage stick, two claims (strength + joints); still not 5 g.
-
-**Recommendation: option 1.** Keep 5 g and register Post-workout as a supplement. Confirm with the OEM that its quote can cover two routes.
+- **The pack must say max 1 stick a day.** The 2.5 g limit is per day, so "two sticks on training days" can't be on the label.
+- **Why 2.5 g is still a good story:** Bryan Johnson's Longevity Mix uses 2.5–3 g a day. At 2.5 g daily, muscle stores still fill;
+  it just takes a few weeks longer than at 5 g. Water retention is lower, which helps the women and GLP-1 angle.
+  Pitch: *"Daily dose, no loading, no bloat."*
+- **Second claim stays:** collagen peptides 2.5 g + vitamin C (joints and tendons), both on the beverage list.
+- **The stick shrinks:** 2.5 g less powder, so ~8 g instead of ~10.5 g.
 
 ## 6. Flavours and names
 
@@ -103,10 +104,10 @@ packing and filling estimate from `SOURCING.md`. **To be confirmed by the OEM qu
 |---|---|---|
 | Morning | B6 + B12 + C + ginger ≈ USD 0.005–0.015 | **≈ 0.24–0.28** |
 | Pre-workout | citrulline 2 g ≈ 0.03–0.05 (beetroot instead ≈ 0.01) | **≈ 0.27–0.32** |
-| Post-workout | creatine 5 g ≈ 0.05–0.08 (Creapure ≈ 0.13–0.18); collagen 2.5 g + C ≈ 0.02–0.03 | **≈ 0.30–0.40** |
+| Post-workout | creatine 2.5 g ≈ 0.025–0.04 (Creapure ≈ 0.07–0.09); collagen 2.5 g + C ≈ 0.02–0.03 | **≈ 0.28–0.34** |
 | Sleep | Mg bisglycinate (more) + GABA + glycine + chamomile + inositol ≈ 0.02–0.04 | **≈ 0.26–0.30** |
 
-**Blended: about USD 0.28–0.32 a stick**, i.e. about 10–30% above the 0.25 base. Creatine is the main driver. At ฿1,290/30 retail (≈ ฿43/stick)
+**Blended: about USD 0.27–0.31 a stick**, i.e. about 10–30% above the 0.25 base. Creatine is the main driver. At ฿1,290/30 retail (≈ ฿43/stick)
 the margin is still healthy. Keep Post-workout priced above the others (≈ ฿1,490–1,590/30).
 
 ## 8. Packs
@@ -126,7 +127,7 @@ the margin is still healthy. Keep Post-workout priced above the others (≈ ฿1
 
 1. Confirm all §2 limits against the current list. Can they file **citrulline** (and any other non-listed extra) through FDA consultation? How long and how much?
 2. **Fortification limits** for vitamin B6, B12, C and D in a No. 356 drink mix.
-3. **Two routes:** quote Post-workout as a dietary supplement (5 g creatine) alongside three drink-mix registrations.
+3. **One route for all four:** dry drink mix (MOPH No. 356), creatine 2.5 g in Post-workout.
 4. **Magnesium:** the most magnesium per stick from bisglycinate before the odour shows (Sleep needs 120 mg).
 5. **Kids:** what a children's serving on pack triggers (labelling, advertising), and whether GABA is acceptable for children.
 6. **Price per stick** for each of the four formulas at ~7.5k each within the 30k MOQ.
