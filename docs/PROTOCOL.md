@@ -61,6 +61,19 @@ answered with food-legal ingredients). Each stick now owns one trend: **clarity 
 - **Claims:** avoid "focus/cognitive" as health claims (risky in Thailand). Use "clear head" / "morning clarity" as tone, and confirm wording with the OEM.
 - **Range-wide second message:** dehydration → brain fog (all sticks); creatine also fuels the brain (Glow Up); good sleep → clearer tomorrow (Snooze Control).
 
+## 1e. Pack colours: a day cycle (2026-11-14)
+
+Each stick has a unique panel colour that ties to its flavour; together they run sunrise → dusk.
+
+| Stick | Panel | Read as |
+|---|---|---|
+| Rise & Brine · Peach of Mind | **#F7BFA0** peach | sunrise; the peach icon has a red blush crescent |
+| Pump It Up · To The Beet | **#EBA1BE** beet pink | daytime energy |
+| Glow Up · Zest Life | **#F2E28E** citrus yellow | afternoon sun |
+| Snooze Control · Calm O' Mile | **#C8DDCB** sage | dusk / calm |
+
+Shared across all four: Paleo Robbie red #D92B3A for flavour names, ink black for line names, warm white #FBFAF7 label.
+
 ## 2. What Wilder's route allows (Thai FDA positive list, June 2023)
 
 The Thai FDA publishes a **positive list for beverages in sealed containers** (except caffeine drinks): four lists of plants,
