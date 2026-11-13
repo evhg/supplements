@@ -21,26 +21,33 @@ RED, DEEP, INK, PAPER = "#D92B3A", "#8C000D", "#141414", "#FBFAF7"
 
 # The Daily Ritual (PROTOCOL.md): four sticks, morning to night, one flavour each.
 SKUS = {
-    "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO GINGER", panel="#F6CFD9", icon="pomelo",
+    "mint-condition": dict(name=["MINT", "CONDITION"], flavour="PINEAPPLE, GINGER &amp; MINT", panel="#F1E5B8", icon="pineapple",
                         line="RISE &amp; BRINE", sub="6 ELECTROLYTES + THAI SEA SALT + GINGER",
                         extra="Thai sea salt, ginger, vitamins B6, B12 and C", water=500, bubble=["JUST ADD", "WATER"],
                         note="Kids 4-12: half a stick."),
-    "wet-melon":   dict(name=["TO THE", "BEET"], flavour="BEET &amp; SALTY WATERMELON", panel="#F7BCC2", icon="melon",
+    "to-the-beet":  dict(name=["TO THE", "BEET"], flavour="WATERMELON, BEET &amp; SEA SALT", panel="#F3BAC4", icon="melon",
                         line="PUMP IT UP", sub="6 ELECTROLYTES + REAL BEETROOT &amp; WATERMELON",
                         extra="real beetroot and watermelon, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
                         note="Pre-workout. Kids 4-12: half a stick."),
-    "lychee-rizz": dict(name=["LYCHEE", "RIZZ"], flavour="LYCHEE", panel="#F3C3CB", icon="lychee",
+    "zest-life":    dict(name=["ZEST", "LIFE"], flavour="POMELO, ORANGE &amp; LIME", panel="#F8D3B0", icon="pomelo",
                         line="GLOW UP", sub="6 ELECTROLYTES + 2.5 G CREATINE + COLLAGEN",
                         extra="2.5 g creatine, collagen and vitamin C", water=500, bubble=["NO LOADING", "NO BLOAT"],
                         note="Post-workout. Adults only. Max 1 stick a day."),
-    "tight-peach": dict(name=["CALM O'", "MILE"], flavour="CHAMOMILE &amp; PEACH", panel="#F8C6B2", icon="peach",
+    "calm-o-mile":  dict(name=["CALM O'", "MILE"], flavour="PEACH CHAMOMILE ICED TEA", panel="#F8C6B2", icon="peach",
                         line="SNOOZE CONTROL", sub="6 ELECTROLYTES + GABA + CHAMOMILE FLOWER",
-                        extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["2-3 HRS", "BEFORE BED"],
-                        note="Drink 2-3 hours before bed, so you sleep through. Kids 4-12: half a stick."),
+                        extra="magnesium, GABA, glycine and chamomile (herbal, caffeine-free)", water=300, bubble=["2-3 HRS", "BEFORE BED"],
+                        note="Herbal, caffeine-free. Drink 2-3 hours before bed, so you sleep through. Kids 4-12: half a stick."),
 }
 
 # Hand-drawn-ish black icons, drawn in a 400x400 box.
 ICONS = {
+    "pineapple": """
+      <path d="M200 140 C130 140 98 200 98 262 C98 330 140 375 200 375 C260 375 302 330 302 262 C302 200 270 140 200 140 Z" fill="#141414"/>
+      <g stroke="{panel}" stroke-width="9" stroke-linecap="round">
+        <line x1="130" y1="190" x2="270" y2="330"/><line x1="112" y1="240" x2="230" y2="358"/><line x1="170" y1="155" x2="290" y2="275"/>
+        <line x1="270" y1="190" x2="130" y2="330"/><line x1="288" y1="240" x2="170" y2="358"/><line x1="230" y1="155" x2="110" y2="275"/></g>
+      <path d="M200 145 L168 40 L200 95 L214 18 L224 100 L268 46 L236 145 Z" fill="#141414"/>
+      <path d="M200 145 L130 70 L190 120 Z" fill="#141414"/>""",
     "lychee": """
       <circle cx="200" cy="225" r="150" fill="#141414"/>
       <g fill="{panel}">
