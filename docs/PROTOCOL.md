@@ -41,13 +41,13 @@ Our flavours are **blends**, so no shopper can compare one of ours 1:1 with one 
 
 | Stick | Blend | Name | Fit |
 |---|---|---|---|
-| Rise & Brine | pineapple, ginger & mint | **Mint Condition** | ginger + mint settle the stomach (morning, GLP-1) |
+| Rise & Brine | lemon, ginger & mint | **Mint Condition** | warm lemon water and the lemon-ginger shot are THE morning rituals; ginger + mint settle the stomach (GLP-1) |
 | Pump It Up | watermelon, beet & sea salt | **To The Beet** | partial overlap with Wilder's watermelon, accepted |
 | Glow Up | pomelo, orange & lime | **Zest Life** | citrus = the vitamin C story for collagen; keeps Thai pomelo |
-| Snooze Control | peach chamomile iced tea (herbal, caffeine-free) | **Calm O' Mile** | partial overlap with Wilder's peach, accepted. The label must say "herbal, caffeine-free" because "iced tea" suggests caffeine |
+| Snooze Control | apple chamomile iced tea (herbal, caffeine-free) | **Calm O' Mile** | chamomile = Greek *khamaimēlon*, "ground apple" (the flower smells of apple), so it's the natural pair; no overlap with Wilder. The label must say "herbal, caffeine-free" because "iced tea" suggests caffeine |
 
 **Reserve flavour:** mint, lemon & rosemary (check rosemary against the Thai beverage list).
-**OEM:** each blend needs its own flavour development and taste trial. Don't reuse the factory's stock peach and watermelon flavours, which may be the same ones Wilder uses.
+**OEM:** each blend needs its own flavour development and taste trial. Don't reuse the factory's stock watermelon flavour, which may be the same ones Wilder uses.
 
 ## 2. What Wilder's route allows (Thai FDA positive list, June 2023)
 
@@ -81,7 +81,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 
 | | **Morning** (GLP-1) | **Pre-workout** (caffeine-free pump) | **Post-workout** (adults only) | **Sleep** |
 |---|---|---|---|---|
-| **Name · flavour** | **Rise & Brine** · **Mint Condition** (pineapple, ginger & mint) | **Pump It Up** · **To The Beet** (watermelon, beet & sea salt) | **Glow Up** · **Zest Life** (pomelo, orange & lime) | **Snooze Control** · **Calm O' Mile** (peach chamomile iced tea, herbal, caffeine-free; drink 2–3 h before bed) |
+| **Name · flavour** | **Rise & Brine** · **Mint Condition** (lemon, ginger & mint) | **Pump It Up** · **To The Beet** (watermelon, beet & sea salt) | **Glow Up** · **Zest Life** (pomelo, orange & lime) | **Snooze Control** · **Calm O' Mile** (apple chamomile iced tea, herbal, caffeine-free; drink 2–3 h before bed) |
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
