@@ -69,11 +69,11 @@ ICONS = {
       <path d="M200 78 C204 50 214 34 228 22" stroke="#141414" stroke-width="12" fill="none" stroke-linecap="round"/>
       <path d="M214 46 C250 18 300 18 330 36 C300 66 250 70 214 46 Z" fill="#141414"/>""",
     "peach": """
-      <path d="M200 92 C110 70 40 140 52 230 C64 320 140 368 204 362 C276 356 350 300 352 214
-               C354 134 286 70 200 92 Z" fill="#141414"/>
-      <path d="M204 104 C176 170 176 270 214 352" stroke="{panel}" stroke-width="13" fill="none" stroke-linecap="round"/>
-      <path d="M200 96 C214 52 250 26 300 22 C292 70 252 100 200 96 Z" fill="#141414"/>
-      <path d="M196 98 C188 74 178 58 166 46" stroke="#141414" stroke-width="12" fill="none" stroke-linecap="round"/>""",
+      <circle cx="200" cy="232" r="140" fill="#141414"/>
+      <path d="M118 196 C126 160 152 134 186 124" stroke="{panel}" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <path d="M200 96 C196 74 186 58 172 46" stroke="#141414" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M204 100 C222 56 262 34 312 34 C302 80 258 106 204 100 Z" fill="#141414"/>
+      <path d="M196 100 C174 68 138 58 104 68 C120 100 160 112 196 100 Z" fill="#141414"/>""",
     "pomelo": """
       <circle cx="200" cy="215" r="160" fill="#141414"/>
       <circle cx="200" cy="215" r="122" fill="{panel}"/>
