@@ -34,9 +34,9 @@ SKUS = {
                         extra="2.5 g creatine, collagen and vitamin C", water=500, bubble=["NO LOADING", "NO BLOAT"],
                         note="Post-workout. Adults only. Max 1 stick a day."),
     "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH CHAMOMILE", panel="#F8C6B2", icon="peach",
-                        line="NIGHTCAP", sub="6 ELECTROLYTES + GABA + CHAMOMILE",
-                        extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["JUST ADD", "WATER"],
-                        note="Before bed. Kids 4-12: half a stick."),
+                        line="WIND DOWN", sub="6 ELECTROLYTES + GABA + CHAMOMILE",
+                        extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["2-3 HRS", "BEFORE BED"],
+                        note="Drink 2-3 hours before bed, so you sleep through. Kids 4-12: half a stick."),
 }
 
 # Hand-drawn-ish black icons, drawn in a 400x400 box.

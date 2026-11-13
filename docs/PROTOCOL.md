@@ -47,7 +47,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 
 | | **Morning** (GLP-1) | **Pre-workout** (caffeine-free pump) | **Post-workout** (adults only) | **Sleep** |
 |---|---|---|---|---|
-| Flavour, name kept for now | Pomelo + ginger · Pomel-Oh! | **Salty Watermelon** · Wet Melon | **Lychee** · *Do You Even Lychee?* (§6) | Peach + chamomile · Tight Peach |
+| Flavour, name kept for now | Pomelo + ginger · Pomel-Oh! | **Salty Watermelon** · Wet Melon | **Lychee** · *Do You Even Lychee?* (§6) | Peach + chamomile · **Wind Down** · Tight Peach (drink 2–3 h before bed) |
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
