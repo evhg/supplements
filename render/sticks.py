@@ -5,7 +5,7 @@ Mac (Blender app, Metal GPU):
 Cloud test (pip install bpy):
     python3 render/sticks.py --samples 32 --res 800
 
-Options: --shot all|trio|hero|backdrops  --sku mint-condition (hero only; default all three)
+Options: --shot all|trio|hero|backdrops  --sku peach-of-mind (hero only; default all three)
          --samples N  --res N (square px)  --device CPU|GPU  --bg cream|pink|wood|"#hex"
 Output:  render/out/<shot>.png (cream) or <shot>-<bg>.png;  --shot backdrops renders the trio
          on all three backdrops plus render/out/backdrops.png (side by side: cream, pink, wood)
@@ -22,7 +22,7 @@ from mathutils import Vector
 HERE = os.path.dirname(os.path.abspath(__file__))
 LABELS = os.path.join(HERE, "labels")
 OUT = os.path.join(HERE, "out")
-SKUS = ["mint-condition", "to-the-beet", "zest-life", "calm-o-mile"]   # morning, pre, post, night
+SKUS = ["peach-of-mind", "to-the-beet", "zest-life", "calm-o-mile"]   # morning, pre, post, night
 BACKDROPS = {"cream": "#EFE6DC", "pink": "#F3D3CE", "wood": "#D8D4CE"}   # wood: hex is the world tint
 
 W, H, SEAL = 0.032, 0.140, 0.012        # metres

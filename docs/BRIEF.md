@@ -22,9 +22,13 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 | Pricing | **20% below Wilder's Shopify price** for the same pack size |
 | Deliverables location | Markdown in this repo under `docs/` |
 
+### Decisions, round 8 (2026-11-14)
+
+- **Final flavours: Rise & Brine · Peach of Mind (peach, holy basil & lemon; the mental-clarity stick), Pump It Up · To The Beet (watermelon, beet & sea salt), Glow Up · Zest Life (pomelo, orange & lime), Snooze Control · Calm O' Mile (apple chamomile iced tea).** Each stick owns one trend: clarity, performance, glow-up, sleep.
+
 ### Decisions, round 7 (2026-11-13)
 
-- **Names: "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control** (flavours Mint Condition, To The Beet, Zest Life, Calm O' Mile). Snooze Control is taken 2–3 h before bed.
+- **Names: "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control** (flavours Peach of Mind, To The Beet, Zest Life, Calm O' Mile). Snooze Control is taken 2–3 h before bed.
 - **Audience: Paleo Robbie's customers** (health-conscious adults and families), not Gen Z.
 - **Real food is the umbrella value:** Thai sea salt, ginger, beetroot + watermelon (the real-food pump, replacing synthetic citrulline), collagen, chamomile.
 - **Cream backdrop** for renders.

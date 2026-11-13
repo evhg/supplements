@@ -21,10 +21,10 @@ RED, DEEP, INK, PAPER = "#D92B3A", "#8C000D", "#141414", "#FBFAF7"
 
 # The Daily Ritual (PROTOCOL.md): four sticks, morning to night, one flavour each.
 SKUS = {
-    "mint-condition": dict(name=["MINT", "CONDITION"], flavour="LEMON, GINGER &amp; MINT", panel="#F3EBB4", icon="lemon",
-                        line="RISE &amp; BRINE", sub="6 ELECTROLYTES + THAI SEA SALT + GINGER",
-                        extra="Thai sea salt, ginger, vitamins B6, B12 and C", water=500, bubble=["JUST ADD", "WATER"],
-                        note="Kids 4-12: half a stick."),
+    "peach-of-mind": dict(name=["PEACH OF", "MIND"], flavour="PEACH, HOLY BASIL &amp; LEMON", panel="#F8C6B2", icon="peach",
+                        line="RISE &amp; BRINE", sub="6 ELECTROLYTES + HOLY BASIL + B6 &amp; B12",
+                        extra="Thai sea salt, holy basil (kaprao), ginger, vitamins B6, B12 and C", water=500, bubble=["CLEAR", "HEAD"],
+                        note="Morning, on an empty stomach. Kids 4-12: half a stick."),
     "to-the-beet":  dict(name=["TO THE", "BEET"], flavour="WATERMELON, BEET &amp; SEA SALT", panel="#F3BAC4", icon="melon",
                         line="PUMP IT UP", sub="6 ELECTROLYTES + REAL BEETROOT &amp; WATERMELON",
                         extra="real beetroot and watermelon, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
