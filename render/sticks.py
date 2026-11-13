@@ -22,7 +22,7 @@ from mathutils import Vector
 HERE = os.path.dirname(os.path.abspath(__file__))
 LABELS = os.path.join(HERE, "labels")
 OUT = os.path.join(HERE, "out")
-SKUS = ["pomel-oh", "wet-melon", "tight-peach"]   # morning, afternoon, evening
+SKUS = ["pomel-oh", "wet-melon", "lychee-rizz", "tight-peach"]   # morning, pre, post, night
 BACKDROPS = {"cream": "#EFE6DC", "pink": "#F3D3CE", "wood": "#D8D4CE"}   # wood: hex is the world tint
 
 W, H, SEAL = 0.032, 0.140, 0.012        # metres
@@ -304,9 +304,10 @@ def render(name):
 
 def shot_trio(a):
     reset(a)
-    for sku, (x, y, r) in zip(SKUS, [(-0.040, 0.004, 9), (0.0, -0.004, -2), (0.040, 0.006, -11)]):
+    spots = [(-0.057, 0.006, 10), (-0.019, -0.004, 3), (0.019, 0.003, -4), (0.057, 0.007, -11)]
+    for sku, (x, y, r) in zip(SKUS, spots[:len(SKUS)]):
         place(make_stick(sku), x, y, r)
-    camera((0.0, -0.20, 0.33), (0, 0.0, 0), 68)
+    camera((0.0, -0.235, 0.385), (0, 0.0, 0), 68)
     render("trio")
 
 

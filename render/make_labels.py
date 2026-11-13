@@ -19,18 +19,37 @@ PX = 20                        # px per mm
 L, W, SEAL = 140 * PX, 32 * PX, 12 * PX
 RED, DEEP, INK, PAPER = "#D92B3A", "#8C000D", "#141414", "#FBFAF7"
 
-# Day system (PRODUCT_RANGE.md v2): one stick per time of day, one flavour each.
+# The Protocol (PROTOCOL.md v3.1): four sticks, morning to night, one flavour each.
 SKUS = {
-    "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO", panel="#F6CFD9", icon="pomelo",
-                        line="MORNING GLORY", sub="6 ELECTROLYTES + 5 G CREATINE", extra="5 g creatine monohydrate", water=500),
-    "wet-melon":   dict(name=["WET", "MELON"],   flavour="WATERMELON", panel="#F7BCC2", icon="melon",
-                        line="AFTERNOON DELIGHT", sub="6 ELECTROLYTES + VITAMINS C, B", extra="vitamin C + B-complex", water=600),
-    "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH", panel="#F8C6B2", icon="peach",
-                        line="NIGHTCAP", sub="6 ELECTROLYTES + CHAMOMILE", extra="magnesium, chamomile, lemon balm", water=300),
+    "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO GINGER", panel="#F6CFD9", icon="pomelo",
+                        line="MORNING GLORY", sub="6 ELECTROLYTES + B6, B12, C + GINGER",
+                        extra="vitamins B6, B12, C and ginger", water=500, bubble=["JUST ADD", "WATER"],
+                        note="Kids 4-12: half a stick."),
+    "wet-melon":   dict(name=["WET", "MELON"],   flavour="SALTY WATERMELON", panel="#F7BCC2", icon="melon",
+                        line="AFTERNOON DELIGHT", sub="6 ELECTROLYTES + CAFFEINE-FREE PUMP",
+                        extra="L-citrulline, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
+                        note="Pre-workout. Kids 4-12: half a stick."),
+    "lychee-rizz": dict(name=["LYCHEE", "RIZZ"], flavour="LYCHEE", panel="#F3C3CB", icon="lychee",
+                        line="GLOW UP", sub="6 ELECTROLYTES + 2.5 G CREATINE + COLLAGEN",
+                        extra="2.5 g creatine, collagen and vitamin C", water=500, bubble=["NO LOADING", "NO BLOAT"],
+                        note="Post-workout. Adults only. Max 1 stick a day."),
+    "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH CHAMOMILE", panel="#F8C6B2", icon="peach",
+                        line="NIGHTCAP", sub="6 ELECTROLYTES + GABA + CHAMOMILE",
+                        extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["JUST ADD", "WATER"],
+                        note="Before bed. Kids 4-12: half a stick."),
 }
 
 # Hand-drawn-ish black icons, drawn in a 400x400 box.
 ICONS = {
+    "lychee": """
+      <circle cx="200" cy="225" r="150" fill="#141414"/>
+      <g fill="{panel}">
+        <circle cx="140" cy="170" r="13"/><circle cx="200" cy="140" r="13"/><circle cx="262" cy="172" r="13"/>
+        <circle cx="120" cy="235" r="13"/><circle cx="180" cy="205" r="13"/><circle cx="240" cy="230" r="13"/>
+        <circle cx="290" cy="245" r="13"/><circle cx="150" cy="292" r="13"/><circle cx="215" cy="285" r="13"/>
+        <circle cx="270" cy="305" r="13"/><circle cx="200" cy="340" r="13"/></g>
+      <path d="M200 78 C204 50 214 34 228 22" stroke="#141414" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M214 46 C250 18 300 18 330 36 C300 66 250 70 214 46 Z" fill="#141414"/>""",
     "peach": """
       <path d="M200 92 C110 70 40 140 52 230 C64 320 140 368 204 362 C276 356 350 300 352 214
                C354 134 286 70 200 92 Z" fill="#141414"/>
@@ -98,7 +117,7 @@ def front_svg(sku):
   <rect width="{L}" height="{W}" fill="{PAPER}"/>
   <polygon points="{px0},0 {torn_edge(px1, 0, W)} {px0},{W}" fill="{s['panel']}"/>
   <g transform="translate({px0 + 40},{150}) scale(0.95)">{icon}</g>
-  {bubble(px0 + 470, 70, 420, 170, ["JUST ADD", "WATER"], 64)}
+  {bubble(px0 + 470, 70, 420, 170, s["bubble"], 64 if max(len(t) for t in s["bubble"]) <= 8 else 52)}
   <text x="{px0 + 480}" y="{W - 70}" font-family="Outfit" font-weight="800" font-size="40" fill="{INK}" letter-spacing="2">1 STICK + {s["water"]} ML</text>
   <text x="{px1 + 70}" y="150" font-family="Anton" font-size="{line_size}" fill="{INK}" letter-spacing="4">{s['line']}</text>
   <text x="{px1 + 70}" y="208" font-family="Outfit" font-weight="500" font-size="36" fill="{DEEP}" letter-spacing="4">{s['sub']}</text>
@@ -118,6 +137,7 @@ def back_svg(sku):
         ("Outfit", 800, 44, INK, f"{s['line']} · {n}"),
         ("Outfit", 500, 32, INK, "Mineral drink mix with " + s["extra"] + ", " + s["flavour"].lower() + " flavour"),
         ("Outfit", 500, 32, INK, f"Directions: empty 1 stick into {s['water']} ml cold water. Shake. Drink."),
+        ("Outfit", 800, 32, DEEP, s["note"]),
         ("Outfit", 500, 32, DEEP, "Ingredients &amp; nutrition: pending OEM spec sheet"),
         ("Loma", 400, 32, INK, "เครื่องดื่มผสมแร่ธาตุ ชนิดผง  ·  เลขสารบบอาหาร XX-X-XXXXX-X-XXXX"),
     ]
