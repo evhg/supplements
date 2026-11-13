@@ -19,22 +19,22 @@ PX = 20                        # px per mm
 L, W, SEAL = 140 * PX, 32 * PX, 12 * PX
 RED, DEEP, INK, PAPER = "#D92B3A", "#8C000D", "#141414", "#FBFAF7"
 
-# The Protocol (PROTOCOL.md v3.1): four sticks, morning to night, one flavour each.
+# The Daily Ritual (PROTOCOL.md): four sticks, morning to night, one flavour each.
 SKUS = {
     "pomel-oh":    dict(name=["POMEL-", "OH!"],  flavour="POMELO GINGER", panel="#F6CFD9", icon="pomelo",
-                        line="MORNING GLORY", sub="6 ELECTROLYTES + B6, B12, C + GINGER",
-                        extra="vitamins B6, B12, C and ginger", water=500, bubble=["JUST ADD", "WATER"],
+                        line="RISE &amp; BRINE", sub="6 ELECTROLYTES + THAI SEA SALT + GINGER",
+                        extra="Thai sea salt, ginger, vitamins B6, B12 and C", water=500, bubble=["JUST ADD", "WATER"],
                         note="Kids 4-12: half a stick."),
     "wet-melon":   dict(name=["WET", "MELON"],   flavour="SALTY WATERMELON", panel="#F7BCC2", icon="melon",
-                        line="AFTERNOON DELIGHT", sub="6 ELECTROLYTES + CAFFEINE-FREE PUMP",
-                        extra="L-citrulline, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
+                        line="PUMP IT UP", sub="6 ELECTROLYTES + REAL BEETROOT &amp; WATERMELON",
+                        extra="real beetroot and watermelon, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
                         note="Pre-workout. Kids 4-12: half a stick."),
     "lychee-rizz": dict(name=["LYCHEE", "RIZZ"], flavour="LYCHEE", panel="#F3C3CB", icon="lychee",
                         line="GLOW UP", sub="6 ELECTROLYTES + 2.5 G CREATINE + COLLAGEN",
                         extra="2.5 g creatine, collagen and vitamin C", water=500, bubble=["NO LOADING", "NO BLOAT"],
                         note="Post-workout. Adults only. Max 1 stick a day."),
     "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH CHAMOMILE", panel="#F8C6B2", icon="peach",
-                        line="WIND DOWN", sub="6 ELECTROLYTES + GABA + CHAMOMILE",
+                        line="SNOOZE CONTROL", sub="6 ELECTROLYTES + GABA + CHAMOMILE FLOWER",
                         extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["2-3 HRS", "BEFORE BED"],
                         note="Drink 2-3 hours before bed, so you sleep through. Kids 4-12: half a stick."),
 }
@@ -106,7 +106,7 @@ def torn_edge(x0, y0, y1, amp=14, step=26):
 
 def front_svg(sku):
     s = SKUS[sku]
-    line_size = min(120, int(880 / (0.47 * len(s["line"]))))
+    line_size = min(120, int(880 / (0.47 * len(s["line"].replace("&amp;", "&")))))
     px0, px1 = SEAL, SEAL + 1000          # pink panel
     icon = ICONS[s["icon"]].format(panel=s["panel"])
     logo = ""

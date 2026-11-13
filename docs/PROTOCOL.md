@@ -1,4 +1,4 @@
-# The Protocol: four sticks, v3.1
+# The Daily Ritual: four sticks, v3.2
 
 _2026-11-11. Four sticks (Morning, Pre-workout, Post-workout, Sleep), all launched together as a daily protocol.
 v3.1 applies the Thai FDA rules for Wilder's registration route (beverage in sealed container, dry type, MOPH No. 356),
@@ -14,6 +14,25 @@ the cost check and the "two ingredients, one extra claim" pairings. The salt mat
 - **No L-theanine** (Wilder's ingredient; parents avoid it). **No melatonin** (a drug in Thailand).
 - **Zero calorie, except one stick may be ~11 kcal.** That number is printed big and proud ("only 11 kcal").
 - **Register like Wilder:** a dry drink mix under MOPH No. 356.
+
+## 1b. Names and the real-food promise (decided 2026-11-13)
+
+**The four sticks are sold as "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control.**
+- Each name is in Paleo Robbie's pun voice, and together they read as one daily cycle: rise, pump, glow, snooze.
+- The cheeky flavour names stay underneath: Pomel-Oh!, Wet Melon, Lychee Rizz, Tight Peach.
+- "Morning ritual" / "daily ritual" is the habit message for the weekly box and the landing page.
+- The audience is Paleo Robbie's own customers: health-conscious adults and families, not Gen Z athletes.
+
+**Real food is Paleo Robbie's umbrella value, so every stick leads with real-food ingredients** (all on the Thai beverage positive list):
+
+| Stick | Real-food ingredients | What they do | Honest note |
+|---|---|---|---|
+| Rise & Brine | **Thai sea salt (dok kluea)**, ginger root, pomelo | the salt is the "brine"; ginger for a gentle morning stomach | vitamins B6/B12/C stay as small fortification |
+| Pump It Up | **beetroot powder + watermelon powder**, sea salt | beetroot nitrate + salt = the caffeine-free pump; watermelon is where citrulline was discovered | real watermelon gives only trace citrulline, so the pump comes from **beetroot**. A real dose of watermelon citrulline would take about 1 kg of fruit. That's why this is the 11 kcal stick |
+| Glow Up | **collagen peptides** (fish or bovine), lychee | collagen + vitamin C for skin, joints and tendons | creatine 2.5 g is the one non-food active |
+| Snooze Control | **chamomile flower**, peach | the classic bedtime flower; magnesium + GABA + glycine do the work | GABA is often made by fermenting rice (as in Ajinomoto's Glyna), a real-food story |
+
+**This also simplifies registration.** Using beetroot instead of synthetic L-citrulline keeps Pump It Up entirely on the pre-approved list, with no FDA consultation needed.
 
 ## 2. What Wilder's route allows (Thai FDA positive list, June 2023)
 
@@ -47,7 +66,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 
 | | **Morning** (GLP-1) | **Pre-workout** (caffeine-free pump) | **Post-workout** (adults only) | **Sleep** |
 |---|---|---|---|---|
-| Flavour, name kept for now | Pomelo + ginger · Pomel-Oh! | **Salty Watermelon** · Wet Melon | **Lychee** · **Glow Up** · Lychee Rizz | Peach + chamomile · **Wind Down** · Tight Peach (drink 2–3 h before bed) |
+| **Name · flavour** | **Rise & Brine** · Pomel-Oh! (pomelo + ginger) | **Pump It Up** · Wet Melon (salty watermelon) | **Glow Up** · Lychee Rizz (lychee) | **Snooze Control** · Tight Peach (peach + chamomile; drink 2–3 h before bed) |
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
