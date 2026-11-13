@@ -24,7 +24,7 @@ plan: build our own brand rather than invest in Wilder (Wilder executes well but
 
 ### Decisions, round 7 (2026-11-13)
 
-- **Names: "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control** (flavours Pomel-Oh!, Wet Melon, Lychee Rizz, Tight Peach). Snooze Control is taken 2–3 h before bed.
+- **Names: "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control** (flavours Pomel-Oh!, To The Beet, Lychee Rizz, Calm O' Mile). Snooze Control is taken 2–3 h before bed.
 - **Audience: Paleo Robbie's customers** (health-conscious adults and families), not Gen Z.
 - **Real food is the umbrella value:** Thai sea salt, ginger, beetroot + watermelon (the real-food pump, replacing synthetic citrulline), collagen, chamomile.
 - **Cream backdrop** for renders.

@@ -25,7 +25,7 @@ SKUS = {
                         line="RISE &amp; BRINE", sub="6 ELECTROLYTES + THAI SEA SALT + GINGER",
                         extra="Thai sea salt, ginger, vitamins B6, B12 and C", water=500, bubble=["JUST ADD", "WATER"],
                         note="Kids 4-12: half a stick."),
-    "wet-melon":   dict(name=["WET", "MELON"],   flavour="SALTY WATERMELON", panel="#F7BCC2", icon="melon",
+    "wet-melon":   dict(name=["TO THE", "BEET"], flavour="BEET &amp; SALTY WATERMELON", panel="#F7BCC2", icon="melon",
                         line="PUMP IT UP", sub="6 ELECTROLYTES + REAL BEETROOT &amp; WATERMELON",
                         extra="real beetroot and watermelon, caffeine-free", water=600, bubble=["ONLY", "11 KCAL"],
                         note="Pre-workout. Kids 4-12: half a stick."),
@@ -33,7 +33,7 @@ SKUS = {
                         line="GLOW UP", sub="6 ELECTROLYTES + 2.5 G CREATINE + COLLAGEN",
                         extra="2.5 g creatine, collagen and vitamin C", water=500, bubble=["NO LOADING", "NO BLOAT"],
                         note="Post-workout. Adults only. Max 1 stick a day."),
-    "tight-peach": dict(name=["TIGHT", "PEACH"], flavour="PEACH CHAMOMILE", panel="#F8C6B2", icon="peach",
+    "tight-peach": dict(name=["CALM O'", "MILE"], flavour="CHAMOMILE &amp; PEACH", panel="#F8C6B2", icon="peach",
                         line="SNOOZE CONTROL", sub="6 ELECTROLYTES + GABA + CHAMOMILE FLOWER",
                         extra="magnesium, GABA, glycine and chamomile", water=300, bubble=["2-3 HRS", "BEFORE BED"],
                         note="Drink 2-3 hours before bed, so you sleep through. Kids 4-12: half a stick."),
@@ -106,6 +106,7 @@ def torn_edge(x0, y0, y1, amp=14, step=26):
 
 def front_svg(sku):
     s = SKUS[sku]
+    name_size = min(300, int(1300 / (0.43 * len(" ".join(s["name"])))))
     line_size = min(120, int(880 / (0.47 * len(s["line"].replace("&amp;", "&")))))
     px0, px1 = SEAL, SEAL + 1000          # pink panel
     icon = ICONS[s["icon"]].format(panel=s["panel"])
@@ -121,7 +122,7 @@ def front_svg(sku):
   <text x="{px0 + 480}" y="{W - 70}" font-family="Outfit" font-weight="800" font-size="40" fill="{INK}" letter-spacing="2">1 STICK + {s["water"]} ML</text>
   <text x="{px1 + 70}" y="150" font-family="Anton" font-size="{line_size}" fill="{INK}" letter-spacing="4">{s['line']}</text>
   <text x="{px1 + 70}" y="208" font-family="Outfit" font-weight="500" font-size="36" fill="{DEEP}" letter-spacing="4">{s['sub']}</text>
-  <text x="{px1 + 60}" y="{W - 70}" font-family="Anton" font-size="300" fill="{RED}" letter-spacing="2">{n1}<tspan dx="{0 if n1.endswith('-') else 34}">{n2}</tspan></text>
+  <text x="{px1 + 60}" y="{W - 70}" font-family="Anton" font-size="{name_size}" fill="{RED}" letter-spacing="2">{n1}<tspan dx="{0 if n1.endswith('-') else 34}">{n2}</tspan></text>
   {logo}
   <text x="{SEAL/2}" y="{W/2}" font-family="Outfit" font-weight="800" font-size="30" fill="{DEEP}" text-anchor="middle"
         transform="rotate(-90 {SEAL/2} {W/2})" letter-spacing="3">{s['flavour']}</text>

@@ -19,7 +19,7 @@ the cost check and the "two ingredients, one extra claim" pairings. The salt mat
 
 **The four sticks are sold as "The Daily Ritual": Rise & Brine → Pump It Up → Glow Up → Snooze Control.**
 - Each name is in Paleo Robbie's pun voice, and together they read as one daily cycle: rise, pump, glow, snooze.
-- The cheeky flavour names stay underneath: Pomel-Oh!, Wet Melon, Lychee Rizz, Tight Peach.
+- Flavour names underneath: Pomel-Oh!, **To The Beet**, Lychee Rizz, **Calm O' Mile** (2026-11-13: the two sexual ones replaced with ingredient puns).
 - "Morning ritual" / "daily ritual" is the habit message for the weekly box and the landing page.
 - The audience is Paleo Robbie's own customers: health-conscious adults and families, not Gen Z athletes.
 
@@ -66,7 +66,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 
 | | **Morning** (GLP-1) | **Pre-workout** (caffeine-free pump) | **Post-workout** (adults only) | **Sleep** |
 |---|---|---|---|---|
-| **Name · flavour** | **Rise & Brine** · Pomel-Oh! (pomelo + ginger) | **Pump It Up** · Wet Melon (salty watermelon) | **Glow Up** · Lychee Rizz (lychee) | **Snooze Control** · Tight Peach (peach + chamomile; drink 2–3 h before bed) |
+| **Name · flavour** | **Rise & Brine** · Pomel-Oh! (pomelo + ginger) | **Pump It Up** · **To The Beet** (beet & salty watermelon) | **Glow Up** · Lychee Rizz (lychee) | **Snooze Control** · **Calm O' Mile** (chamomile & peach; drink 2–3 h before bed) |
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
