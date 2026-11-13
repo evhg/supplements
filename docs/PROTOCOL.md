@@ -47,7 +47,7 @@ consultation; that's the "no hassle" path. Source: food.fda.moph.go.th, *Beverag
 
 | | **Morning** (GLP-1) | **Pre-workout** (caffeine-free pump) | **Post-workout** (adults only) | **Sleep** |
 |---|---|---|---|---|
-| Flavour, name kept for now | Pomelo + ginger · Pomel-Oh! | **Salty Watermelon** · Wet Melon | **Lychee** · *Do You Even Lychee?* (§6) | Peach + chamomile · **Wind Down** · Tight Peach (drink 2–3 h before bed) |
+| Flavour, name kept for now | Pomelo + ginger · Pomel-Oh! | **Salty Watermelon** · Wet Melon | **Lychee** · **Glow Up** · Lychee Rizz | Peach + chamomile · **Wind Down** · Tight Peach (drink 2–3 h before bed) |
 | Sodium / potassium | 500 / 300 mg | **900** / 400 mg | 400 / 400 mg | 150 / 300 mg |
 | Magnesium (bisglycinate) | 75 mg | 50 mg | 75 mg | **120 mg** |
 | Calcium / phosphate / chloride | 50 / 30 mg / from salt | 50 / 60 mg / from salt | 50 / 30 mg / from salt | 50 / 30 mg / from salt |
@@ -89,7 +89,8 @@ These pairings give each stick a second, separate benefit to talk about. All wor
 - **Pineapple is Wilder's flavour, so swap it out.** Wilder sells pineapple, strawberry, yuzu, peach and watermelon. Our peach and watermelon overlap too; pomelo and **lychee** are ours alone.
 - **Pre-workout = Salty Watermelon.** Salt (the pump), and watermelon is where citrulline was first discovered. The flavour *is* the formula.
 - **Post-workout = lychee, with a gym-bro meme name.** Lychee is Thai and not Wilder's. Candidates:
-  - **Do You Even Lychee?** (the "do you even lift, bro?" meme). My favourite.
+  - **Chosen: Glow Up · Lychee Rizz** (Gen Z words parents know; fits the time-name + fruit-pun pattern).
+  - Earlier candidates: Do You Even Lychee? (dropped: off-pattern)
   - **Swole Mate**
   - **Bro-Science**
   - **Never Skip Leg Day**
