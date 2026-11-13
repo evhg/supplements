@@ -24,5 +24,57 @@
       "d": 7225,
       "m": 2809
     }
+  },
+  "float-peach-of-mind": {
+    "frames": 72,
+    "aspect": 1,
+    "alpha": true,
+    "sizes": {
+      "d": 1100,
+      "m": 700
+    },
+    "kb": {
+      "d": 2092,
+      "m": 1111
+    }
+  },
+  "float-to-the-beet": {
+    "frames": 72,
+    "aspect": 1,
+    "alpha": true,
+    "sizes": {
+      "d": 1100,
+      "m": 700
+    },
+    "kb": {
+      "d": 2015,
+      "m": 1062
+    }
+  },
+  "float-zest-life": {
+    "frames": 72,
+    "aspect": 1,
+    "alpha": true,
+    "sizes": {
+      "d": 1100,
+      "m": 700
+    },
+    "kb": {
+      "d": 2044,
+      "m": 1082
+    }
+  },
+  "float-calm-o-mile": {
+    "frames": 72,
+    "aspect": 1,
+    "alpha": true,
+    "sizes": {
+      "d": 1100,
+      "m": 700
+    },
+    "kb": {
+      "d": 2056,
+      "m": 1086
+    }
   }
 }
