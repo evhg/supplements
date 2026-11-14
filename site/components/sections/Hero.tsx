@@ -35,6 +35,8 @@ export default function Hero() {
         // the row ends a touch smaller and lower, so the line above it and the lead copy beside it stay clear
         .fromTo(".hero-stage", { scale: 0.92, y: "4vh" }, { scale: () => (window.innerWidth < 760 ? 0.84 : 0.68), y: () => (window.innerWidth < 760 ? "4vh" : "4vh") }, 0)
         .to(".hero-scroll", { autoAlpha: 0, duration: 0.15 }, 0)
+        // the intro copy steps aside as the row forms, so the four sticks never sit under text
+        .to(".hero-lead", { autoAlpha: 0, y: -24, duration: 0.2 }, 0.55)
         .fromTo(".hero-after", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.25 }, 0.72);
     },
     { scope: root },
