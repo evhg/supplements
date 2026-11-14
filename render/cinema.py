@@ -120,28 +120,29 @@ def shot_float(a, sku):
 
 
 # ---------------------------------------------------------------- pour (just add water)
-def glass_material():
-    m = bpy.data.materials.new("glass")
+def _glass(name, ior, rough):
+    """Glass BSDF node rather than Principled transmission: identical in Blender 4.2 (Mac) and 5.x (cloud)."""
+    m = bpy.data.materials.new(name)
     m.use_nodes = True
-    b = m.node_tree.nodes["Principled BSDF"]
-    b.inputs["Base Color"].default_value = (1, 1, 1, 1)
-    b.inputs["Roughness"].default_value = 0.02
-    b.inputs["IOR"].default_value = 1.45
-    b.inputs["Transmission Weight"].default_value = 1.0
-    return m
+    nt = m.node_tree
+    nt.nodes.remove(nt.nodes["Principled BSDF"])
+    g = nt.nodes.new("ShaderNodeBsdfGlass")
+    g.inputs["IOR"].default_value = ior
+    g.inputs["Roughness"].default_value = rough
+    nt.links.new(g.outputs["BSDF"], nt.nodes["Material Output"].inputs["Surface"])
+    return m, g
+
+
+def glass_material():
+    return _glass("glass", 1.45, 0.02)[0]
 
 
 def water_material(col):
-    m = bpy.data.materials.new("water")
-    m.use_nodes = True
+    m, g = _glass("water", 1.33, 0.03)
     nt = m.node_tree
-    b = nt.nodes["Principled BSDF"]
-    b.inputs["Roughness"].default_value = 0.03
-    b.inputs["IOR"].default_value = 1.33
-    b.inputs["Transmission Weight"].default_value = 1.0
     vol = nt.nodes.new("ShaderNodeVolumeAbsorption")
     nt.links.new(vol.outputs["Volume"], nt.nodes["Material Output"].inputs["Volume"])
-    return m, b, vol
+    return m, g, vol
 
 
 def make_glass(r=0.036, h=0.105, wall=0.0022, base=0.006, steps=96):
@@ -162,9 +163,35 @@ def make_glass(r=0.036, h=0.105, wall=0.0022, base=0.006, steps=96):
     me = bpy.data.meshes.new("glass")
     bm.to_mesh(me)
     bm.free()
-    for p in me.polygons:                                   # smooth the walls only; rim and base stay crisp
-        p.use_smooth = p.index % (len(prof) - 1) in (2, 4)
+    # smooth walls, crisp rim and base: mark edges sharper than 30 deg (Blender 4.2 otherwise blends the
+    # wall normals into the rim and the glass renders black on the Mac)
+    me.shade_smooth()
+    me.set_sharp_from_angle(angle=math.radians(30))
     ob = bpy.data.objects.new("glass", me)
+    bpy.context.scene.collection.objects.link(ob)
+    return ob
+
+
+def make_cyclorama(mat, start=0.7, radius=0.3, width=4.0, steps=24):
+    """Floor that curves up into a wall: no horizon line behind the glass."""
+    import bmesh
+    prof = [(-2.0, 0.0), (start, 0.0)]
+    for i in range(1, steps + 1):                      # quarter circle up into the wall
+        t = (math.pi / 2) * i / steps
+        prof.append((start + radius * math.sin(t), radius * (1 - math.cos(t))))
+    prof.append((start + radius, 2.0))
+    bm = bmesh.new()
+    L = [bm.verts.new((-width / 2, y, z)) for y, z in prof]
+    R = [bm.verts.new((width / 2, y, z)) for y, z in prof]
+    for j in range(len(prof) - 1):
+        bm.faces.new((L[j], R[j], R[j + 1], L[j + 1]))
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    me = bpy.data.meshes.new("cyc")
+    bm.to_mesh(me)
+    bm.free()
+    me.shade_smooth()
+    me.materials.append(mat)
+    ob = bpy.data.objects.new("cyc", me)
     bpy.context.scene.collection.objects.link(ob)
     return ob
 
@@ -206,10 +233,11 @@ def shot_pour(a, sku="to-the-beet"):
     ps.particle_size, ps.size_random = 1.0, 0.6
 
     sc.cycles.max_bounces, sc.cycles.transmission_bounces, sc.cycles.volume_bounces = 16, 16, 4
-    sc.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.9
-    for ob in sc.objects:                              # big seamless floor instead of the 4 m plane
+    sc.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.55
+    for ob in list(sc.objects):                        # swap the floor plane for a seamless studio sweep
         if ob.type == "MESH" and ob.name.startswith("Plane") and ob is not emitter:
-            ob.scale = (8, 8, 1)
+            make_cyclorama(ob.data.materials[0])
+            bpy.data.objects.remove(ob, do_unlink=True)
     S.camera((0.0, -0.40, 0.13), (0.018, 0, 0.10), 50)
 
     def pose(f):
@@ -234,7 +262,7 @@ def shot_pour(a, sku="to-the-beet"):
         c = ease((t - 0.32) / 0.5)                     # water tints from clear to beet
         vol.inputs["Density"].default_value = 45.0 * c
         vol.inputs["Color"].default_value = col
-        wb.inputs["Base Color"].default_value = tuple(1 - (1 - x) * c * 0.5 for x in col[:3]) + (1,)
+        wb.inputs["Color"].default_value = tuple(1 - (1 - x) * c * 0.35 for x in col[:3]) + (1,)
     render_seq(sc, a, "pour", update)
 
 
