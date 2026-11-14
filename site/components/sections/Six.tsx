@@ -23,7 +23,6 @@ export default function Six() {
         },
         scrollTrigger: { trigger: ".six-ring", start: "top 70%", end: "center 50%", scrub: 0.5 },
       });
-      gsap.from(".six-copy > *", { y: 50, opacity: 0, stagger: 0.1, duration: 1, ease: "ritual", scrollTrigger: { trigger: ".six-copy", start: "top 80%" } });
     },
     { scope: root },
   );
@@ -31,9 +30,10 @@ export default function Six() {
   return (
     <section id="six" ref={root} className="six" data-bg="#F6EFE4" data-tint="#EBA1BE">
       <div className="six-copy">
-        <p className="eyebrow">Chapter three · What&apos;s inside</p>
         <h2>
-          Six, <em>not three.</em>
+          Six,
+          <br />
+          not <s>three</s>.
         </h2>
         <p className="lead">
           Plenty of hydration mixes stop at sodium, potassium and magnesium. Every Daily Ritual stick carries all six

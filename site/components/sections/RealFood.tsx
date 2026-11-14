@@ -5,12 +5,6 @@ import { useRef } from "react";
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import { REAL_FOOD } from "@/lib/products";
 
-const ZEROS = [
-  { v: "0", k: "g sugar" },
-  { v: "0", k: "caffeine" },
-  { v: "0", k: "artificial colours, flavours or sweeteners" },
-  { v: "4", k: "real-food blends" },
-];
 
 export default function RealFood() {
   const root = useRef<HTMLElement>(null);
@@ -26,8 +20,8 @@ export default function RealFood() {
           gsap.to(rows, { skewX: -v, duration: 0.5, ease: "power3.out", overwrite: true });
         },
       });
-      gsap.from(".food-head > *", { y: 60, opacity: 0, stagger: 0.1, duration: 1.1, ease: "ritual", scrollTrigger: { trigger: ".food-head", start: "top 80%" } });
-      gsap.from(".zero", { y: 80, opacity: 0, rotateX: -70, transformOrigin: "50% 100%", stagger: 0.1, duration: 1, ease: "ritual", scrollTrigger: { trigger: ".zeros", start: "top 85%" } });
+      // the one reveal in this chapter: each "no" lands as you reach it
+      gsap.fromTo(".zeros span", { opacity: 0.12 }, { opacity: 1, stagger: 0.3, ease: "none", scrollTrigger: { trigger: ".zeros", start: "top 85%", end: "bottom 55%", scrub: true } });
       gsap.fromTo(".mq", { rotate: -4 }, { rotate: 3, ease: "none", scrollTrigger: { trigger: root.current, start: "top bottom", end: "bottom top", scrub: true } });
     },
     { scope: root },
@@ -36,11 +30,10 @@ export default function RealFood() {
   return (
     <section id="food" ref={root} className="food" data-bg="#141414" data-fg="#F6EFE4" data-tint="#F2E28E">
       <div className="food-head">
-        <p className="eyebrow">Chapter four · Real food</p>
         <h2>
           Made from food,
           <br />
-          <em>not a lab.</em>
+          not a lab.
         </h2>
         <p className="lead">
           Real food is the reason Paleo Robbie exists. So every stick leads with something you could find in a Thai market:
@@ -67,14 +60,9 @@ export default function RealFood() {
           </div>
         </div>
       </div>
-      <div className="zeros">
-        {ZEROS.map((z) => (
-          <div key={z.k} className="zero">
-            <b>{z.v}</b>
-            <span>{z.k}</span>
-          </div>
-        ))}
-      </div>
+      <p className="zeros">
+        <span>No sugar.</span> <span>No caffeine.</span> <span>No artificial colours, flavours or sweeteners.</span>
+      </p>
     </section>
   );
 }

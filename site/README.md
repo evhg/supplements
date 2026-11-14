@@ -41,3 +41,13 @@ variant GIDs and Storefront token from `.env.example`, set the flag to `true`. `
 to Shopify's `checkoutUrl`.
 
 Prices in `lib/products.ts` are **placeholders** until pricing is signed off.
+
+## Design notes (frontend-design pass, 2026-11-14)
+
+- Everything visual comes from the pack: cream backdrop, the four day colours, PR red and ink, Anton + Outfit (the label faces).
+  Red on the second line of "The Daily / Ritual" and "Start your / ritual" mirrors the label (line name ink, flavour name red).
+- Cut as generic: all-caps chapter eyebrows, single red phrases in headlines, 01–04 panel numbers (the clock already orders the day),
+  middle-dot meta strings, arrows in links, identical shadowed cards with hover tilt, big-number stat tiles, fade-up on every section.
+- One bold thing per chapter, and the scroll set pieces carry the motion. "For you" is four full-width bands in the stick colours;
+  the zeros are one sentence; "Six, not three" crosses out the three.
+- Labels are sentence case. Pour steps keep 1-2-3 because they are a real sequence.

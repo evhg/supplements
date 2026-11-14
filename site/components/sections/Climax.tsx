@@ -45,8 +45,6 @@ export default function Climax() {
         .from(split.chars, { yPercent: 120, stagger: 0.012, duration: 0.25, ease: "power3.out" }, 0.05)
         .fromTo(".climax-title", { scale: 1.25 }, { scale: 0.9, duration: 1 }, 0)
         .fromTo(".climax-sub", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.15 }, 0.78);
-
-      gsap.from(".pack", { y: 100, opacity: 0, stagger: 0.12, duration: 1.1, ease: "ritual", scrollTrigger: { trigger: ".packs", start: "top 85%" } });
     },
     { scope: root },
   );
@@ -76,7 +74,7 @@ export default function Climax() {
           <div className="pack-body">
             <h3>{weekly.title}</h3>
             <p className="pack-sub">
-              {weekly.sticks} sticks · {weekly.sub}
+              {weekly.sub}
             </p>
             <ul className="pack-days">
               {STICKS.map((s) => (
@@ -101,7 +99,7 @@ export default function Climax() {
           <span className="pack-badge">{sampler.badge}</span>
           <h3>{sampler.title}</h3>
           <p className="pack-sub">
-            {sampler.sticks} sticks · {sampler.sub}
+            {sampler.sub}
           </p>
           <p className="pack-copy">Not sure where to start? Three days of each stick, to find the one your day was missing.</p>
           <div className="pack-buy">

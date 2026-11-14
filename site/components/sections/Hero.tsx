@@ -52,7 +52,6 @@ export default function Hero() {
       </div>
 
       <div className="hero-lead">
-        <p className="eyebrow">Paleo Robbie · New</p>
         <p className="lead">
           Four sticks for the four parts of your day. <strong>All 6 electrolytes</strong>, real food, zero sugar.
         </p>

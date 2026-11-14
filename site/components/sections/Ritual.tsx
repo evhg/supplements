@@ -108,7 +108,6 @@ export default function Ritual() {
 
       <div className="ritual-track">
         <article className="r-intro">
-          <p className="eyebrow r-reveal">Chapter two · The day</p>
           <h2 className="r-reveal">
             One stick for
             <br />
@@ -120,16 +119,16 @@ export default function Ritual() {
             Each one owns one thing: <b>clarity</b>, <b>performance</b>, <b>glow</b>, <b>sleep</b>. All four carry all six
             electrolytes. Together they make the ritual.
           </p>
-          <p className="r-reveal r-hint">Keep scrolling: the sun is coming up →</p>
+          <p className="r-reveal r-hint">Keep scrolling. The sun is coming up.</p>
         </article>
 
-        {STICKS.map((s, i) => (
+        {STICKS.map((s) => (
           <article key={s.id} className="r-panel" style={{ "--panel": s.panel, "--deep": s.deep } as React.CSSProperties}>
             <span className="r-watermark" aria-hidden>
               {s.trend}
             </span>
             <div className="r-visual">
-              <SequenceCanvas mode="loop" shot={`float-${s.id}`} fallback={`/img/hero-${s.id}-1200.webp`} alt={`${s.line} · ${s.name} stick`} blend />
+              <SequenceCanvas mode="loop" shot={`float-${s.id}`} fallback={`/img/hero-${s.id}-1200.webp`} alt={`${s.line}, ${s.name} stick`} blend />
             </div>
             <div className="r-copy">
               <p className="r-time r-reveal">
@@ -167,9 +166,6 @@ export default function Ritual() {
               </div>
               <p className="r-note r-reveal">{s.note}</p>
             </div>
-            <span className="r-index" aria-hidden>
-              0{i + 1}
-            </span>
           </article>
         ))}
       </div>

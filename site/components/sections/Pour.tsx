@@ -41,7 +41,6 @@ export default function Pour() {
   return (
     <section id="pour" ref={root} className="pour" data-bg="#EFE6DC" data-tint="#EBA1BE">
       <div className="pour-copy">
-        <p className="eyebrow">Chapter five · The ritual itself</p>
         <h2 className="pour-title">
           <span className="m"><span className="w">Just</span></span> <span className="m"><span className="w">add</span></span>{" "}
           <span className="m"><span className="w">water.</span></span>

@@ -169,7 +169,7 @@ export const PACKS: Pack[] = [
   {
     id: "weekly",
     title: "The Weekly Ritual",
-    sub: "7 days × all 4 sticks",
+    sub: "28 sticks: all four, every day for a week",
     sticks: 28,
     price: 1290,
     badge: "The full day",
@@ -178,7 +178,7 @@ export const PACKS: Pack[] = [
   {
     id: "sampler",
     title: "The Sampler",
-    sub: "3 of each stick",
+    sub: "12 sticks: three of each",
     sticks: 12,
     price: 590,
     badge: "Try them all",
@@ -186,8 +186,8 @@ export const PACKS: Pack[] = [
   },
   ...STICKS.map<Pack>((s) => ({
     id: s.id,
-    title: `${s.line} · ${s.name}`,
-    sub: `30 sticks · ${s.flavour}`,
+    title: `${s.line}: ${s.name}`,
+    sub: `30 sticks of ${s.flavour.toLowerCase()}`,
     sticks: 30,
     price: s.id === "zest-life" ? 1490 : 1290,
     image: `/img/hero-${s.id}-1200.webp`,
