@@ -7,7 +7,18 @@
       "mcp__Parallel_Search__web_search",
       "mcp__Parallel_Search__web_fetch",
       "WebFetch",
-      "WebSearch"
+      "WebSearch",
+      "mcp__Vercel__list_teams",
+      "mcp__Vercel__list_projects",
+      "mcp__Vercel__get_project",
+      "mcp__Vercel__list_deployments",
+      "mcp__Vercel__get_deployment",
+      "mcp__Vercel__list_deployment_events",
+      "mcp__Vercel__get_runtime_logs",
+      "mcp__Vercel__get_runtime_errors",
+      "mcp__Vercel__web_fetch_vercel_url",
+      "mcp__Vercel__get_access_to_vercel_url",
+      "mcp__Vercel__create_deployment"
     ]
   }
 }
