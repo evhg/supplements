@@ -15,9 +15,6 @@ export default function Hero() {
   const seq = useRef<SequenceHandle>(null);
   const { ask } = useNotify();
   const manifest = useManifest();
-  // until the fronts-only "arrive" render lands, play the second half of the older sequence (fronts already turning in)
-  const arrive = manifest && manifest.arrive;
-  const shot = arrive ? "arrive" : "assemble";
 
   useGSAP(
     () => {
@@ -76,12 +73,10 @@ export default function Hero() {
       <div className="hero-stage">
         {manifest && (
           <SequenceCanvas
-            key={shot}
             ref={seq}
-            shot={shot}
+            shot="arrive"
             mode="once"
             eager
-            range={arrive ? [0, 1] : [0.52, 1]}
             poster="/img/hero-poster.webp"
             fallback="/img/hero-poster.webp"
             alt="The four Daily Ritual sticks: Rise & Brine, Pump It Up, Glow Up and Snooze Control"
