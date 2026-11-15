@@ -58,6 +58,8 @@ export default function Ritual() {
             const cs = getComputedStyle(pn);
             const room = pn.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
             const k = Math.min(1, room / copy.scrollHeight);
+            // an over-tall block is laid out from the top of the panel's content box, so shrink it from there
+            copy.style.transformOrigin = k < 1 ? "left top" : "";
             if (k < 1) copy.style.transform = `scale(${k.toFixed(3)})`;
           });
         fit();
