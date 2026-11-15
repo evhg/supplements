@@ -17,8 +17,9 @@ const OUT = path.join(ROOT, "site", "public", "seq");
 // desktop (d) is sized for a 5K display at ~half the viewport, mobile (m) for a 1320 px wide iPhone screen
 const SIZES = {
   assemble: { d: 1800, m: 1000 },
+  arrive: { d: 2048, m: 1000 },
   pour: { d: 1800, m: 1000 },
-  float: { d: 1100, m: 700 },
+  float: { d: 1100, m: 520 },   // portrait frames: these are widths (height is double)
 };
 
 const shots = process.argv.slice(2).length
@@ -35,6 +36,7 @@ for (const shot of shots) {
   let bytes = { d: 0, m: 0 };
   for (const [key, width] of Object.entries(sizes)) {
     const dir = path.join(OUT, shot, key);
+    fs.rmSync(dir, { recursive: true, force: true });   // frame counts change between jobs
     fs.mkdirSync(dir, { recursive: true });
     for (const [i, f] of frames.entries()) {
       const out = path.join(dir, String(i + 1).padStart(4, "0") + ".webp");

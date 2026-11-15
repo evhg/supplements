@@ -9,10 +9,12 @@ Cloud test (CPU, pip bpy):
     python3 render/cinema.py --shot assemble --samples 4 --res 320 --frames 1,60,120
 
 Shots (PNG RGBA per frame into render/seq/<shot>/####.png):
-  assemble          120 frames, transparent: the four sticks spin from a stacked back-view into a front-facing row
-  float-<sku>        72 frames, transparent, seamless loop: one stick upright, gentle sway and bob
-  pour              120 frames, cream backdrop: To The Beet tilts and pours powder into a glass of water that turns beet-pink
-Options: --shot assemble|float|pour|all  --frames a,b,c (render only these, for tests)
+  arrive             72 frames, transparent: a hand of four FRONTS rises and spreads into the row (the hero)
+  float-<sku>        48 frames, transparent PORTRAIT (res/2 x res), seamless loop: one stick upright, gentle sway
+  pour              120 frames, studio sweep: To The Beet pours from the left (name upright), water turns beet-pink, stick leaves
+  stills            transparent PNGs with soft shadow into render/out/site: lay-<sku> x4, pack-weekly, pack-sampler
+  assemble          (superseded by arrive) back-view stack spinning into the row
+Options: --shot arrive|float|pour|stills|all  --frames a,b,c (render only these, for tests)
 """
 import argparse, math, os, sys
 
@@ -104,18 +106,46 @@ def shot_assemble(a):
     render_seq(sc, a, "assemble", update)
 
 
-# ---------------------------------------------------------------- float (one per stick)
-def shot_float(a, sku):
+# ---------------------------------------------------------------- arrive (hero, fronts only)
+def shot_arrive(a):
+    """The landing page's opening beat: a tight hand of four FRONTS rises and spreads into the row.
+    No back face is ever shown (the back label still carries placeholder text). Ends on assemble's last frame."""
     sc = setup(a)
     sc.frame_start, sc.frame_end = 1, 72
-    ob = S.make_stick(sku)
-    S.camera((0.0, -0.36, 0.01), (0, 0, 0.0), 70)
+    sticks = [S.make_stick(k) for k in S.SKUS]
+    gap = 0.046
+    end_x = [(-1.5 + i) * gap for i in range(4)]
+    S.camera((0.0, -0.37, 0.010), (0, 0, 0.0), 70)
 
     def update(f):
-        ph = 2 * math.pi * (f - 1) / 72
-        ob.location = (0, 0, 0.004 * math.sin(ph))
-        ob.rotation_euler = (UPRIGHT + math.radians(4 * math.sin(ph + 1.0)), math.radians(3 * math.sin(ph)),
-                             math.radians(28 * math.sin(ph)))
+        t = (f - 1) / 71
+        for i, ob in enumerate(sticks):
+            c = i - 1.5
+            k = ease((t - (3 - i) * 0.05) / 0.80)          # right stick leads, like dealing a hand
+            x = end_x[i] * (0.34 + 0.66 * k)
+            z = -0.010 * (1 - k) - 0.003 * abs(c) * (1 - k)
+            y = 0.004 * c * (1 - k)                          # depth order while they overlap
+            roll = math.radians(-9.0 * c * (1 - k) - 1.2 * c * k)
+            yaw = math.radians(-16 * c * (1 - k))            # a little turn outward, fronts stay readable
+            ob.location = (x, y, z)
+            ob.rotation_euler = (UPRIGHT, roll, yaw)
+    render_seq(sc, a, "arrive", update)
+
+
+# ---------------------------------------------------------------- float (one per stick, portrait)
+def shot_float(a, sku):
+    """Portrait frame (width = res / 2) with the stick filling about 85% of the height, so it stays sharp at 5K."""
+    sc = setup(a)
+    sc.render.resolution_x = a.res // 2
+    sc.frame_start, sc.frame_end = 1, 48
+    ob = S.make_stick(sku)
+    S.camera((0.0, -0.315, 0.004), (0, 0, 0.0), 70)
+
+    def update(f):
+        ph = 2 * math.pi * (f - 1) / 48
+        ob.location = (0, 0, 0.003 * math.sin(ph))
+        ob.rotation_euler = (UPRIGHT + math.radians(3 * math.sin(ph + 1.0)), math.radians(2.5 * math.sin(ph)),
+                             math.radians(22 * math.sin(ph)))
     render_seq(sc, a, f"float-{sku}", update)
 
 
@@ -199,7 +229,7 @@ def make_cyclorama(mat, start=0.7, radius=0.3, width=4.0, steps=24):
 def shot_pour(a, sku="to-the-beet"):
     sc = setup(a, transparent=False, keep_floor=True)
     sc.frame_start, sc.frame_end = 1, 120
-    col = S.hex_rgb("#C2185B")                        # beet juice tone, deeper than the pack panel
+    col = S.hex_rgb("#D2356F")                        # beet juice tone, deeper than the pack panel
 
     glass = make_glass()
     glass.data.materials.append(glass_material())
@@ -211,7 +241,7 @@ def shot_pour(a, sku="to-the-beet"):
     water.data.materials.append(wm)
 
     stick = S.make_stick(sku)
-    end_a, end_b = Vector((0.050, 0.0, 0.205)), Vector((0.006, 0.0, 0.128))   # path of the stick's open end
+    end_a, end_b = Vector((-0.050, 0.0, 0.205)), Vector((-0.006, 0.0, 0.128))  # path of the stick's open end (from the left)
     half = 0.069
 
     # powder: a particle emitter at the stick's open end
@@ -233,21 +263,23 @@ def shot_pour(a, sku="to-the-beet"):
     ps.particle_size, ps.size_random = 1.0, 0.6
 
     sc.cycles.max_bounces, sc.cycles.transmission_bounces, sc.cycles.volume_bounces = 16, 16, 4
-    sc.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.55
+    sc.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.42
+    sc.view_settings.exposure = -1.0                   # the sweep read blown-out white at -0.35
     for ob in list(sc.objects):                        # swap the floor plane for a seamless studio sweep
         if ob.type == "MESH" and ob.name.startswith("Plane") and ob is not emitter:
             make_cyclorama(ob.data.materials[0])
             bpy.data.objects.remove(ob, do_unlink=True)
-    S.camera((0.0, -0.40, 0.13), (0.018, 0, 0.10), 50)
+    S.camera((0.0, -0.40, 0.125), (-0.020, 0, 0.098), 60)
 
     def pose(f):
         t = (f - 1) / 119
         k = ease(t / 0.24)                             # tilt in (frames 1-29)
-        th = math.radians(-20 - 105 * k)               # about the camera axis: top swings down-left
+        th = math.radians(20 + 105 * k)                # top swings down-right, so the name reads upright
         end = end_a.lerp(end_b, k)
         d = Vector((math.sin(th), 0, math.cos(th)))
-        stick.location = end - d * half
-        stick.rotation_euler = (UPRIGHT, th, 0)
+        away = ease((t - 0.70) / 0.22)                 # empty stick lifts out of frame while the drink settles
+        stick.location = end - d * half + Vector((-0.11, 0, 0.13)) * away
+        stick.rotation_euler = (UPRIGHT, th - math.radians(25) * away, 0)
         emitter.location = end + d * 0.004
         emitter.rotation_euler = (0, th, 0)              # plane normal = pour direction
 
@@ -260,16 +292,67 @@ def shot_pour(a, sku="to-the-beet"):
     def update(f):
         t = (f - 1) / 119
         c = ease((t - 0.32) / 0.5)                     # water tints from clear to beet
-        vol.inputs["Density"].default_value = 45.0 * c
+        vol.inputs["Density"].default_value = 24.0 * c  # a light beet pink you can see through, not syrup
         vol.inputs["Color"].default_value = col
         wb.inputs["Color"].default_value = tuple(1 - (1 - x) * c * 0.35 for x in col[:3]) + (1,)
     render_seq(sc, a, "pour", update)
 
 
+# ---------------------------------------------------------------- stills for the shop (transparent, soft shadow)
+def _still(a, name, build, cam, res_xy):
+    """Top-down product still on a shadow-catcher floor: transparent PNG into render/out/site/<name>.png."""
+    sc = setup(a, transparent=True, keep_floor=True)
+    for ob in sc.objects:
+        if ob.type == "MESH" and ob.name.startswith("Plane"):
+            ob.is_shadow_catcher = True
+    build()
+    S.camera(*cam)
+    sc.render.resolution_x, sc.render.resolution_y = res_xy
+    out = os.path.join(HERE, "out", "site")
+    os.makedirs(out, exist_ok=True)
+    sc.render.filepath = os.path.join(out, f"{name}.png")
+    bpy.ops.render.render(write_still=True)
+    print("wrote", sc.render.filepath)
+
+
+def shot_stills(a):
+    r = a.res
+    only = set(a.frames.split(",")) if a.frames else None     # --frames lay-zest-life,pack-sampler to pick
+
+    def want(n):
+        return only is None or n in only
+
+    for sku in S.SKUS:                                 # one stick lying down, name reading left to right
+        if want(f"lay-{sku}"):
+            _still(a, f"lay-{sku}", lambda sku=sku: S.place(S.make_stick(sku), 0, 0, -97),
+                   ((0.0, -0.085, 0.335), (0, 0, 0), 85), (r, int(r * 0.42)))
+
+    def weekly():
+        spots = [(-0.057, 0.006, 10), (-0.019, -0.004, 3), (0.019, 0.003, -4), (0.057, 0.007, -11)]
+        for sku, (x, y, rot) in zip(S.SKUS, spots):
+            S.place(S.make_stick(sku), x, y, rot)
+    if want("pack-weekly"):
+        _still(a, "pack-weekly", weekly, ((0.0, -0.235, 0.385), (0, 0, 0), 68), (r, int(r * 0.8)))
+
+    def sampler():                                     # three of each, dealt as four small fans
+        for i, sku in enumerate(S.SKUS):
+            cx = (i - 1.5) * 0.050
+            for j in range(3):
+                ob = S.make_stick(sku)
+                S.place(ob, cx + (j - 1) * 0.011, 0.004 * (1 - abs(j - 1)) - 0.002 * j, (1 - j) * 9 + (1.5 - i) * 2)
+                ob.location.z += 0.0042 * j            # stack order: last one on top
+    if want("pack-sampler"):
+        _still(a, "pack-sampler", sampler, ((0.0, -0.20, 0.44), (0, 0.002, 0), 68), (r, int(r * 0.8)))
+
+
 if __name__ == "__main__":
     a = args()
-    if a.shot in ("all", "assemble"):
+    if a.shot == "assemble":                              # superseded by "arrive"; kept for reference
         shot_assemble(a)
+    if a.shot in ("all", "arrive"):
+        shot_arrive(a)
+    if a.shot in ("all", "stills"):
+        shot_stills(a)
     if a.shot in ("all", "float"):
         for k in S.SKUS:
             shot_float(a, k)
