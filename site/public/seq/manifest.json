@@ -26,55 +26,55 @@
     }
   },
   "float-peach-of-mind": {
-    "frames": 72,
-    "aspect": 1,
+    "frames": 48,
+    "aspect": 0.5,
     "alpha": true,
     "sizes": {
       "d": 1100,
-      "m": 700
+      "m": 520
     },
     "kb": {
-      "d": 2092,
-      "m": 1111
+      "d": 3110,
+      "m": 1324
     }
   },
   "float-to-the-beet": {
-    "frames": 72,
-    "aspect": 1,
+    "frames": 48,
+    "aspect": 0.5,
     "alpha": true,
     "sizes": {
       "d": 1100,
-      "m": 700
+      "m": 520
     },
     "kb": {
-      "d": 2015,
-      "m": 1062
+      "d": 2970,
+      "m": 1271
     }
   },
   "float-zest-life": {
-    "frames": 72,
-    "aspect": 1,
+    "frames": 48,
+    "aspect": 0.5,
     "alpha": true,
     "sizes": {
       "d": 1100,
-      "m": 700
+      "m": 520
     },
     "kb": {
-      "d": 2044,
-      "m": 1082
+      "d": 3057,
+      "m": 1292
     }
   },
   "float-calm-o-mile": {
-    "frames": 72,
-    "aspect": 1,
+    "frames": 48,
+    "aspect": 0.5,
     "alpha": true,
     "sizes": {
       "d": 1100,
-      "m": 700
+      "m": 520
     },
     "kb": {
-      "d": 2056,
-      "m": 1086
+      "d": 3085,
+      "m": 1303
     }
   },
   "arrive": {
