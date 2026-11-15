@@ -23,10 +23,13 @@ export default function Hero() {
     () => {
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (reduce) return;
-      gsap.set(".hero-copy > *, .hero-chant", { autoAlpha: 0, y: 26 });
+      // resolve the elements now: `go` runs later from the curtain's timeline, where selectors are scoped to the curtain
+      const copy = gsap.utils.toArray<HTMLElement>(".hero-copy > *");
+      const chant = root.current!.querySelector(".hero-chant");
+      gsap.set([...copy, chant], { autoAlpha: 0, y: 26 });
       const go = () => {
-        gsap.to(".hero-copy > *", { autoAlpha: 1, y: 0, duration: 0.9, stagger: 0.09, ease: "ritual", delay: 0.15 });
-        gsap.to(".hero-chant", { autoAlpha: 1, y: 0, duration: 0.9, ease: "ritual", delay: 1.1 });
+        gsap.to(copy, { autoAlpha: 1, y: 0, duration: 0.9, stagger: 0.09, ease: "ritual", delay: 0.15 });
+        gsap.to(chant, { autoAlpha: 1, y: 0, duration: 0.9, ease: "ritual", delay: 1.1 });
       };
       if (document.documentElement.classList.contains("intro-done")) go();
       else window.addEventListener("intro-done", go, { once: true });

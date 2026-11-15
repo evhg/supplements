@@ -512,10 +512,11 @@ h2 {
   color: var(--red);
 }
 .heat-sub {
-  margin: 0.9em auto 0;
-  max-width: 36ch;
-  font-size: var(--t-lead);
-  line-height: 1.35;
+  margin: 0.7em auto 0;
+  max-width: 34ch;
+  font-size: clamp(19px, 1.5vw + 8px, 48px);
+  font-weight: 500;
+  line-height: 1.3;
 }
 .heat-end {
   display: grid;
@@ -1787,6 +1788,7 @@ h2 {
   .heat-sub { font-size: 18px; }
 
   .r-intro h2 { font-size: 12.4vw; }
+  .r-intro h2 br { display: none; }
   .r-name { font-size: 14.6vw; }
   .r-line { font-size: 7.4vw; }
   .r-pairs { grid-template-columns: 1fr; }
@@ -1860,7 +1862,7 @@ h2 {
 
   .packs-grid { grid-template-columns: 1fr; }
   .pack-pic { aspect-ratio: 16 / 10; }
-  .pack-buy .btn { flex: 1 1 160px; }
+  .pack-buy .btn { flex: 1 1 100%; }
   .packs-notify { box-shadow: inset 0 0 0 2px var(--ink); }
   .notify-row .btn { flex: 1 1 100%; }
 
