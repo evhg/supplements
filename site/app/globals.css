@@ -433,7 +433,7 @@ h2 {
 .hero-stage {
   position: relative;
   justify-self: center;
-  width: min(100%, 84svh);
+  width: min(100%, 64svh);
   aspect-ratio: 1;
 }
 .hero-stage .seq,
@@ -613,7 +613,7 @@ h2 {
   grid-template-columns: 0.78fr 1fr;
   align-items: center;
   gap: 2vw;
-  padding: calc(var(--ribbon) + 16vh) var(--gutter) 4vh;
+  padding: calc(var(--ribbon) + 12vh) var(--gutter) 3vh;
 }
 .r-word {
   position: absolute;
@@ -637,6 +637,7 @@ h2 {
 .r-copy {
   position: relative;
   z-index: 1;
+  transform-origin: left center;
   max-width: min(46vw, 1120px);
   display: grid;
   gap: clamp(8px, 1.5vh, 22px);

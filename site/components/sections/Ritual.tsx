@@ -50,6 +50,19 @@ export default function Ritual() {
           panels.forEach((pn, i) => f > i + 0.45 && pn.classList.add("seen"));
         };
 
+        // short laptop screens: shrink a panel's copy as a block until it fits, so the note and button are never cut off
+        const fit = () =>
+          panels.forEach((pn) => {
+            const copy = pn.querySelector<HTMLElement>(".r-copy")!;
+            copy.style.transform = "";
+            const cs = getComputedStyle(pn);
+            const room = pn.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+            const k = Math.min(1, room / copy.scrollHeight);
+            if (k < 1) copy.style.transform = `scale(${k.toFixed(3)})`;
+          });
+        fit();
+        ScrollTrigger.addEventListener("refreshInit", fit);
+
         const tl = gsap.timeline({
           onUpdate: onMove,
           scrollTrigger: { trigger: el, start: "top top", end: () => "+=" + window.innerHeight * TOTAL, pin: true, scrub: 0.25, invalidateOnRefresh: true },
@@ -60,6 +73,10 @@ export default function Ritual() {
         });
         tl.to({}, { duration: TAIL });
         onMove();
+        return () => {
+          ScrollTrigger.removeEventListener("refreshInit", fit);
+          panels.forEach((pn) => (pn.querySelector<HTMLElement>(".r-copy")!.style.transform = ""));
+        };
       });
 
       mm.add(`not all and ${CINEMA}`, () => {
