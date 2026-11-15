@@ -28,9 +28,9 @@ export default function Heat() {
           defaults: { ease: "power2.out" },
           scrollTrigger: { trigger: el, start: "top top", end: "+=230%", pin: true, scrub: 0.3 },
         });
-        // each beat: hold still, then cross over to the next (out and in overlap, so no frame is empty)
+        // each beat: hold still, then hand over to the next. One leaves before the other arrives, so two lines never share the spot
         const cross = (i: number, at: number) =>
-          tl.to(beats[i], { autoAlpha: 0, y: -40, duration: 0.3, ease: "power2.in" }, at).to(beats[i + 1], { autoAlpha: 1, y: 0, duration: 0.3 }, at + 0.12);
+          tl.to(beats[i], { autoAlpha: 0, y: -40, duration: 0.2, ease: "power2.in" }, at).to(beats[i + 1], { autoAlpha: 1, y: 0, duration: 0.3 }, at + 0.2);
         cross(0, 1.0);
         cross(1, 2.3);
         tl.to(n, { v: 34, duration: 0.5, ease: "power1.out", onUpdate: () => count(n.v) }, 2.42);
