@@ -1,83 +1,99 @@
 "use client";
-// Chapter 1: the promise. Pinned; scrolling spins the four sticks from a stack into a row (Blender "assemble"),
-// while the headline splits apart around them.
-import { useRef } from "react";
+// Chapter 1: what it is, who it's from, why you'd want it, in one screen. Not pinned.
+// The page's one orchestrated entrance: as the curtain lifts, a hand of four pack fronts is dealt into a row
+// (Blender "arrive" sequence, played once) while the copy steps in beside it.
+import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { gsap, SplitText, useGSAP } from "@/lib/gsap";
-import SequenceCanvas, { type SequenceHandle } from "../SequenceCanvas";
+import { gsap, useGSAP } from "@/lib/gsap";
+import { CHECKOUT_LIVE } from "@/lib/products";
+import { useNotify } from "@/lib/notify";
+import SequenceCanvas, { type SequenceHandle, useManifest } from "../SequenceCanvas";
 import { scrollToId } from "../SmoothScroll";
 
 export default function Hero() {
   const root = useRef<HTMLElement>(null);
   const seq = useRef<SequenceHandle>(null);
+  const { ask } = useNotify();
+  const manifest = useManifest();
+  // until the fronts-only "arrive" render lands, play the second half of the older sequence (fronts already turning in)
+  const arrive = manifest && manifest.arrive;
+  const shot = arrive ? "arrive" : "assemble";
 
   useGSAP(
     () => {
-      const split = SplitText.create(".hero-title .l", { type: "chars", mask: "chars" });
-      // entrance, after the intro curtain
-      gsap.from(split.chars, { yPercent: 110, duration: 1.1, stagger: 0.03, ease: "ritual", delay: 2.6 });
-      gsap.from(".hero-stage", { scale: 1.25, autoAlpha: 0, duration: 1.8, ease: "ritual", delay: 2.5 });
-      gsap.from(".hero-lead > *", { y: 30, autoAlpha: 0, duration: 1, stagger: 0.1, ease: "ritual", delay: 3.1 });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: "top top",
-          end: "+=170%",
-          pin: true,
-          scrub: 0.6,
-          onUpdate: (st) => seq.current?.setProgress(Math.min(1, st.progress / 0.85)),
-        },
-        defaults: { ease: "none" },
-      });
-      tl.to(".hero-title .l1", { xPercent: -18, opacity: 0.07 }, 0)
-        .to(".hero-title .l2", { xPercent: 18, opacity: 0.07 }, 0)
-        // the row ends a touch smaller and lower, so the line above it and the lead copy beside it stay clear
-        .fromTo(".hero-stage", { scale: 0.92, y: "4vh" }, { scale: () => (window.innerWidth < 760 ? 0.84 : 0.68), y: () => (window.innerWidth < 760 ? "4vh" : "4vh") }, 0)
-        .to(".hero-scroll", { autoAlpha: 0, duration: 0.15 }, 0)
-        // the intro copy steps aside as the row forms, so the four sticks never sit under text
-        .to(".hero-lead", { autoAlpha: 0, y: -24, duration: 0.2 }, 0.55)
-        .fromTo(".hero-after", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.25 }, 0.72);
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduce) return;
+      gsap.set(".hero-copy > *, .hero-chant", { autoAlpha: 0, y: 26 });
+      const go = () => {
+        gsap.to(".hero-copy > *", { autoAlpha: 1, y: 0, duration: 0.9, stagger: 0.09, ease: "ritual", delay: 0.15 });
+        gsap.to(".hero-chant", { autoAlpha: 1, y: 0, duration: 0.9, ease: "ritual", delay: 1.1 });
+      };
+      if (document.documentElement.classList.contains("intro-done")) go();
+      else window.addEventListener("intro-done", go, { once: true });
+      return () => window.removeEventListener("intro-done", go);
     },
     { scope: root },
   );
 
+  // deal the sticks once the curtain lifts and the first frames are in
+  useEffect(() => {
+    if (!manifest) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let tries = 0;
+    const play = () => {
+      if (seq.current?.ready()) seq.current.play(1.6);
+      else if (tries++ < 40) setTimeout(play, 80);
+    };
+    if (document.documentElement.classList.contains("intro-done")) play();
+    else window.addEventListener("intro-done", play, { once: true });
+    return () => window.removeEventListener("intro-done", play);
+  }, [manifest]);
+
   return (
-    <section id="top" ref={root} className="hero" data-bg="#F6EFE4" data-tint="#F7BFA0">
-      <h1 className="hero-title" aria-label="The Daily Ritual">
-        <span className="l l1">The Daily</span>
-        <span className="l l2">Ritual</span>
-      </h1>
-
-      <div className="hero-stage">
-        <SequenceCanvas ref={seq} shot="assemble" fallback="/img/trio-2400.webp" alt="The four Daily Ritual sticks" blend />
-      </div>
-
-      <div className="hero-lead">
+    <section id="top" ref={root} className="hero">
+      <div className="hero-copy">
+        <p className="hero-from">
+          New from Paleo Robbie <span>The Daily Ritual</span>
+        </p>
+        <h1>Bangkok is thirsty work.</h1>
         <p className="lead">
-          Four sticks for the four parts of your day. <strong>All 6 electrolytes</strong>, real food, zero sugar.
+          Four electrolyte drinks, one for each part of your day. From Paleo Robbie, with real-food ingredients, no caffeine, no
+          added sugar and no weird stuff.
         </p>
         <div className="row">
-          <motion.button className="btn" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} onClick={() => scrollToId("shop")}>
-            Start your ritual
+          <motion.button className="btn btn-red" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }} onClick={() => (CHECKOUT_LIVE ? scrollToId("packs") : ask())}>
+            {CHECKOUT_LIVE ? "Choose your sticks" : "Tell me when it lands"}
           </motion.button>
-          <motion.button className="btn btn-ghost" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} onClick={() => scrollToId("ritual")}>
-            See the day
+          <motion.button className="btn btn-ghost" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }} onClick={() => scrollToId("ritual")}>
+            Meet the four
           </motion.button>
         </div>
       </div>
 
-      <p className="hero-after">
-        Rise. Pump. Glow. Snooze.
-        <span>One stick for each, every day.</span>
-      </p>
-
-      <div className="hero-scroll" aria-hidden>
-        <span>Scroll</span>
-        <svg viewBox="0 0 2 60" width="2" height="60">
-          <line x1="1" y1="0" x2="1" y2="60" />
-        </svg>
+      <div className="hero-stage">
+        {manifest && (
+          <SequenceCanvas
+            key={shot}
+            ref={seq}
+            shot={shot}
+            mode="once"
+            eager
+            range={arrive ? [0, 1] : [0.52, 1]}
+            poster="/img/hero-poster.webp"
+            fallback="/img/hero-poster.webp"
+            alt="The four Daily Ritual sticks: Rise & Brine, Pump It Up, Glow Up and Snooze Control"
+          />
+        )}
+        {!manifest && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="hero-poster" src="/img/hero-poster.webp" alt="The four Daily Ritual sticks" fetchPriority="high" />
+        )}
       </div>
+
+      <p className="hero-chant">
+        Rise. Pump. Glow. Snooze.
+        <span>Morning, before you sweat, the evening, and bedtime. Drink the ones that fit your day.</span>
+      </p>
     </section>
   );
 }

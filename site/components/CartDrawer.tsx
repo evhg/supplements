@@ -1,8 +1,10 @@
 "use client";
+// The bag. Only reachable once checkout is live; before launch every buy button opens the waiting list instead.
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
 import { useCart } from "@/lib/cart";
-import { baht, CHECKOUT_LIVE } from "@/lib/products";
+import { baht } from "@/lib/products";
+import Still from "./Still";
 
 export default function CartDrawer() {
   const { lines, total, open, setOpen, setQty, checkout, busy, error, count } = useCart();
@@ -21,7 +23,7 @@ export default function CartDrawer() {
     <AnimatePresence>
       {open && (
         <>
-          <motion.div className="drawer-scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(false)} />
+          <motion.div className="scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(false)} />
           <motion.aside
             className="drawer"
             role="dialog"
@@ -33,18 +35,19 @@ export default function CartDrawer() {
             data-lenis-prevent
           >
             <header>
-              <h2>Your ritual</h2>
+              <h2>Your bag</h2>
               <button className="x" onClick={() => setOpen(false)} aria-label="Close bag">
                 ×
               </button>
             </header>
-            {!lines.length && <p className="drawer-empty">Your bag is empty. The day starts at 07:00.</p>}
+            {!lines.length && <p className="drawer-empty">Nothing in here yet. Mornings start with Rise & Brine.</p>}
             <motion.ul layout className="drawer-lines">
               <AnimatePresence initial={false}>
                 {lines.map((l) => (
                   <motion.li key={l.id} layout initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40, height: 0 }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={l.pack.image} alt="" />
+                    <span className="drawer-thumb" style={{ background: l.pack.color }}>
+                      <Still base={l.pack.image} fallback="/img/trio-1200.webp" alt="" />
+                    </span>
                     <div>
                       <b>{l.pack.title}</b>
                       <small>{l.pack.sticks} sticks</small>
@@ -64,21 +67,13 @@ export default function CartDrawer() {
             <footer>
               <p className="drawer-total">
                 <span>Total</span>
-                <motion.b key={total} initial={{ scale: 1.15 }} animate={{ scale: 1 }}>
-                  {baht(total)}
-                </motion.b>
+                <b>{baht(total)}</b>
               </p>
-              {CHECKOUT_LIVE ? (
-                <button className="btn btn-big btn-full" disabled={!count || busy} onClick={() => checkout()}>
-                  {busy ? "Opening checkout…" : "Checkout"}
-                </button>
-              ) : (
-                <button className="btn btn-big btn-full btn-soon" disabled aria-disabled>
-                  Checkout opens at launch
-                </button>
-              )}
-              {error && <p className="drawer-error">{error}</p>}
-              <p className="drawer-note">Secure checkout by Shopify. Prices in Thai baht, VAT included.</p>
+              <button className="btn btn-red btn-full" disabled={!count || busy} onClick={() => checkout()}>
+                {busy ? "Opening checkout…" : "Checkout"}
+              </button>
+              {error && <p className="notify-error">{error}</p>}
+              <p className="drawer-note">Secure checkout. Prices in Thai baht, VAT included.</p>
             </footer>
           </motion.aside>
         </>

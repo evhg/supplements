@@ -6,10 +6,15 @@ const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-displ
 const outfit = Outfit({ weight: ["300", "400", "500", "700", "800"], subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "The Daily Ritual · Paleo Robbie",
+  metadataBase: new URL("https://dailyritual.cathnivore.com"),
+  title: "The Daily Ritual: electrolyte drink mix | Paleo Robbie",
   description:
-    "Four electrolyte sticks for the four parts of your day. All 6 electrolytes, real food, zero sugar. Rise & Brine, Pump It Up, Glow Up, Snooze Control.",
-  openGraph: { images: ["/img/trio-2400.webp"] },
+    "Four electrolyte drink sticks for a Bangkok day, from Paleo Robbie. All six electrolytes, real food first, no caffeine, no added sugar.",
+  openGraph: {
+    title: "Bangkok is thirsty work.",
+    description: "Four electrolyte drinks for the four parts of your day, from Paleo Robbie. Real food first. No caffeine, no added sugar, no weird stuff.",
+    images: ["/img/hero-poster.webp"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -22,7 +27,12 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${anton.variable} ${outfit.variable}`}>
-      <body>{children}</body>
+      <body>
+        <noscript>
+          <style>{`.r-reveal,.heat-beat,.hero-copy>*,.hero-chant{opacity:1!important;transform:none!important;visibility:visible!important}.nav{opacity:1!important}`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }

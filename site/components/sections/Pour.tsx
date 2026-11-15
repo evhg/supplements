@@ -1,13 +1,14 @@
 "use client";
-// Chapter 6: just add water. Pinned; the Blender pour plays under your scroll and the steps light up.
+// Chapter 6: how you use it. Pinned briefly; the Blender pour plays under your scroll and the three steps light up
+// in time with the footage. The heading is there from the first frame.
 import { useRef } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
 import SequenceCanvas, { type SequenceHandle } from "../SequenceCanvas";
 
 const STEPS = [
-  { n: "01", t: "Tear.", d: "Along the notch." },
-  { n: "02", t: "Pour.", d: "Into 300–600 ml of cold water." },
-  { n: "03", t: "Shake.", d: "Twenty seconds. Done." },
+  { n: "1", t: "Tear.", d: "Along the notch." },
+  { n: "2", t: "Pour.", d: "Into cold water. Each stick tells you how much." },
+  { n: "3", t: "Shake.", d: "Or stir. Twenty seconds." },
 ];
 
 export default function Pour() {
@@ -16,39 +17,28 @@ export default function Pour() {
   useGSAP(
     () => {
       const steps = gsap.utils.toArray<HTMLElement>(".pour-step");
-      const tl = gsap.timeline({
-        defaults: { ease: "none" },
-        scrollTrigger: {
-          trigger: root.current,
-          start: "top top",
-          end: "+=200%",
-          pin: true,
-          scrub: 0.5,
-          onUpdate: (st) => {
-            seq.current?.setProgress(st.progress);
-            const i = st.progress < 0.25 ? 0 : st.progress < 0.62 ? 1 : 2;
-            steps.forEach((s, k) => s.classList.toggle("on", k === i));
-          },
-        },
+      const set = (p: number) => {
+        seq.current?.setProgress(p);
+        const i = p < 0.2 ? 0 : p < 0.72 ? 1 : 2;
+        steps.forEach((s, k) => s.classList.toggle("on", k === i));
+      };
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return set(1);
+      gsap.fromTo(".pour-fill", { scaleX: 0 }, {
+        scaleX: 1,
+        ease: "none",
+        scrollTrigger: { trigger: root.current, start: "top top", end: "+=150%", pin: true, scrub: 0.25, onUpdate: (st) => set(Math.min(1, st.progress / 0.9)) },
       });
-      tl.fromTo(".pour-stage", { scale: 0.86, borderRadius: "48px" }, { scale: 1, borderRadius: "28px", duration: 0.3 }, 0)
-        .fromTo(".pour-title .w", { yPercent: 100 }, { yPercent: 0, stagger: 0.05, duration: 0.2 }, 0)
-        .to(".pour-fill", { scaleY: 1, duration: 1 }, 0)
-        .fromTo(".pour-done", { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.12 }, 0.86);
+      set(0);
     },
     { scope: root },
   );
   return (
-    <section id="pour" ref={root} className="pour" data-bg="#EFE6DC" data-tint="#EBA1BE">
+    <section id="pour" ref={root} className="pour">
       <div className="pour-copy">
-        <h2 className="pour-title">
-          <span className="m"><span className="w">Just</span></span> <span className="m"><span className="w">add</span></span>{" "}
-          <span className="m"><span className="w">water.</span></span>
-        </h2>
+        <h2>Just add water.</h2>
         <ol className="pour-steps">
           {STEPS.map((s) => (
             <li key={s.n} className="pour-step">
-              <small>{s.n}</small>
               <b>{s.t}</b>
               <span>{s.d}</span>
             </li>
@@ -57,10 +47,13 @@ export default function Pour() {
         <div className="pour-meter" aria-hidden>
           <div className="pour-fill" />
         </div>
-        <p className="pour-done">That&apos;s the whole ritual. Each glass takes less time than making coffee.</p>
+        <p className="pour-done">
+          That&apos;s all there is to it. Quicker than making a coffee. Keep a few in your bag, your desk drawer and the kids&apos;
+          sports kit.
+        </p>
       </div>
       <div className="pour-stage">
-        <SequenceCanvas ref={seq} shot="pour" fallback="/img/hero-to-the-beet-2400.webp" alt="To The Beet poured into a glass of water" fit="cover" />
+        <SequenceCanvas ref={seq} shot="pour" fallback="/img/hero-to-the-beet-2400.webp" alt="A Pump It Up stick poured into a glass of water, turning it beet pink" fit="cover" focusX={0.42} />
       </div>
     </section>
   );

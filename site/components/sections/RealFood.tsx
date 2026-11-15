@@ -1,43 +1,38 @@
 "use client";
-// Chapter 5: real food, Paleo Robbie's core value. Two marquees of ingredients drift against each other
-// (CSS keyframes, sped up by scroll velocity), then the zeros land.
+// Chapter 5: real food first, Paleo Robbie's core value, said honestly. A light, warm chapter: one marquee of the
+// ingredients that are physically in the sticks (CSS keyframes, leaning with scroll speed), then the no-thanks list.
 import { useRef } from "react";
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import { REAL_FOOD } from "@/lib/products";
-
 
 export default function RealFood() {
   const root = useRef<HTMLElement>(null);
   useGSAP(
     () => {
-      const rows = gsap.utils.toArray<HTMLElement>(".mq-row");
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const skew = gsap.quickTo(".mq-row", "skewX", { duration: 0.5, ease: "power3.out" });
       ScrollTrigger.create({
         trigger: root.current,
         start: "top bottom",
         end: "bottom top",
-        onUpdate: (st) => {
-          const v = gsap.utils.clamp(-14, 14, st.getVelocity() / 250);
-          gsap.to(rows, { skewX: -v, duration: 0.5, ease: "power3.out", overwrite: true });
-        },
+        onUpdate: (st) => skew(gsap.utils.clamp(-6, 6, -st.getVelocity() / 400)),
       });
-      // the one reveal in this chapter: each "no" lands as you reach it
-      gsap.fromTo(".zeros span", { opacity: 0.12 }, { opacity: 1, stagger: 0.3, ease: "none", scrollTrigger: { trigger: ".zeros", start: "top 85%", end: "bottom 55%", scrub: true } });
-      gsap.fromTo(".mq", { rotate: -4 }, { rotate: 3, ease: "none", scrollTrigger: { trigger: root.current, start: "top bottom", end: "bottom top", scrub: true } });
     },
     { scope: root },
   );
   const items = [...REAL_FOOD, ...REAL_FOOD];
   return (
-    <section id="food" ref={root} className="food" data-bg="#141414" data-fg="#F6EFE4" data-tint="#F2E28E">
+    <section id="food" ref={root} className="food">
       <div className="food-head">
         <h2>
-          Made from food,
+          Real food first.
           <br />
-          not a lab.
+          Nothing artificial.
         </h2>
         <p className="lead">
-          Real food is the reason Paleo Robbie exists. So every stick leads with something you could find in a Thai market:
-          sea salt, holy basil, beetroot, pomelo, chamomile flower.
+          Real food is why Paleo Robbie exists, so that&apos;s where every stick starts: Thai sea salt, holy basil, ginger,
+          beetroot, watermelon, chamomile flower. Then the six minerals, and a few extras we name in full. You read the label on
+          everything else you buy from us. Read this one.
         </p>
       </div>
       <div className="mq" aria-hidden>
@@ -50,19 +45,21 @@ export default function RealFood() {
             ))}
           </div>
         </div>
-        <div className="mq-row rev">
-          <div className="mq-inner">
-            {items.slice().reverse().map((t, i) => (
-              <span key={i} className={i % 2 ? "" : "o"}>
-                {t}
-              </span>
-            ))}
-          </div>
+      </div>
+      <div className="food-foot">
+        <ul className="nos">
+          <li>No added sugar.</li>
+          <li>No caffeine.</li>
+          <li>No artificial colours, flavours or sweeteners.</li>
+        </ul>
+        <div className="food-rules">
+          <h3>Same rules as everything else we sell.</h3>
+          <p>
+            If we wouldn&apos;t stock it in the Paleo Robbie grocery, it doesn&apos;t go in a stick. No refined sugar, no artificial
+            anything, and every ingredient named on the box. A little stevia leaf or monk fruit does the sweetening.
+          </p>
         </div>
       </div>
-      <p className="zeros">
-        <span>No sugar.</span> <span>No caffeine.</span> <span>No artificial colours, flavours or sweeteners.</span>
-      </p>
     </section>
   );
 }
