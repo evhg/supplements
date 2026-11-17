@@ -1,6 +1,6 @@
 "use client";
 // A buy bar that stays with the reader on phones and tablets (the top nav hides while scrolling down).
-// Appears after the hero, steps aside while the packs or the footer are on screen.
+// Appears after the hero, steps aside from the closing chapter onward, where the page has its own buttons.
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { baht, pack } from "@/lib/products";
@@ -23,7 +23,7 @@ export default function BuyBar() {
       es.forEach((e) => (e.isIntersecting ? blocking.add(e.target) : blocking.delete(e.target)));
       update();
     });
-    ["packs", "faq", "foot"].forEach((id) => {
+    ["close", "packs", "faq", "foot"].forEach((id) => {
       const el = document.getElementById(id);
       if (el) io.observe(el);
     });

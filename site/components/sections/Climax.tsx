@@ -45,7 +45,7 @@ export default function Climax() {
   );
 
   return (
-    <section ref={root} className="climax">
+    <section id="close" ref={root} className="climax">
       <Near className="climax-fizz">
         <Particles mode="fizz" colors={["#EBA1BE", "#F7BFA0"]} level={fizz} count={700} />
       </Near>
