@@ -5,6 +5,8 @@ import { useRef } from "react";
 import dynamic from "next/dynamic";
 import { gsap, SplitText, useGSAP } from "@/lib/gsap";
 import { CHECKOUT_LIVE } from "@/lib/products";
+import { useCinema } from "@/lib/useDesktop";
+import Still from "../Still";
 import { scrollToId } from "../SmoothScroll";
 import Near from "../Near";
 
@@ -15,6 +17,7 @@ export default function Climax() {
   const root = useRef<HTMLElement>(null);
   const progress = useRef(0);
   const fizz = useRef(0);
+  const cinema = useCinema();
 
   useGSAP(
     () => {
@@ -25,6 +28,7 @@ export default function Climax() {
       // the headline is never scrubbed: it lands once, whole, as the section approaches
       const split = SplitText.create(".climax-title", { type: "chars", mask: "chars" });
       gsap.from(split.chars, { yPercent: 115, duration: 0.8, stagger: 0.025, ease: "ritual", scrollTrigger: { trigger: root.current, start: "top 62%", once: true } });
+      gsap.fromTo(".climax-still", { scale: 0.82, rotate: -4, y: 40 }, { scale: 1, rotate: 0, y: 0, ease: "none", scrollTrigger: { trigger: root.current, start: "top 80%", end: "top 20%", scrub: 0.3 } });
       gsap.to(progress, {
         current: 1,
         ease: "none",
@@ -46,9 +50,16 @@ export default function Climax() {
         <Particles mode="fizz" colors={["#EBA1BE", "#F7BFA0"]} level={fizz} count={700} />
       </Near>
       <h2 className="climax-title">Start your ritual</h2>
-      <Near className="climax-3d">
-        <StickStage progress={progress} />
-      </Near>
+      {cinema ? (
+        <Near className="climax-3d">
+          <StickStage progress={progress} />
+        </Near>
+      ) : (
+        // phones: a rendered still. A live 3D stage is the part most likely to misbehave in mobile Safari and in-app browsers
+        <div className="climax-still">
+          <Still base="/img/pack-weekly" fallback="/img/hero-poster.webp" alt="The four Daily Ritual sticks" />
+        </div>
+      )}
       <div className="climax-foot">
         <p>{CHECKOUT_LIVE ? "Order today and the first glass could be tomorrow morning." : "The first batch is nearly here."}</p>
         <button className="btn btn-red btn-big" onClick={() => scrollToId("packs")}>

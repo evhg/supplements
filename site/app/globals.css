@@ -1891,3 +1891,77 @@ h2 {
     min-height: 100svh;
   }
 }
+
+/* ------------------------------------------------------------------ phone fixes for the bottom of the page (2026-11-17) */
+.climax-still {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 560px);
+  aspect-ratio: 5 / 4;
+}
+/* form fields look the same on iOS as everywhere else */
+.notify-form select,
+.notify-form input[type="email"] {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--ink);
+}
+.notify-form select {
+  padding-right: 44px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23141414' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center / 12px 8px;
+}
+.faq summary::after {
+  font-size: 1.3em;
+  line-height: 0.9;
+}
+.foot-links a {
+  text-underline-offset: 0.2em;
+}
+@media (max-width: 1000px) {
+  .foot {
+    padding-bottom: max(40px, calc(env(safe-area-inset-bottom) + 28px)); /* the buy bar steps aside at the footer */
+  }
+}
+@media (max-width: 760px) {
+  .climax {
+    gap: 14px;
+    padding: 72px var(--gutter) 56px;
+  }
+  .faq {
+    padding: 64px var(--gutter) 56px;
+    gap: 22px;
+  }
+  .packs {
+    padding-bottom: 56px;
+  }
+  .foot {
+    padding-top: 52px;
+  }
+  /* solid, not outlined: hairline outlines turn muddy at this size and Safari draws them worst */
+  .foot-big {
+    font-size: 8.9vw;
+    color: var(--cream);
+    -webkit-text-stroke: 0;
+    margin-bottom: 30px;
+  }
+  .foot-row {
+    gap: 18px;
+  }
+  .foot-links {
+    gap: 0;
+    font-size: 16px;
+  }
+  .foot-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+.climax-still .still {
+  transform: scale(1.28);
+}
+@media (max-width: 760px) {
+  .foot-big {
+    font-size: 8.4vw;
+  }
+}
