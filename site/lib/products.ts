@@ -24,7 +24,7 @@ export type Stick = {
   pairs: { pair: string; story: string }[];
   stats: { k: string; v: string }[];
   note: string;
-  adultsOnly?: boolean;
+  adults?: boolean;        // "Recommended for adults" (Glow Up: creatine. Snooze Control: GABA)
   label: { sodium: number; potassium: number; magnesium: number; calcium: number; phosphate: number; kcal: string; extras: string };
 };
 
@@ -45,7 +45,7 @@ export const STICKS: Stick[] = [
     taste: "Think peach iced tea with a squeeze of lemon and a herby, lightly salty finish.",
     inside: ["All 6 electrolytes", "Thai sea salt", "Holy basil", "Ginger root", "Vitamins B6, B12 and C"],
     pairs: [
-      { pair: "Magnesium + B6", story: "Contribute to the reduction of tiredness and fatigue. No caffeine involved." },
+      { pair: "Magnesium bisglycinate + B6", story: "Contribute to the reduction of tiredness and fatigue. No caffeine involved." },
       { pair: "Ginger", story: "The old Thai morning root. A gentle start before breakfast." },
     ],
     stats: [
@@ -58,8 +58,8 @@ export const STICKS: Stick[] = [
   },
   {
     id: "to-the-beet",
-    time: "16:30",
-    moment: "Before anything sweaty",
+    time: "17:30",
+    moment: "Before anything sweaty, whenever that is",
     word: "Pump",
     line: "Pump It Up",
     name: "To The Beet",
@@ -68,12 +68,12 @@ export const STICKS: Stick[] = [
     deep: "#74204A",
     pitch: "The salty one, on purpose.",
     body:
-      "Sweat is mostly water and salt, so this stick carries 900 mg of sodium, with real beetroot and real watermelon. There's no caffeine, so an evening game of padel doesn't follow you to bed. Have it before the gym, a run round Benjakitti, a round of golf or a Saturday on the touchline.",
+      "Sweat is mostly water and salt, so this stick carries 900 mg of natural, unprocessed sodium from Thai sea salt, with real beetroot and real watermelon. There's no caffeine, so an evening game of padel doesn't follow you to bed. Have it before the gym, a run round Benjakitti, a round of golf or any long afternoon outdoors.",
     taste: "Think cold watermelon with a pinch of salt and an earthy bit of beet.",
-    inside: ["All 6 electrolytes", "Real beetroot", "Real watermelon", "900 mg sodium", "No caffeine"],
+    inside: ["All 6 electrolytes", "900 mg natural sodium", "Real beetroot", "Real watermelon", "No caffeine"],
     pairs: [
       { pair: "Sea salt + beetroot", story: "The salt you sweat out, and a real vegetable instead of a stimulant." },
-      { pair: "Potassium + magnesium", story: "Contribute to normal muscle function." },
+      { pair: "All six electrolytes", story: "Sodium, chloride, potassium, magnesium, calcium and phosphate. Potassium, magnesium and calcium contribute to normal muscle function." },
     ],
     stats: [
       { k: "sodium", v: "900 mg" },
@@ -85,8 +85,8 @@ export const STICKS: Stick[] = [
   },
   {
     id: "zest-life",
-    time: "18:30",
-    moment: "Early evening, every day",
+    time: "19:00",
+    moment: "In the evening, every day",
     word: "Glow",
     line: "Glow Up",
     name: "Zest Life",
@@ -95,25 +95,25 @@ export const STICKS: Stick[] = [
     deep: "#5F4E0A",
     pitch: "One for the grown-ups.",
     body:
-      "2.5 g of creatine, an everyday amount: nothing to load, nothing to cycle. Creatine is one of the most studied ingredients in sport, and it isn't only for people who lift. The collagen comes with vitamin C, because vitamin C contributes to normal collagen formation.",
+      "2.5 g of micronized creatine, an everyday amount: nothing to load, nothing to cycle. Micronized means milled extra fine, so it dissolves in the glass and doesn't settle at the bottom. Creatine is one of the most studied ingredients in sport, and it isn't only for people who lift. The collagen comes with vitamin C, because vitamin C contributes to normal collagen formation.",
     taste: "Think fresh pomelo with orange and a sharp squeeze of lime. Like something you'd order by a pool.",
-    inside: ["All 6 electrolytes", "2.5 g creatine", "2.5 g collagen", "Vitamin C", "Adults only"],
+    inside: ["All 6 electrolytes", "2.5 g micronized creatine", "2.5 g collagen", "Vitamin C", "Recommended for adults"],
     pairs: [
       { pair: "Creatine + electrolytes", story: "Creatine draws water into muscle. The electrolytes keep you hydrated while it does." },
       { pair: "Collagen + vitamin C", story: "Vitamin C contributes to normal collagen formation." },
     ],
     stats: [
-      { k: "creatine", v: "2.5 g" },
+      { k: "micronized creatine", v: "2.5 g" },
       { k: "kcal, from the collagen", v: "about 13" },
       { k: "water", v: "500 ml" },
     ],
-    note: "Adults only. One stick a day, no more.",
-    adultsOnly: true,
-    label: { sodium: 400, potassium: 400, magnesium: 75, calcium: 50, phosphate: 30, kcal: "about 13", extras: "Creatine 2.5 g, collagen 2.5 g, vitamin C 80 mg" },
+    note: "Recommended for adults. One stick a day.",
+    adults: true,
+    label: { sodium: 400, potassium: 400, magnesium: 75, calcium: 50, phosphate: 30, kcal: "about 13", extras: "Micronized creatine 2.5 g, collagen 2.5 g, vitamin C 80 mg" },
   },
   {
     id: "calm-o-mile",
-    time: "20:00",
+    time: "20:30",
     moment: "Two to three hours before bed",
     word: "Snooze",
     line: "Snooze Control",
@@ -123,19 +123,20 @@ export const STICKS: Stick[] = [
     deep: "#2F4F38",
     pitch: "The last glass of the day.",
     body:
-      "A cold apple and chamomile tea. Herbal, so there's no caffeine, and no melatonin either. It has the most magnesium of the four, with GABA, glycine and real chamomile flower. Have it two to three hours before bed, and the glass is long gone by lights out.",
+      "A cold apple and chamomile tea. Herbal, so there's no caffeine, and no melatonin either. It has the most magnesium of the four, as magnesium bisglycinate: magnesium bound to the amino acid glycine, the form that's easy to absorb and gentle on your stomach. With it come GABA, glycine and real chamomile flower. Have it two to three hours before bed, so nature calls before lights out and not at 3 am.",
     taste: "Think cold apple tea with soft, floral chamomile. Hardly salty at all.",
-    inside: ["All 6 electrolytes", "Most magnesium", "GABA + glycine", "Chamomile flower", "No caffeine, no melatonin"],
+    inside: ["All 6 electrolytes", "120 mg magnesium bisglycinate", "GABA + glycine", "Chamomile flower", "No caffeine, no melatonin"],
     pairs: [
       { pair: "GABA + glycine", story: "Two amino acids. You know them from GABA rice and bone broth." },
-      { pair: "Magnesium + chamomile", story: "Magnesium contributes to normal muscle function. Chamomile is the classic bedtime flower." },
+      { pair: "Magnesium bisglycinate + chamomile", story: "Magnesium contributes to normal muscle function and to the normal functioning of the nervous system. Chamomile is the classic bedtime flower." },
     ],
     stats: [
-      { k: "magnesium", v: "120 mg" },
+      { k: "magnesium, as bisglycinate", v: "120 mg" },
       { k: "kcal", v: "about 4" },
       { k: "water", v: "300 ml" },
     ],
-    note: "Herbal and caffeine-free. A kids' serving is being confirmed with our maker.",
+    note: "Herbal and caffeine-free. Recommended for adults.",
+    adults: true,
     label: { sodium: 150, potassium: 300, magnesium: 120, calcium: 50, phosphate: 30, kcal: "about 4", extras: "GABA 100 mg, glycine 100 mg, chamomile flower" },
   },
 ];
@@ -146,7 +147,7 @@ export const ELECTROLYTES = [
   { sym: "Na", name: "Sodium", job: "the main one you sweat out" },
   { sym: "Cl", name: "Chloride", job: "sodium's other half: together they're salt" },
   { sym: "K", name: "Potassium", job: "normal muscle and nerve function" },
-  { sym: "Mg", name: "Magnesium", job: "helps reduce tiredness and fatigue" },
+  { sym: "Mg", name: "Magnesium", job: "as bisglycinate, the gentle form" },
   { sym: "Ca", name: "Calcium", job: "normal muscle function" },
   { sym: "PO₄", name: "Phosphate", job: "normal energy metabolism" },
 ];
@@ -159,7 +160,7 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
     who: "The whole house",
     title: "Half a stick for the little ones.",
     body:
-      "Rise & Brine and Pump It Up are family sticks. Kids aged 4 to 12 have half a stick in a full glass of water: after football, after swimming, after a school day in a hot uniform. No caffeine, no added sugar, nothing artificial. Glow Up is the grown-ups' one.",
+      "Rise & Brine and Pump It Up are family sticks. Kids aged 4 to 12 have half a stick in a full glass of water: after football, after swimming, after a school day in a hot uniform. No caffeine, no added sugar, nothing artificial. Glow Up and Snooze Control are recommended for adults.",
     tag: "Rise & Brine",
     sku: "peach-of-mind",
     packId: "peach-of-mind",
@@ -168,7 +169,7 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
     who: "Anyone who sweats",
     title: "You don't have to be an athlete.",
     body:
-      "Bangkok does half the work for you. Have Pump It Up before anything sweaty and Glow Up in the evening. Neither has caffeine. And if you do lift: 2.5 g of creatine a day, no loading week.",
+      "Bangkok does half the work for you. Have Pump It Up before anything sweaty and Glow Up in the evening. Neither has caffeine. And if you do lift: 2.5 g of micronized creatine a day, no loading week.",
     tag: "Pump It Up",
     sku: "to-the-beet",
     packId: "to-the-beet",
@@ -177,7 +178,7 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
     who: "Light sleepers",
     title: "An early last drink.",
     body:
-      "Snooze Control goes down two to three hours before bed. Magnesium, GABA, glycine and chamomile flower in a cold apple tea, small on purpose and early on purpose.",
+      "Snooze Control goes down two to three hours before bed. Magnesium bisglycinate (the gentle, easily absorbed form), GABA, glycine and chamomile flower in a cold apple tea. Small on purpose and early on purpose, so you're not up again at 3 am.",
     tag: "Snooze Control",
     sku: "calm-o-mile",
     packId: "calm-o-mile",
@@ -186,7 +187,7 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
     who: "Eating less",
     title: "Eating less means drinking less.",
     body:
-      "About a fifth of your water comes from food. So if you're fasting, eating low-carb, on a GLP-1 or just not a breakfast person, you're drinking less than you think. Rise & Brine is the light one: a little ginger, no sugar, about 3 kcal. On medication? Check with your doctor first.",
+      "About a fifth of your water comes from food. So if you're fasting, eating low-carb, on a GLP-1 such as Mounjaro or Ozempic, or just not a breakfast person, you're drinking less than you think. Rise & Brine is the light one: a little ginger, no sugar, about 3 kcal. On medication? Check with your doctor first.",
     tag: "Rise & Brine",
     sku: "peach-of-mind",
     packId: "sampler",
@@ -196,15 +197,19 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
 export const FAQ: { q: string; a: string }[] = [
   {
     q: "What's actually in them, and what makes them sweet?",
-    a: "All six electrolytes (sodium, chloride, potassium, magnesium, calcium and phosphate), plus the real food on the front of each stick: Thai sea salt, holy basil, ginger, beetroot, watermelon, collagen or chamomile flower, depending on which one. They're lightly sweetened with plant sweeteners, stevia leaf or monk fruit. No sugar is added, there's no caffeine, and there are no artificial colours, flavours or sweeteners. The amounts for each stick are in the table above, and the full ingredient list will be on every box.",
+    a: "All six electrolytes (sodium, chloride, potassium, magnesium, calcium and phosphate). The sodium and chloride come from natural, unprocessed Thai sea salt, and the magnesium is magnesium bisglycinate, a form that's easy to absorb and gentle on the stomach. Then there's the real food on the front of each stick: Thai sea salt, holy basil, ginger, beetroot, watermelon, collagen or chamomile flower, depending on which one. They're lightly sweetened with plant sweeteners, stevia leaf or monk fruit. No sugar is added, there's no caffeine, and there are no artificial colours, flavours or sweeteners. The amounts for each stick are in the table above, and the full ingredient list will be on every box.",
   },
   {
     q: "Can my kids drink them?",
-    a: "Rise & Brine and Pump It Up, yes: half a stick in a full glass of water for children aged 4 to 12. Neither has caffeine. A kids' serving for Snooze Control is still being confirmed with our maker, so that one is for grown-ups for now. Glow Up contains creatine and is for adults only. None of them is for under-4s, and if your child has a medical condition, ask your doctor first.",
+    a: "Rise & Brine and Pump It Up, yes: half a stick in a full glass of water for children aged 4 to 12. Neither has caffeine. Glow Up, which has creatine, and Snooze Control, which has GABA, are recommended for adults. None of them is for under-4s, and if your child has a medical condition, ask your doctor first.",
   },
   {
     q: "I don't go to the gym. Is this for me? Do I need all four?",
     a: "Yes, and no. You sweat in Bangkok whether you train or not. Most people start with the two ends of the day: Rise & Brine in the morning and Snooze Control in the evening. Add Pump It Up on days you'll be out in the heat, and Glow Up if you'd like a simple daily creatine and collagen. The Sampler lets you try all four first.",
+  },
+  {
+    q: "I'm on Mounjaro, Ozempic or Wegovy. Can I drink these?",
+    a: "They're a food, not a medicine, and nothing in them acts on your appetite. People on GLP-1 medicines such as Mounjaro (tirzepatide), Ozempic, Wegovy and Rybelsus (semaglutide) or Saxenda (liraglutide) often reach for electrolytes for a simple reason: when you eat less, you drink less. About a fifth of your water normally comes from food, and smaller meals also bring less salt, potassium and magnesium. Rise & Brine is the gentle place to start: a light peach water with a little ginger, no sugar and about 3 kcal, easy to sip on a morning when you don't fancy much. It isn't a treatment for side effects, so tell your doctor you're adding it, especially if you've been told to watch your salt.",
   },
   {
     q: "Isn't that a lot of salt?",
@@ -221,6 +226,8 @@ export const FAQ: { q: string; a: string }[] = [
 ];
 
 // Prices in THB. INDICATIVE until pricing is signed off.
+// Each price is a whole number of baht per stick, and the per-stick price falls as the pack grows:
+// 12 sticks at ฿50, 28 at ฿45, 30 at ฿43 (Glow Up, with creatine and collagen, at ฿49).
 export type PackId = "sampler" | "weekly" | SkuId;
 export type Pack = {
   id: PackId;
@@ -241,7 +248,7 @@ export const PACKS: Pack[] = [
     sub: "12 sticks. Three of each.",
     body: "Not sure which part of your day needs one? Try all four for three days and see which you reach for.",
     sticks: 12,
-    price: 590,
+    price: 600,
     badge: "Start here",
     image: "/img/pack-sampler",
     color: "#F7BFA0",
@@ -252,7 +259,7 @@ export const PACKS: Pack[] = [
     sub: "28 sticks. Seven of each.",
     body: "One full week for one person. Or share it round the house.",
     sticks: 28,
-    price: 1150,
+    price: 1260,
     badge: "All four, for a week",
     image: "/img/pack-weekly",
     color: "#C8DDCB",
@@ -262,7 +269,7 @@ export const PACKS: Pack[] = [
     title: s.line,
     sub: `30 sticks of ${s.flavour.toLowerCase()}.`,
     sticks: 30,
-    price: s.id === "zest-life" ? 1490 : 1290,
+    price: s.id === "zest-life" ? 1470 : 1290,
     image: `/img/lay-${s.id}`,
     color: s.panel,
   })),
@@ -270,6 +277,11 @@ export const PACKS: Pack[] = [
 
 export const pack = (id: PackId) => PACKS.find((p) => p.id === id)!;
 export const perStick = (p: Pack) => Math.round(p.price / p.sticks);
+// Saving per stick against the smallest pack, in whole percent. Small differences aren't worth a badge.
+export const saving = (p: Pack) => {
+  const pct = Math.round((1 - perStick(p) / perStick(pack("sampler"))) * 100);
+  return pct >= 5 ? pct : 0;
+};
 export const baht = (n: number) => "฿" + n.toLocaleString("en-US");
 export const CHECKOUT_LIVE = process.env.NEXT_PUBLIC_CHECKOUT_LIVE === "true";
 // A thin "preview" ribbon for stakeholder reviews. On unless switched off, and always off once checkout is live.

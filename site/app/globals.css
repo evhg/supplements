@@ -1287,12 +1287,36 @@ h2 {
   font-size: 0.6em;
   margin-right: -0.1em;
 }
-.price small {
-  flex-basis: 100%;
-  margin-top: 0.4em;
-  font-family: var(--body);
-  font-weight: 700;
+.price-block {
+  flex: 1 1 100%; /* the button always sits on its own row, so the three cards line up */
+  display: grid;
+  gap: 0.7em;
+}
+/* the per-stick price in an outlined pill, with the saving in a solid one beside it */
+.per {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
   font-size: var(--t-small);
+  line-height: 1;
+}
+.per .each,
+.per .save {
+  padding: 0.5em 0.85em;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.per .each {
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+.per b {
+  font-weight: 800;
+}
+.per .save {
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
 }
 .seg {
   display: grid;

@@ -7,7 +7,7 @@ import { ELECTROLYTES, STICKS } from "@/lib/products";
 const ROWS: { k: string; unit: string; get: (i: number) => string }[] = [
   { k: "Sodium", unit: "mg", get: (i) => String(STICKS[i].label.sodium) },
   { k: "Potassium", unit: "mg", get: (i) => String(STICKS[i].label.potassium) },
-  { k: "Magnesium", unit: "mg", get: (i) => String(STICKS[i].label.magnesium) },
+  { k: "Magnesium", unit: "mg, as bisglycinate", get: (i) => String(STICKS[i].label.magnesium) },
   { k: "Calcium", unit: "mg", get: (i) => String(STICKS[i].label.calcium) },
   { k: "Phosphate", unit: "mg", get: (i) => String(STICKS[i].label.phosphate) },
   { k: "Energy", unit: "kcal", get: (i) => STICKS[i].label.kcal },
@@ -42,13 +42,18 @@ export default function Inside() {
           </p>
           <ul className="inside-facts">
             <li>
-              <b>Salt set by the hour.</b> From 150 mg of sodium at bedtime to 900 mg before you sweat.
+              <b>Salt set by the hour.</b> Natural, unprocessed Thai sea salt: from 150 mg of sodium at bedtime to 900 mg before
+              you sweat.
             </li>
             <li>
               <b>Nothing to keep you up.</b> No caffeine, no L-theanine, no melatonin.
             </li>
             <li>
-              <b>Made for a household.</b> Two family sticks, and one that&apos;s for grown-ups only.
+              <b>Magnesium that&apos;s easy on you.</b> Magnesium bisglycinate, bound to the amino acid glycine: easy to absorb,
+              gentle on your stomach.
+            </li>
+            <li>
+              <b>Made for a household.</b> Two family sticks, and two recommended for adults.
             </li>
           </ul>
         </div>
@@ -91,7 +96,7 @@ export default function Inside() {
       <div className="label-wrap">
         <table className="label">
           <caption>
-            What&apos;s in each stick <span>Target formula, being finalised with our maker.</span>
+            What&apos;s in each stick <span>Target formula. The final amounts are printed on every box.</span>
           </caption>
           <thead>
             <tr>

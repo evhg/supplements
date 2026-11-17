@@ -66,17 +66,19 @@ Page length: 27.4 screens → about 22 on desktop; first price is now reachable 
 These are shown on the page under a "Preview. Formula and prices to be confirmed." ribbon. Each needs a decision or a
 confirmation before a customer sees the page.
 
-1. **Kids' serving on Snooze Control.** `PROTOCOL.md` marks GABA for children as unconfirmed, so the page now says two
-   family sticks (Rise & Brine, Pump It Up) and "a kids' serving is being confirmed" for Snooze Control. If the maker
-   confirms, switch back to three.
+1. **Who each stick is for.** Rise & Brine and Pump It Up are family sticks (kids 4 to 12: half a stick). Glow Up
+   (creatine) and Snooze Control (GABA) say "Recommended for adults" everywhere, not "adults only". If the maker
+   confirms a kids' serving for Snooze Control, it can become the third family stick.
 2. **Sweetener.** The page says "stevia leaf or monk fruit". Confirm which.
 3. **Glow Up calories.** With 2.5 g collagen it is about 13 kcal, so it is the highest-calorie stick, while the pack
    bubble on Pump It Up says "Only 11 kcal".
 4. **Pack art.** "Clear head" (Rise & Brine) and "No loading, no bloat" (Glow Up) bubbles, and "Kids 4–12: half a stick"
    on the Snooze Control back label, need the same claims check as the page.
 5. **Collagen source** (fish or bovine): an allergen and diet question; must be stated.
-6. **Prices** are indicative: Sampler ฿590 (฿49 a stick), Weekly Ritual ฿1,150 (฿41), box of 30 ฿1,290 (฿43), Glow Up
-   ฿1,490 (฿50). The Weekly was lowered from ฿1,290 so the bundle no longer costs more per stick than a single box.
+6. **Prices** are indicative, and are now whole baht per stick that fall as the pack grows: Sampler ฿600 (12 sticks,
+   ฿50 a stick), Weekly Ritual ฿1,260 (28, ฿45, "Save 10%"), box of 30 ฿1,290 (฿43, "Save 14%"), Glow Up box ฿1,470
+   (฿49). Against the last round the Sampler is up ฿10, the Weekly up ฿110 and the Glow Up box down ฿20. There is no
+   multi-box tier yet; a "two boxes or more" step (say ฿40 a stick) would make the ladder steeper.
 7. **Where waiting-list sign-ups go.** They are logged by the site now; set `NOTIFY_WEBHOOK_URL` to send each one to a
    sheet, Slack or LINE. A LINE add-friend button can be added once the official account ID is confirmed.
 8. **Buying route.** For existing customers the strongest button is "add to my Paleo Robbie order". The page promises the
@@ -87,3 +89,12 @@ confirmation before a customer sees the page.
 11. **Photography.** The brand reviewer's "one screen that makes Jon say yes" includes a real photo of four iced glasses
     with their ingredients. Everything on the page is a render; a shoot is the next step once samples exist.
 12. **All claim wording** to be cleared by the maker's regulatory contact as advertising, not only as label text.
+13. **Three ingredient statements added on 2026-11-17 need the maker's spec sheet behind them:** "natural, unprocessed
+    sodium from Thai sea salt" (true only if all the sodium comes from unrefined sea salt, not sodium citrate),
+    "micronized creatine" (the spec says creatine monohydrate; ask for the micronized grade), and "magnesium
+    bisglycinate: easy to absorb and gentle on your stomach" (the form is in `PROTOCOL.md`; the absorption and stomach
+    wording needs the same claims check as the rest).
+14. **GLP-1 question in the FAQ** names Mounjaro, Ozempic, Wegovy, Rybelsus and Saxenda for search. It says the sticks
+    are a food and not a treatment, and sends the reader to their doctor. Naming prescription medicines in food
+    advertising should be cleared with the regulatory contact before launch.
+

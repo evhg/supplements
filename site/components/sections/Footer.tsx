@@ -11,7 +11,7 @@ export default function Footer() {
         </a>
         <p className="foot-legal">
           The Daily Ritual is a powdered drink mix with electrolytes, made in Thailand for Paleo Robbie. It is a food, not a
-          medicine. Glow Up contains creatine: adults only, one stick a day. If you are pregnant, breastfeeding, on medication,
+          medicine. Glow Up contains creatine and is recommended for adults, one stick a day. Snooze Control is recommended for adults. If you are pregnant, breastfeeding, on medication,
           watching your salt or under a doctor&apos;s care, ask your doctor first. Not for children under 4.
         </p>
         <nav className="foot-links" aria-label="Paleo Robbie">

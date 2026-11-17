@@ -1,13 +1,13 @@
 "use client";
 // Chapter 3: the four sticks, as one day.
-// Wide screens: a pinned sideways journey from 07:00 to 20:00 that PARKS on each stick (travel, then a dead-still
+// Wide screens: a pinned sideways journey from 07:00 to 20:30 that PARKS on each stick (travel, then a dead-still
 // hold), with a small sun-and-clock instrument keeping the time. Each panel owns its pack colour.
 // Phones and reduced motion: four stacked, full-colour cards with the stick lying across the top. Nothing is pinned,
 // so nothing depends on the height of the browser.
 import { useRef } from "react";
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import { CINEMA, useCinema } from "@/lib/useDesktop";
-import { STICKS, baht, pack } from "@/lib/products";
+import { STICKS, baht, pack, perStick } from "@/lib/products";
 import SequenceCanvas from "../SequenceCanvas";
 import Still from "../Still";
 import Buy from "../Buy";
@@ -107,7 +107,7 @@ export default function Ritual() {
       <div className="ritual-track">
         <header className="r-intro">
           <h2>
-            One stick for each
+            One stick for each{" "}
             <br />
             part of your day.
           </h2>
@@ -167,8 +167,8 @@ export default function Ritual() {
               <div className="r-buy r-reveal">
                 <Buy pack={s.id} live={`Add a box of 30 for ${baht(pack(s.id).price)}`} />
                 <span>
-                  Box of 30, {baht(pack(s.id).price)}
-                  {s.adultsOnly ? ". Adults only." : ""}
+                  Box of 30, {baht(pack(s.id).price)}: {baht(perStick(pack(s.id)))} a stick.
+                  {s.adults ? " Recommended for adults." : ""}
                 </span>
               </div>
             </div>

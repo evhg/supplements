@@ -3,10 +3,29 @@
 // Before launch the buttons open the waiting list, tagged with the pack; the same form sits inline underneath.
 import { useState } from "react";
 import { motion } from "motion/react";
-import { CHECKOUT_LIVE, PREVIEW, STICKS, baht, pack, perStick, type SkuId } from "@/lib/products";
+import { CHECKOUT_LIVE, PREVIEW, STICKS, baht, pack, perStick, saving, type Pack, type SkuId } from "@/lib/products";
 import Still from "../Still";
 import Buy from "../Buy";
 import NotifyForm from "../NotifyForm";
+
+// The total you pay, with the per-stick price beside it: the number shoppers compare, and it falls as the pack grows.
+function Price({ pack: p }: { pack: Pack }) {
+  const save = saving(p);
+  return (
+    <div className="price-block">
+      <p className="price">
+        <span className="cur">฿</span>
+        {p.price.toLocaleString("en-US")}
+      </p>
+      <p className="per">
+        <span className="each">
+          <b>{baht(perStick(p))}</b> a stick
+        </span>
+        {save > 0 && <span className="save">Save {save}%</span>}
+      </p>
+    </div>
+  );
+}
 
 export default function Packs() {
   const [single, setSingle] = useState<SkuId>("peach-of-mind");
@@ -20,7 +39,7 @@ export default function Packs() {
       <header className="packs-head">
         <h2>Pick your pack.</h2>
         <p>
-          Start small, or go for the full day. {PREVIEW ? "Prices are indicative until launch." : "No subscription: buy a box when you run out."}
+          The bigger the pack, the less each stick costs. {PREVIEW ? "Prices are indicative until launch." : "No subscription: buy a box when you run out."}
         </p>
       </header>
 
@@ -34,11 +53,7 @@ export default function Packs() {
           <p className="pack-sub">{sampler.sub}</p>
           <p className="pack-copy">{sampler.body}</p>
           <div className="pack-buy">
-            <p className="price">
-              <span className="cur">฿</span>
-              {sampler.price.toLocaleString("en-US")}
-              <small>{baht(perStick(sampler))} a stick</small>
-            </p>
+            <Price pack={sampler} />
             <Buy pack="sampler" live="Add the Sampler" />
           </div>
         </article>
@@ -50,13 +65,9 @@ export default function Packs() {
           </div>
           <h3>{weekly.title}</h3>
           <p className="pack-sub">{weekly.sub}</p>
-          <p className="pack-copy">{weekly.body} Includes seven Glow Up sticks, which are for adults only.</p>
+          <p className="pack-copy">{weekly.body} Glow Up and Snooze Control are recommended for adults.</p>
           <div className="pack-buy">
-            <p className="price">
-              <span className="cur">฿</span>
-              {weekly.price.toLocaleString("en-US")}
-              <small>{baht(perStick(weekly))} a stick</small>
-            </p>
+            <Price pack={weekly} />
             <Buy pack="weekly" live="Add the Weekly Ritual" />
           </div>
         </article>
@@ -76,14 +87,10 @@ export default function Packs() {
             ))}
           </div>
           <p className="pack-sub">
-            {box.sub} {s.adultsOnly ? "Adults only, one a day." : "A month, one a day."}
+            {box.sub} {s.adults ? "A month, one a day. Recommended for adults." : "A month, one a day."}
           </p>
           <div className="pack-buy">
-            <p className="price">
-              <span className="cur">฿</span>
-              {box.price.toLocaleString("en-US")}
-              <small>{baht(perStick(box))} a stick</small>
-            </p>
+            <Price pack={box} />
             <Buy pack={single} live="Add to bag" />
           </div>
         </article>

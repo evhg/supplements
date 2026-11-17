@@ -59,7 +59,7 @@ export default function Heat() {
       <div className="heat-stage">
         <p className="heat-beat heat-line in">You live somewhere very warm.</p>
         <p className="heat-beat heat-line">
-          You sweat on the school run.
+          You sweat the minute you step outside.
           <br />
           Then sit in air con all day.
         </p>
@@ -72,8 +72,8 @@ export default function Heat() {
           </p>
         </div>
         <div className="heat-beat heat-end">
-          <p className="heat-line">Water puts back the water.</p>
-          <p className="heat-turn">These put back the rest.</p>
+          <p className="heat-line">You sweat out more than water.</p>
+          <p className="heat-turn">These put the rest back.</p>
         </div>
       </div>
     </section>
