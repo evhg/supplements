@@ -1,6 +1,6 @@
 "use client";
 // Chapter 3: the four sticks, as one day.
-// Wide screens: a pinned sideways journey from 07:00 to 20:30 that PARKS on each stick (travel, then a dead-still
+// Wide screens: a pinned sideways journey from 08:00 to 20:00 that PARKS on each stick (travel, then a dead-still
 // hold), with a small sun-and-clock instrument keeping the time. Each panel owns its pack colour.
 // Phones and reduced motion: four stacked, full-colour cards with the stick lying across the top. Nothing is pinned,
 // so nothing depends on the height of the browser.
@@ -113,7 +113,7 @@ export default function Ritual() {
           </h2>
           <p className="lead">
             Each is made for its hour: the most salt before you sweat, the most magnesium before bed. All four carry all six
-            electrolytes. Drink one, two or the full set.
+            electrolytes. Four hours apart, from breakfast to bedtime: 8, 12, 4 and 8. Drink one, two or the full set.
           </p>
           <p className="r-hint">Keep scrolling. The sun is coming up.</p>
         </header>

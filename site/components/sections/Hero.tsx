@@ -90,7 +90,7 @@ export default function Hero() {
 
       <p className="hero-chant">
         Rise. Pump. Glow. Snooze.
-        <span>Morning, before you sweat, the evening, and bedtime. Drink the ones that fit your day.</span>
+        <span>Morning, midday, afternoon and evening. Drink the ones that fit your day.</span>
       </p>
     </section>
   );

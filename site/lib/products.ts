@@ -1,5 +1,6 @@
 // Single source of truth for the four sticks, the packs, the label table and the FAQ.
 //
+// The day runs in four-hour steps: 08:00, 12:00, 16:00, 20:00.
 // Voice (panel review, 2026-11-15): written for Paleo Robbie's own shoppers, households in a hot city, not for gym people.
 // One name per stick in running copy: the LINE name (Rise & Brine). The flavour name appears on the product panel only.
 // Claims: nutrient-function wording only (Thai drink-mix route). No sleep, focus, energy, pump or strength outcomes.
@@ -31,7 +32,7 @@ export type Stick = {
 export const STICKS: Stick[] = [
   {
     id: "peach-of-mind",
-    time: "07:00",
+    time: "08:00",
     moment: "First thing, before coffee",
     word: "Rise",
     line: "Rise & Brine",
@@ -58,8 +59,8 @@ export const STICKS: Stick[] = [
   },
   {
     id: "to-the-beet",
-    time: "17:30",
-    moment: "Before anything sweaty, whenever that is",
+    time: "12:00",
+    moment: "Before the midday heat, or anything sweaty",
     word: "Pump",
     line: "Pump It Up",
     name: "To The Beet",
@@ -68,7 +69,7 @@ export const STICKS: Stick[] = [
     deep: "#74204A",
     pitch: "The salty one, on purpose.",
     body:
-      "Sweat is mostly water and salt, so this stick carries 900 mg of natural, unprocessed sodium from Thai sea salt, with real beetroot and real watermelon. There's no caffeine, so an evening game of padel doesn't follow you to bed. Have it before the gym, a run round Benjakitti, a round of golf or any long afternoon outdoors.",
+      "Sweat is mostly water and salt, so this stick carries 900 mg of natural, unprocessed sodium from Thai sea salt, with real beetroot and real watermelon. There's no caffeine, so an evening game of padel doesn't follow you to bed. Have it before you step out into the midday heat, or before the gym, a run round Benjakitti or a round of golf.",
     taste: "Think cold watermelon with a pinch of salt and an earthy bit of beet.",
     inside: ["All 6 electrolytes", "900 mg natural sodium", "Real beetroot", "Real watermelon", "No caffeine"],
     pairs: [
@@ -85,8 +86,8 @@ export const STICKS: Stick[] = [
   },
   {
     id: "zest-life",
-    time: "19:00",
-    moment: "In the evening, every day",
+    time: "16:00",
+    moment: "Mid-afternoon, every day",
     word: "Glow",
     line: "Glow Up",
     name: "Zest Life",
@@ -113,7 +114,7 @@ export const STICKS: Stick[] = [
   },
   {
     id: "calm-o-mile",
-    time: "20:30",
+    time: "20:00",
     moment: "Two to three hours before bed",
     word: "Snooze",
     line: "Snooze Control",
@@ -169,7 +170,7 @@ export const BANDS: { who: string; title: string; body: string; tag: string; sku
     who: "Anyone who sweats",
     title: "You don't have to be an athlete.",
     body:
-      "Bangkok does half the work for you. Have Pump It Up before anything sweaty and Glow Up in the evening. Neither has caffeine. And if you do lift: 2.5 g of micronized creatine a day, no loading week.",
+      "Bangkok does half the work for you. Have Pump It Up before anything sweaty and Glow Up in the afternoon. Neither has caffeine. And if you do lift: 2.5 g of micronized creatine a day, no loading week.",
     tag: "Pump It Up",
     sku: "to-the-beet",
     packId: "to-the-beet",
